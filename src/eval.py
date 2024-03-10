@@ -50,7 +50,8 @@ def get_args():
     
     args = parser.parse_args() 
     if args.api_key is not None:
-        openai.api_key = args.api_key
+        openai.api_key = args.api_key 
+
     if args.solar_api_key is not None:
         openai.api_key = args.solar_api_key
     return args
