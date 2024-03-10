@@ -300,8 +300,60 @@ def openai_chat_request(
         contents.append(choice['message']['content'])
 
     return contents
-     
- 
+
+def solar_chat_request(
+        model: str = None,
+        engine: str = None,
+        temperature: float = 0,
+        max_tokens: int = 1024,
+        top_p: float = 1.0,
+        prompt: str = None,
+        n: int = 1,
+        messages: List[dict] = None,
+        **kwargs,
+) -> List[str]:
+    """
+    Request the evaluation prompt from the SOLAR API in chat format.
+    Args:
+        prompt (str): The encoded prompt.
+        messages (List[dict]): The messages.
+        model (str): The model to use.
+        engine (str): The engine to use.
+        temperature (float, optional): The temperature. Defaults to 0.7.
+        max_tokens (int, optional): The maximum number of tokens. Defaults to 1024.
+        top_p (float, optional): The top p. Defaults to 0.95.
+    Returns:
+        List[str]: The list of generated evaluation prompts.
+    """
+    # Call solar api to generate aspects
+    assert prompt is not None or messages is not None, "Either prompt or messages should be provided."
+    if messages is None:
+        messages = [{"role": "system", "content": "You are a helpful assistant."},
+                    {"role": "user", "content": prompt}]
+
+    openai.api_base = "https://api.upstage.ai/v1/solar"
+    openai.api_key = os.getenv("SOLAR_API_KEY") if openai.api_key is None else openai.api_key
+    if openai.api_key is None:
+        raise ValueError("No API key provided. You can set your API key by setting env 'SOLAR_API_KEY'")
+
+    response = openai.ChatCompletion.create(
+        model=model,
+        engine=engine,
+        messages=messages,
+        temperature=temperature,
+        max_tokens=max_tokens,
+        top_p=top_p,
+        n=n,
+        stream=False,
+        **kwargs,
+    )
+    contents = []
+    for choice in response['choices']:
+        contents.append(choice['message']['content'])
+
+    return contents
+
+
 def google_chat_request(
     model: str=None,
     generation_config: dict=None,

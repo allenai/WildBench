@@ -42,13 +42,17 @@ def get_args():
     parser.add_argument("--max_tokens", type=int, default=1024)
     parser.add_argument("--overwrite", action="store_true")
 
+    # SOLAR Configs
+    parser.add_argument("--solar_api_key", type=str, default=None)
+
     
     parser.add_argument("--seed", type=int, default=42)
     
     args = parser.parse_args() 
     if args.api_key is not None:
-        openai.api_key = args.api_key 
-     
+        openai.api_key = args.api_key
+    if args.solar_api_key is not None:
+        openai.api_key = args.solar_api_key
     return args
         
 
