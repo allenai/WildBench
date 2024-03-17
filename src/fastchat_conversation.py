@@ -24,6 +24,8 @@ def map_to_conv(model_name):
         conv = get_conv_template("Yi-34b-chat")
     elif "vicuna" in model_name.lower():
         conv = get_conv_template("vicuna_v1.1")
+    elif "solar" in model_name.lower() and "chat" in model_name.lower():
+        conv = get_conv_template("solar")
     else:
         raise ValueError(f"Model {model_name} is not supported.")
 
@@ -1410,6 +1412,17 @@ register_conv_template(
         sep_style=SeparatorStyle.CHATML,
         sep="<end_of_turn>",
         stop_str="<end_of_turn>",
+    )
+)
+
+register_conv_template(
+    Conversation(
+        name="solar",
+        system_template="[INST] <<SYS>>\n{system_message}\n<</SYS>>\n\n",
+        roles=("[INST]", "[/INST]"),
+        sep_style=SeparatorStyle.LLAMA2,
+        sep=" ",
+        sep2=" </s><s>",
     )
 )
 
