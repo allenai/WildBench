@@ -251,12 +251,21 @@ def retry_handler(retry_limit=10):
                         # print("Finished waiting for {} seconds. Start another try".format(time_to_wait))
                     elif isinstance(e, OPENAI_API_ERROR):
                         # this is because the prompt contains content that is filtered by OpenAI API
-                        print("API error:", str(e))
-                        if "invalid" in str(e).lower():
-                            print("Invalid request, returning.")
-                            retried = retry_limit
-                            raise e
-
+                        if retried < retry_limit:
+                            print("API error:", str(e))
+                            if "invalid" in str(e).lower():
+                                print("Invalid request, returning.")
+                                retried = retry_limit
+                                raise e
+                            print(f"Retrying for the {retried + 1} time..")
+                        else:
+                            err_msg = str(e)
+                            if '504 Gateway Time-out' in err_msg:
+                                print ('Yi issue!')
+                                return ['']
+                            else:
+                                raise e # to prevent infinite loop
+                        retried += 1
                     else:
                         err_msg = str(e)
                         print(e.__class__.__name__+":", err_msg)
