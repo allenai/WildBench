@@ -289,6 +289,9 @@ def retry_handler(retry_limit=10):
                             if 'The read operation timed out' in err_msg:
                                 print ('reka time out issue!')
                                 return ['']
+                            if 'Something wrong happened during your request! Please retry.If the error persists, contact our support team' in err_msg:
+                                print ('reka error!')
+                                return ['']
                             if '504 Gateway Time-out' in err_msg:
                                 print ('Yi issue!')
                                 return ['']
