@@ -1,12 +1,19 @@
 model_name=$1 # model to test 
 # by default use gpt-3.5-turbo-0125 as ref_name 
 # by default use "gpt-4-0125-preview" as gpt_eval_name
-gpt_eval_name=${2:-"gpt-4-turbo-2024-04-09"} # evaluator name  # gpt-4-0125-preview
+# gpt_eval_name=${2:-"gpt-4-turbo-2024-04-09"} # evaluator name  # gpt-4-0125-preview
+gpt_eval_name=${2:-"gpt-4o-2024-05-13"} # evaluator name  # gpt-4-0125-preview
 
 
 
+# if gpt_eval_name == gpt-4-turbo-2024-04-09; then use `evaluation/eval_template.score.v2.0522.md`
+# if gpt_eval_name == gpt-4-0125-preview; then use `evaluation/eval_template.score.v2.md`
+if [ $gpt_eval_name == "gpt-4-turbo-2024-04-09" ]; then
+    eval_template="evaluation/eval_template.score.v2.0522.md"
+else
+    eval_template="evaluation/eval_template.score.v2.md"
+fi
 
-eval_template="evaluation/eval_template.score.v2.md"
 eval_folder="eval_results/v2.0522/score.v2/eval=${gpt_eval_name}/"
 echo "Evaluating $model_name using $gpt_eval_name with $eval_template"
 mkdir -p $eval_folder 

@@ -3,6 +3,37 @@ import json
 from tabulate import tabulate
 import sys 
 
+#### task tag mapping ####  
+from datasets import load_dataset
+
+task_group_new = {
+    "Information seeking": "Information/Advice seeking",
+    "Creative Writing": "Creative Tasks",
+    "Coding & Debugging": "Coding & Debugging",
+    "Reasoning": "Planning & Reasoning",
+    "Editing": "Creative Tasks",
+    "Math": "Math & Data Analysis",
+    "Planning": "Planning & Reasoning",
+    "Brainstorming": "Creative Tasks",
+    "Role playing": "Creative Tasks",
+    "Advice seeking": "Information/Advice seeking",
+    "Data Analysis": "Math & Data Analysis",
+    "Others": "Creative Tasks"
+}
+
+print(list(set(task_group_new.values())))
+
+task_mapping = {}
+wb_data = load_dataset("allenai/WildBench", "v2", split="test")
+for item in wb_data:
+    
+    tags = [item["primary_tag"]] + item["secondary_tags"]
+    task_mapping[item["id"]] = []
+    for tag in tags:
+        task_mapping[item["id"]].append(task_group_new[tag])
+        
+
+
 FOLDER = "eval_results/v2.0522"
 ACTION = sys.argv[1] 
 K = -1 # for pairwise length margin
@@ -18,8 +49,11 @@ elif ACTION == "pairwise-haiku":
     folder = FOLDER+"/pairwise.v2/eval=gpt-4-turbo-2024-04-09/ref=claude-3-haiku-20240307"
     MODE = "pairwise"
     ref_model = "claude-3-haiku-20240307" 
-elif ACTION == "score":
+elif ACTION == "score.legacy":
     folder = FOLDER+"/score.v2/eval=gpt-4-turbo-2024-04-09/"
+    MODE = "score"
+elif ACTION == "score":
+    folder = FOLDER+"/score.v2/eval=gpt-4o-2024-05-13/"
     MODE = "score"
 else:
     print("Please provide either 'pairwise' or 'score' as the argument")
@@ -99,24 +133,44 @@ for file in files:
             row_item["K"] = K
             # row_item["win_rate"] = (row_item["win"] + row_item["win_much"]) / row_item["total"]
         elif MODE == "score":
+            task_cat_results = {}
             for item in eval_result:
                 scores.append(float(item["score"]))
                 model_output = item["model_output"].strip()
                 model_output_len = len(model_output)
-                lengths.append(model_output_len)    
+                lengths.append(model_output_len)
+                task_tags = task_mapping[item["session_id"]]
+                for tag in task_tags:
+                    if tag not in task_cat_results:
+                        task_cat_results[tag] = []
+                    task_cat_results[tag].append(float(item["score"]))
+
             test_model_id = item["model_test"] 
+
+            task_cat_score = {}
+            for tag in task_cat_results:
+                task_cat_score[tag] = sum(task_cat_results[tag]) / len(task_cat_results[tag])
+                # adjust 
+                task_cat_score[tag] = (task_cat_score[tag] - 5) * 2
+            task_macro_score = sum(task_cat_score.values()) / len(task_cat_score)
+
             row_item = {
                 "model": file.replace(".json", ""),
                 "raw_score": sum(scores) / len(scores),
                 "adjusted_score": (sum(scores) / len(scores) - 5) * 2*10,
+                "task_macro_score": task_macro_score*10,
                 "total": len(eval_result),
                 "avg_len": sum(lengths) / len(lengths), 
             }
+
+            for tag in task_cat_score:
+                row_item[tag] = task_cat_score[tag]*10
+            
         table.append(row_item)
 if MODE == "pairwise":
     table = sorted(table, key=lambda x: x["reward"]*100, reverse=True)
 elif MODE == "score":
-    table = sorted(table, key=lambda x: x["adjusted_score"], reverse=True)
+    table = sorted(table, key=lambda x: x["task_macro_score"], reverse=True)
 
 result = {}
 for item in table:

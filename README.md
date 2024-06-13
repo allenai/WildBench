@@ -41,6 +41,7 @@ pip install openai datasets tenacity
 pip install google-generativeai
 pip install cohere mistralai 
 pip install anthropic==0.19.0
+pip install reka-api==3.0.8
 # export HF_HOME=/path/to/your/custom/cache_dir/
 ```
 
@@ -113,7 +114,8 @@ You should change the code to add these APIs, for example, gemini, cohere, claud
 We suggest to use OpenAI's [Batch Mode](https://platform.openai.com/docs/guides/batch) for evaluation, which is faster, cheaper and more reliable. 
 
 You can:
-1. running `bash evaluation/run_all_eval_batch.sh ${MODEL_PRETTY_NAME}`to submmit the eval jobs.
+1.1 running `bash evaluation/run_all_eval_batch.sh ${MODEL_PRETTY_NAME}`to submmit the eval jobs. 
+1.2 (alternative) running `bash evaluation/run_score_eval_batch.sh` to submmit the eval jobs for only doing the WB Score. (about 10$ per model)
 2. running `python src/openai_batch_eval/check_batch_status_with_model_name.py ${MODEL_PRETTY_NAME}` to track the status of the batch jobs.
 3. Step 2 will download the results when batch jobs are finished, and then you can view the results (see next section).
 
@@ -127,7 +129,7 @@ You can:
 
 When Step 3 in the above section is finished, you can view the results by running the following commands:
 
-- WB Score on Llama-2-70b-chat: `python src/view_wb_eval.py score`
+- WB Score: `python src/view_wb_eval.py score`
 - WB Reward on GPT-4-turbo: `python src/view_wb_eval.py pairwise-gpt4t 500`
 - WB Reward on Claude-3-Haiku: `python src/view_wb_eval.py pairwise-haiku 500`
 - WB Reward on Llama-2-70b-chat: `python src/view_wb_eval.py pairwise-llama 500`
@@ -202,6 +204,9 @@ python src/upload_results.py Qwen1.5-72B-Chat-greedy
 python src/upload_results.py yi-large 
 python src/upload_results.py reka-flash-20240226
 python src/upload_results.py deepseekv2-chat
+python src/upload_results.py reka-edge
+python src/upload_results.py reka-core-20240501
+
 
 ### Submit Batch Jobs
 bash evaluation/run_all_eval_batch.sh command-r-plus
@@ -223,6 +228,9 @@ bash evaluation/run_all_eval_batch.sh yi-large
 bash evaluation/run_all_eval_batch.sh reka-flash-20240226
 bash evaluation/run_all_eval_batch.sh deepseekv2-chat
 
+bash evaluation/run_all_eval_batch.sh reka-edge
+bash evaluation/run_all_eval_batch.sh reka-core-20240501
+
 ### Check Batch Status
 python src/openai_batch_eval/check_batch_status_with_model_name.py command-r-plus
 python src/openai_batch_eval/check_batch_status_with_model_name.py Hermes-2-Theta-Llama-3-8B
@@ -242,8 +250,58 @@ python src/openai_batch_eval/check_batch_status_with_model_name.py yi-large
 python src/openai_batch_eval/check_batch_status_with_model_name.py reka-flash-20240226
 python src/openai_batch_eval/check_batch_status_with_model_name.py deepseekv2-chat
 
+python src/openai_batch_eval/check_batch_status_with_model_name.py reka-edge
+python src/openai_batch_eval/check_batch_status_with_model_name.py reka-core-20240501
+
 python src/view_wb_eval.py score
 python src/view_wb_eval.py pairwise-gpt4t -1
 python src/view_wb_eval.py pairwise-haiku -1
 python src/view_wb_eval.py pairwise-llama -1
- -->
+
+
+bash evaluation/run_score_eval_batch.sh reka-flash-20240226
+
+### For Magpie evaluaiton 
+bash evaluation/run_score_eval_batch.sh Magpie-Pro-SFT-v0.1
+python src/openai_batch_eval/check_batch_status_with_model_name.py Magpie-Pro-SFT-v0.1
+python src/view_wb_eval.py score
+
+bash evaluation/run_haiku_eval_batch.sh Magpie-Pro-SFT-v0.1
+python src/openai_batch_eval/check_batch_status_with_model_name.py Magpie-Pro-SFT-v0.1
+
+
+bash evaluation/run_score_eval_batch.sh Llama-3-8B-WildChat
+python src/openai_batch_eval/check_batch_status_with_model_name.py Llama-3-8B-WildChat
+python src/view_wb_eval.py score
+
+
+bash evaluation/run_score_eval_batch.sh Llama-3-8B-Tulu-330K
+python src/openai_batch_eval/check_batch_status_with_model_name.py Llama-3-8B-Tulu-330K
+python src/view_wb_eval.py score
+
+
+
+bash scripts/Llama-3-8B-Tulu-330K.sh 
+wait 
+bash scripts/Llama-3-8B-OpenHermes-243K.sh 
+wait 
+bash scripts/Llama-3-8B-Ultrachat-200K.sh
+wait 
+bash scripts/Llama-3-8B-WizardLM-196K.sh
+wait 
+bash scripts/Llama-3-8B-ShareGPT-112K.sh
+wait 
+
+
+bash evaluation/run_score_eval_batch.sh Llama-3-8B-OpenHermes-243K
+bash evaluation/run_score_eval_batch.sh Llama-3-8B-Ultrachat-200K
+bash evaluation/run_score_eval_batch.sh Llama-3-8B-WizardLM-196K
+bash evaluation/run_score_eval_batch.sh Llama-3-8B-ShareGPT-112K
+
+
+python src/openai_batch_eval/check_batch_status_with_model_name.py Llama-3-8B-OpenHermes-243K
+python src/openai_batch_eval/check_batch_status_with_model_name.py Llama-3-8B-Ultrachat-200K
+python src/openai_batch_eval/check_batch_status_with_model_name.py Llama-3-8B-WizardLM-196K
+python src/openai_batch_eval/check_batch_status_with_model_name.py Llama-3-8B-ShareGPT-112K
+
+-->

@@ -130,7 +130,10 @@ if __name__ == "__main__":
 
     if args.model_name in IM_END_MODELS:
         hf_tokenizer = AutoTokenizer.from_pretrained(args.model_name, trust_remote_code=True)
-        stop_token_ids += [hf_tokenizer.encode("<|im_end|>", add_special_tokens=False)[0]]
+        potential_end_tokens = ["<|im_end|>" , "<|eot_id|>"]
+        for potential_end_token in potential_end_tokens:
+            if potential_end_token in hf_tokenizer.get_vocab():
+                stop_token_ids += [hf_tokenizer.get_vocab()[potential_end_token]]
     if args.model_name in HF_TEMPLATED_MODELS:
         hf_tokenizer = AutoTokenizer.from_pretrained(args.model_name, trust_remote_code=True)
         stop_token_ids.append(hf_tokenizer.eos_token_id)

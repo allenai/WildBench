@@ -14,7 +14,7 @@ for batch in batches:
     if batch.metadata is None or "description" not in batch.metadata:
         continue
     desc = batch.metadata["description"]  
-    if MODEL_NAME not in desc:
+    if not desc.endswith(MODEL_NAME):
         continue
     if desc not in looked_desc:
         looked_desc.add(desc)

@@ -101,6 +101,9 @@ for item in results:
     elif MODE == "score":
         assert len(custom_id_splits) == 2
         model_test = custom_id_splits[1]
+        if "score" not in eval_output_parsed:
+            print(eval_output_parsed)
+            continue
         score  = eval_output_parsed["score"]
         results_item.update({
             "model_test": model_test,
