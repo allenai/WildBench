@@ -114,10 +114,10 @@ You should change the code to add these APIs, for example, gemini, cohere, claud
 We suggest to use OpenAI's [Batch Mode](https://platform.openai.com/docs/guides/batch) for evaluation, which is faster, cheaper and more reliable. 
 
 You can:
-1.1 running `bash evaluation/run_all_eval_batch.sh ${MODEL_PRETTY_NAME}`to submmit the eval jobs. 
-1.2 (alternative) running `bash evaluation/run_score_eval_batch.sh` to submmit the eval jobs for only doing the WB Score. (about 10$ per model)
-2. running `python src/openai_batch_eval/check_batch_status_with_model_name.py ${MODEL_PRETTY_NAME}` to track the status of the batch jobs.
-3. Step 2 will download the results when batch jobs are finished, and then you can view the results (see next section).
+- 1.1 running `bash evaluation/run_all_eval_batch.sh ${MODEL_PRETTY_NAME}`to submmit the eval jobs. 
+- 1.2 (alternative) running `bash evaluation/run_score_eval_batch.sh` to submmit the eval jobs for only doing the WB Score. (about 10$ per model)
+- 2. running `python src/openai_batch_eval/check_batch_status_with_model_name.py ${MODEL_PRETTY_NAME}` to track the status of the batch jobs.
+- 3. Step 2 will download the results when batch jobs are finished, and then you can view the results (see next section).
 
 ***Remarks***
 - `${MODEL_PRETTY_NAME}` should be the same as the script name without the `.sh` extension.
