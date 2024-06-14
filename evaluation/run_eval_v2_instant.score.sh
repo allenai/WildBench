@@ -1,6 +1,6 @@
 model_name=$1 # model to test 
 # by default use "gpt-4-0125-preview" as gpt_eval_name
-gpt_eval_name=${2:-"gpt-4-turbo-2024-04-09"} # evaluator name  # gpt-4-0125-preview
+gpt_eval_name=${2:-"gpt-4o-2024-05-13"} # evaluator name  # gpt-4-0125-preview
 num_shards=${3:-8} # shards 
 
 total_ex=1024

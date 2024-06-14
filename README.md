@@ -157,7 +157,7 @@ To analyze the correlation between WildBench (v2) and human evaluation, we consi
 
 ### Models pending to test 
 
-- [ ] m-a-p/neo_7b_instruct_v0.1
+- [x] m-a-p/neo_7b_instruct_v0.1
 - [ ] GLM-4
 - [x] Reka Flash
 - [x] DeepSeekV2-Chat
@@ -214,6 +214,7 @@ python src/upload_results.py reka-flash-20240226
 python src/upload_results.py deepseekv2-chat
 python src/upload_results.py reka-edge
 python src/upload_results.py reka-core-20240501
+python src/upload_results.py neo_7b_instruct_v0.1
 
 
 ### Submit Batch Jobs
@@ -238,6 +239,7 @@ bash evaluation/run_all_eval_batch.sh deepseekv2-chat
 
 bash evaluation/run_all_eval_batch.sh reka-edge
 bash evaluation/run_all_eval_batch.sh reka-core-20240501
+bash evaluation/run_all_eval_batch.sh neo_7b_instruct_v0.1
 
 ### Check Batch Status
 python src/openai_batch_eval/check_batch_status_with_model_name.py command-r-plus
@@ -249,17 +251,16 @@ python src/openai_batch_eval/check_batch_status_with_model_name.py SELM-Zephyr-7
 python src/openai_batch_eval/check_batch_status_with_model_name.py Qwen2-72B-Instruct
 python src/openai_batch_eval/check_batch_status_with_model_name.py gemini-1.5-flash
 python src/openai_batch_eval/check_batch_status_with_model_name.py gemini-1.5-pro
-
 python src/openai_batch_eval/check_batch_status_with_model_name.py Llama-3-Instruct-8B-SimPO-ExPO
 python src/openai_batch_eval/check_batch_status_with_model_name.py Starling-LM-7B-beta-ExPO
 python src/openai_batch_eval/check_batch_status_with_model_name.py Qwen1.5-72B-Chat-greedy
-
 python src/openai_batch_eval/check_batch_status_with_model_name.py yi-large
 python src/openai_batch_eval/check_batch_status_with_model_name.py reka-flash-20240226
 python src/openai_batch_eval/check_batch_status_with_model_name.py deepseekv2-chat
-
 python src/openai_batch_eval/check_batch_status_with_model_name.py reka-edge
 python src/openai_batch_eval/check_batch_status_with_model_name.py reka-core-20240501
+
+python src/openai_batch_eval/check_batch_status_with_model_name.py neo_7b_instruct_v0.1
 
 python src/view_wb_eval.py score
 python src/view_wb_eval.py pairwise-gpt4t -1
