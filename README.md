@@ -60,9 +60,15 @@ You can take the files under `scripts` as a reference to add a new model to the 
 1. Create a script named "Yi-1.5-9B-Chat.sh.py" under `scripts` folder.
 2. Copy and paste the most similar existing script file to it, rename the file to the `[model_pretty_name].sh`.
 3. Change the `model_name` and `model_pretty_name` to `01-ai/Yi-1.5-9B-Chat` and `Yi-1.5-9B-Chat.sh` respectively. Make sure that `model_name` is the same as the model name in the Hugging Face model hub, and the `model_pretty_name` is the same as the script name without the `.py` extension.
-4. Specify the conversation template for this model by modifying the code in `src/fastchat_conversation.py` or setting the `--use_hf_conv_template` argument if your hugingface model contains a conversation template.
+4. Specify the conversation template for this model by modifying the code in `src/fastchat_conversation.py` or setting the `--use_hf_conv_template` argument if your hugingface model contains a conversation template in tokenizer config.
 5. Run your script to make sure it works. You can run the script by running `bash scripts/Yi-1.5-9B-Chat.sh` in the root folder. 
 6. Create a PR to add your script to the benchmark.
+
+For Step 3-5, you can also use this common command to run the model if your model is supported by vLLM and has a conversation template on hf's tokenizer config:
+```bash
+bash scripts/_common_hf.sh m-a-p/neo_7b_instruct_v0.1 neo_7b_instruct_v0.1 4 
+# 1st arg is hf_name; 2nd is the pretty name; 3rd is the number of shards (gpus)
+```
 
 <details>
 	<summary> Case 2: Models that are only supported by native HuggingFace API </summary>
