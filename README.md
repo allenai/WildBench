@@ -182,11 +182,14 @@ Create an Issue if you'd like to add a model that you wanna see on our leaderboa
 ## Citation
 
 ```bibtex
-@misc{wildbench2024,
-	title= {WildBench: Benchmarking Language Models with Challenging Tasks from Real Users in the Wild},
-	author = {Bill Yuchen Lin and Khyathi Chandu and Faeze Brahman and Yuntian Deng and Abhilasha Ravichander and Valentina Pyatkin and Ronan Le Bras and Yejin Choi},
-	year = 2024,
-	url	= {https://huggingface.co/spaces/allenai/WildBench},
+@misc{lin2024wildbench,
+    title={WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild},
+    author={Bill Yuchen Lin and Yuntian Deng and Khyathi Chandu and Faeze Brahman and Abhilasha Ravichander and Valentina Pyatkin and Nouha Dziri and Ronan Le Bras and Yejin Choi},
+    year={2024},
+    eprint={2406.04770},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL},
+    url={https://arxiv.org/abs/2406.04770}
 }
 ```
 
