@@ -1,0 +1,754 @@
+{
+  "gpt-4o-2024-05-13": {
+    "model": "gpt-4o-2024-05-13",
+    "score": 7.8455522971652005,
+    "adjusted_score": 5.691104594330401,
+    "task_macro_score": 5.970552682926404,
+    "adjusted_task_macro_score": 5.970552682926404,
+    "task_categorized_scores": {
+      "Creative Tasks": 6.0787746170678325,
+      "Coding & Debugging": 6.022099447513813,
+      "Planning & Reasoning": 6.101892285298398,
+      "Information/Advice seeking": 5.97584541062802,
+      "Math & Data Analysis": 5.696750902527075
+    },
+    "total": 1023,
+    "avg_len": 3244.9858541893364
+  },
+  "gpt-4-turbo-2024-04-09": {
+    "model": "gpt-4-turbo-2024-04-09",
+    "score": 7.773216031280548,
+    "adjusted_score": 5.546432062561095,
+    "task_macro_score": 5.532735496748202,
+    "adjusted_task_macro_score": 5.532735496748202,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 5.650918635170603,
+      "Information/Advice seeking": 5.713636363636363,
+      "Coding & Debugging": 5.474747474747474,
+      "Creative Tasks": 5.863636363636363,
+      "Math & Data Analysis": 5.141868512110726
+    },
+    "total": 1023,
+    "avg_len": 3026.7115768463073
+  },
+  "gpt-4-0125-preview": {
+    "model": "gpt-4-0125-preview",
+    "score": 7.63671875,
+    "adjusted_score": 5.2734375,
+    "task_macro_score": 5.2242700016297885,
+    "adjusted_task_macro_score": 5.2242700016297885,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 5.369934640522876,
+      "Information/Advice seeking": 5.448747152619591,
+      "Coding & Debugging": 5.271844660194175,
+      "Creative Tasks": 5.759541984732824,
+      "Math & Data Analysis": 4.5586206896551715
+    },
+    "total": 1024,
+    "avg_len": 3267.640159045726
+  },
+  "claude-3-opus-20240229": {
+    "model": "claude-3-opus-20240229",
+    "score": 7.55078125,
+    "adjusted_score": 5.1015625,
+    "task_macro_score": 5.132658785409081,
+    "adjusted_task_macro_score": 5.132658785409081,
+    "task_categorized_scores": {
+      "Creative Tasks": 5.294117647058824,
+      "Coding & Debugging": 5.298969072164949,
+      "Planning & Reasoning": 5.261455525606468,
+      "Information/Advice seeking": 5.402777777777779,
+      "Math & Data Analysis": 4.522033898305084
+    },
+    "total": 1024,
+    "avg_len": 2445.902763561924
+  },
+  "deepseekv2-chat": {
+    "model": "deepseekv2-chat",
+    "score": 7.479960899315738,
+    "adjusted_score": 4.959921798631475,
+    "task_macro_score": 4.888031271219919,
+    "adjusted_task_macro_score": 4.888031271219919,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 5.121693121693122,
+      "Information/Advice seeking": 5.294930875576037,
+      "Coding & Debugging": 4.457711442786069,
+      "Creative Tasks": 5.447470817120623,
+      "Math & Data Analysis": 4.4413793103448285
+    },
+    "total": 1023,
+    "avg_len": 2685.4115267947423
+  },
+  "deepseek-coder-v2": {
+    "model": "deepseek-coder-v2",
+    "score": 7.419354838709677,
+    "adjusted_score": 4.838709677419354,
+    "task_macro_score": 4.7779651571919795,
+    "adjusted_task_macro_score": 4.7779651571919795,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 4.976190476190476,
+      "Information/Advice seeking": 5.244239631336406,
+      "Coding & Debugging": 4.517412935323383,
+      "Creative Tasks": 5.454545454545455,
+      "Math & Data Analysis": 4.102739726027398
+    },
+    "total": 1023,
+    "avg_len": 2653.787083753784
+  },
+  "yi-large": {
+    "model": "yi-large",
+    "score": 7.417399804496578,
+    "adjusted_score": 4.834799608993157,
+    "task_macro_score": 4.890947236179694,
+    "adjusted_task_macro_score": 4.890947236179694,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 5.156914893617021,
+      "Information/Advice seeking": 5.101851851851851,
+      "Coding & Debugging": 4.7857142857142865,
+      "Creative Tasks": 5.143410852713178,
+      "Math & Data Analysis": 4.379310344827585
+    },
+    "total": 1023,
+    "avg_len": 2972.432926829268
+  },
+  "Meta-Llama-3-70B-Instruct": {
+    "model": "Meta-Llama-3-70B-Instruct",
+    "score": 7.41544477028348,
+    "adjusted_score": 4.830889540566959,
+    "task_macro_score": 4.792743132889153,
+    "adjusted_task_macro_score": 4.792743132889153,
+    "task_categorized_scores": {
+      "Creative Tasks": 5.471172962226641,
+      "Coding & Debugging": 4.476190476190476,
+      "Planning & Reasoning": 5.010840108401084,
+      "Information/Advice seeking": 5.2459770114942526,
+      "Math & Data Analysis": 4.157534246575343
+    },
+    "total": 1023,
+    "avg_len": 2840.027692307692
+  },
+  "Yi-1.5-34B-Chat": {
+    "model": "Yi-1.5-34B-Chat",
+    "score": 7.340175953079179,
+    "adjusted_score": 4.680351906158357,
+    "task_macro_score": 4.604141897399862,
+    "adjusted_task_macro_score": 4.604141897399862,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 4.878179384203481,
+      "Information/Advice seeking": 5.150812064965198,
+      "Coding & Debugging": 4.182741116751268,
+      "Creative Tasks": 5.430830039525691,
+      "Math & Data Analysis": 3.859649122807017
+    },
+    "total": 1023,
+    "avg_len": 3336.5762538382805
+  },
+  "Qwen2-72B-Instruct": {
+    "model": "Qwen2-72B-Instruct",
+    "score": 7.30859375,
+    "adjusted_score": 4.6171875,
+    "task_macro_score": 4.518874257844971,
+    "adjusted_task_macro_score": 4.518874257844971,
+    "task_categorized_scores": {
+      "Creative Tasks": 4.982658959537572,
+      "Coding & Debugging": 4.05911330049261,
+      "Planning & Reasoning": 4.7407407407407405,
+      "Information/Advice seeking": 5.016018306636155,
+      "Math & Data Analysis": 4.096551724137932
+    },
+    "total": 1024,
+    "avg_len": 2719.12625250501
+  },
+  "gemini-1.5-pro": {
+    "model": "gemini-1.5-pro",
+    "score": 7.2861328125,
+    "adjusted_score": 4.572265625,
+    "task_macro_score": 5.219443882383536,
+    "adjusted_task_macro_score": 5.219443882383536,
+    "task_categorized_scores": {
+      "Information/Advice seeking": 5.185365853658537,
+      "Coding & Debugging": 5.503030303030304,
+      "Planning & Reasoning": 5.306358381502891,
+      "Creative Tasks": 5.558441558441558,
+      "Math & Data Analysis": 4.683274021352313
+    },
+    "total": 1024,
+    "avg_len": 2895.174778761062
+  },
+  "Qwen1.5-72B-Chat": {
+    "model": "Qwen1.5-72B-Chat",
+    "score": 7.220372184133203,
+    "adjusted_score": 4.440744368266406,
+    "task_macro_score": 4.125440886023105,
+    "adjusted_task_macro_score": 4.125440886023105,
+    "task_categorized_scores": {
+      "Creative Tasks": 5.050656660412757,
+      "Coding & Debugging": 3.6538461538461533,
+      "Planning & Reasoning": 4.454193548387098,
+      "Information/Advice seeking": 4.918918918918919,
+      "Math & Data Analysis": 3.128378378378379
+    },
+    "total": 1021,
+    "avg_len": 2375.693516699411
+  },
+  "claude-3-sonnet-20240229": {
+    "model": "claude-3-sonnet-20240229",
+    "score": 7.210371819960861,
+    "adjusted_score": 4.420743639921723,
+    "task_macro_score": 4.533843927001909,
+    "adjusted_task_macro_score": 4.533843927001909,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 4.758904109589041,
+      "Information/Advice seeking": 4.796252927400468,
+      "Creative Tasks": 4.642857142857142,
+      "Math & Data Analysis": 3.965156794425088,
+      "Coding & Debugging": 4.56989247311828
+    },
+    "total": 1022,
+    "avg_len": 2404.93588417787
+  },
+  "Qwen1.5-72B-Chat-greedy": {
+    "model": "Qwen1.5-72B-Chat-greedy",
+    "score": 7.166503428011753,
+    "adjusted_score": 4.3330068560235055,
+    "task_macro_score": 3.994065778119266,
+    "adjusted_task_macro_score": 3.994065778119266,
+    "task_categorized_scores": {
+      "Creative Tasks": 5.079245283018867,
+      "Coding & Debugging": 3.507246376811594,
+      "Planning & Reasoning": 4.348837209302326,
+      "Information/Advice seeking": 4.861047835990888,
+      "Math & Data Analysis": 2.8445945945945947
+    },
+    "total": 1021,
+    "avg_len": 2363.6666666666665
+  },
+  "gemini-1.5-flash": {
+    "model": "gemini-1.5-flash",
+    "score": 7.131115459882583,
+    "adjusted_score": 4.262230919765166,
+    "task_macro_score": 4.899363511362703,
+    "adjusted_task_macro_score": 4.899363511362703,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 5.144970414201184,
+      "Information/Advice seeking": 4.895522388059701,
+      "Coding & Debugging": 4.795031055900621,
+      "Creative Tasks": 5.409610983981693,
+      "Math & Data Analysis": 4.444444444444445
+    },
+    "total": 1022,
+    "avg_len": 2992.7715909090907
+  },
+  "mistral-large-2402": {
+    "model": "mistral-large-2402",
+    "score": 7.096774193548387,
+    "adjusted_score": 4.193548387096774,
+    "task_macro_score": 3.899291068369972,
+    "adjusted_task_macro_score": 3.899291068369972,
+    "task_categorized_scores": {
+      "Creative Tasks": 4.930966469428007,
+      "Coding & Debugging": 3.368932038834952,
+      "Planning & Reasoning": 4.178191489361701,
+      "Information/Advice seeking": 4.671264367816091,
+      "Math & Data Analysis": 2.9862068965517246
+    },
+    "total": 1023,
+    "avg_len": 2337.3784056508575
+  },
+  "Llama-3-Instruct-8B-SimPO": {
+    "model": "Llama-3-Instruct-8B-SimPO",
+    "score": 7.044965786901271,
+    "adjusted_score": 4.0899315738025415,
+    "task_macro_score": 3.735189761675725,
+    "adjusted_task_macro_score": 3.735189761675725,
+    "task_categorized_scores": {
+      "Creative Tasks": 5.073446327683616,
+      "Coding & Debugging": 3.184466019417476,
+      "Planning & Reasoning": 4.129533678756477,
+      "Information/Advice seeking": 4.873303167420815,
+      "Math & Data Analysis": 2.27027027027027
+    },
+    "total": 1023,
+    "avg_len": 2505.9437869822486
+  },
+  "reka-core-20240501": {
+    "model": "reka-core-20240501",
+    "score": 7.04296875,
+    "adjusted_score": 4.0859375,
+    "task_macro_score": 4.6131628301663605,
+    "adjusted_task_macro_score": 4.6131628301663605,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 4.830811554332875,
+      "Information/Advice seeking": 5.20673076923077,
+      "Coding & Debugging": 4.051813471502591,
+      "Creative Tasks": 5.556910569105691,
+      "Math & Data Analysis": 3.985401459854014
+    },
+    "total": 1024,
+    "avg_len": 2573.1615949632737
+  },
+  "glm-4-9b-chat": {
+    "model": "glm-4-9b-chat",
+    "score": 7.019550342130987,
+    "adjusted_score": 4.0391006842619745,
+    "task_macro_score": 4.051589325905354,
+    "adjusted_task_macro_score": 4.051589325905354,
+    "task_categorized_scores": {
+      "Creative Tasks": 4.96049896049896,
+      "Coding & Debugging": 3.580645161290322,
+      "Planning & Reasoning": 4.455696202531646,
+      "Information/Advice seeking": 4.860576923076923,
+      "Math & Data Analysis": 2.9562043795620436
+    },
+    "total": 1023,
+    "avg_len": 3179.2869379014987
+  },
+  "Llama-3-Instruct-8B-SimPO-ExPO": {
+    "model": "Llama-3-Instruct-8B-SimPO-ExPO",
+    "score": 6.975562072336266,
+    "adjusted_score": 3.951124144672532,
+    "task_macro_score": 3.554714842206728,
+    "adjusted_task_macro_score": 3.554714842206728,
+    "task_categorized_scores": {
+      "Creative Tasks": 4.922787193973635,
+      "Coding & Debugging": 2.8932038834951452,
+      "Planning & Reasoning": 4.031128404669261,
+      "Information/Advice seeking": 4.803611738148984,
+      "Math & Data Analysis": 2.0
+    },
+    "total": 1023,
+    "avg_len": 2453.7064039408865
+  },
+  "SELM-Llama-3-8B-Instruct-iter-3": {
+    "model": "SELM-Llama-3-8B-Instruct-iter-3",
+    "score": 6.966731898238748,
+    "adjusted_score": 3.9334637964774952,
+    "task_macro_score": 3.60460797342667,
+    "adjusted_task_macro_score": 3.60460797342667,
+    "task_categorized_scores": {
+      "Creative Tasks": 5.094696969696969,
+      "Coding & Debugging": 2.806451612903226,
+      "Planning & Reasoning": 4.0751677852349,
+      "Information/Advice seeking": 4.683602771362587,
+      "Math & Data Analysis": 2.2602739726027394
+    },
+    "total": 1022,
+    "avg_len": 2777.160081053698
+  },
+  "Yi-1.5-9B-Chat": {
+    "model": "Yi-1.5-9B-Chat",
+    "score": 6.965786901270772,
+    "adjusted_score": 3.9315738025415445,
+    "task_macro_score": 3.928782463287059,
+    "adjusted_task_macro_score": 3.928782463287059,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 4.308108108108108,
+      "Information/Advice seeking": 4.419354838709678,
+      "Coding & Debugging": 3.4226804123711343,
+      "Creative Tasks": 4.532818532818533,
+      "Math & Data Analysis": 3.290780141843971
+    },
+    "total": 1023,
+    "avg_len": 3291.574055158325
+  },
+  "claude-3-haiku-20240307": {
+    "model": "claude-3-haiku-20240307",
+    "score": 6.958984375,
+    "adjusted_score": 3.91796875,
+    "task_macro_score": 3.8285371385531572,
+    "adjusted_task_macro_score": 3.8285371385531572,
+    "task_categorized_scores": {
+      "Creative Tasks": 4.33469387755102,
+      "Coding & Debugging": 3.510416666666666,
+      "Planning & Reasoning": 4.151147098515519,
+      "Information/Advice seeking": 4.560185185185185,
+      "Math & Data Analysis": 2.941580756013746
+    },
+    "total": 1024,
+    "avg_len": 2272.667009249743
+  },
+  "command-r-plus": {
+    "model": "command-r-plus",
+    "score": 6.950097847358121,
+    "adjusted_score": 3.900195694716242,
+    "task_macro_score": 3.597995865535713,
+    "adjusted_task_macro_score": 3.597995865535713,
+    "task_categorized_scores": {
+      "Creative Tasks": 5.325740318906606,
+      "Coding & Debugging": 2.554347826086957,
+      "Planning & Reasoning": 4.1516452074391985,
+      "Information/Advice seeking": 4.935643564356436,
+      "Math & Data Analysis": 2.0824742268041234
+    },
+    "total": 1022,
+    "avg_len": 2636.933187294633
+  },
+  "dbrx-instruct@together": {
+    "model": "dbrx-instruct@together",
+    "score": 6.764418377321603,
+    "adjusted_score": 3.5288367546432067,
+    "task_macro_score": 3.3185955089975048,
+    "adjusted_task_macro_score": 3.3185955089975048,
+    "task_categorized_scores": {
+      "Creative Tasks": 4.231372549019607,
+      "Coding & Debugging": 2.6568627450980387,
+      "Planning & Reasoning": 3.7678100263852237,
+      "Information/Advice seeking": 4.206422018348624,
+      "Math & Data Analysis": 2.296551724137931
+    },
+    "total": 1023,
+    "avg_len": 2433.8201005025126
+  },
+  "Starling-LM-7B-beta-ExPO": {
+    "model": "Starling-LM-7B-beta-ExPO",
+    "score": 6.736328125,
+    "adjusted_score": 3.47265625,
+    "task_macro_score": 3.1848056478341062,
+    "adjusted_task_macro_score": 3.1848056478341062,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 3.676584734799482,
+      "Information/Advice seeking": 4.411764705882353,
+      "Coding & Debugging": 2.535885167464114,
+      "Creative Tasks": 4.4196597353497165,
+      "Math & Data Analysis": 1.68135593220339
+    },
+    "total": 1024,
+    "avg_len": 2746.229022704837
+  },
+  "Mixtral-8x7B-Instruct-v0.1": {
+    "model": "Mixtral-8x7B-Instruct-v0.1",
+    "score": 6.726027397260274,
+    "adjusted_score": 3.4520547945205475,
+    "task_macro_score": 3.1930927397238826,
+    "adjusted_task_macro_score": 3.1930927397238826,
+    "task_categorized_scores": {
+      "Creative Tasks": 4.352475247524753,
+      "Coding & Debugging": 2.4444444444444446,
+      "Planning & Reasoning": 3.499330655957163,
+      "Information/Advice seeking": 4.267281105990783,
+      "Math & Data Analysis": 2.1736111111111107
+    },
+    "total": 1022,
+    "avg_len": 2432.8087487283824
+  },
+  "reka-flash-20240226": {
+    "model": "reka-flash-20240226",
+    "score": 6.720430107526882,
+    "adjusted_score": 3.440860215053764,
+    "task_macro_score": 3.088583287678617,
+    "adjusted_task_macro_score": 3.088583287678617,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 3.509677419354839,
+      "Information/Advice seeking": 4.207674943566591,
+      "Coding & Debugging": 2.248803827751196,
+      "Creative Tasks": 4.241054613935971,
+      "Math & Data Analysis": 1.986440677966101
+    },
+    "total": 1023,
+    "avg_len": 2089.5722713864307
+  },
+  "Starling-LM-7B-beta": {
+    "model": "Starling-LM-7B-beta",
+    "score": 6.700879765395895,
+    "adjusted_score": 3.4017595307917894,
+    "task_macro_score": 3.104215778712496,
+    "adjusted_task_macro_score": 3.104215778712496,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 3.532467532467532,
+      "Information/Advice seeking": 4.311212814645309,
+      "Coding & Debugging": 2.541871921182265,
+      "Creative Tasks": 4.380952380952381,
+      "Math & Data Analysis": 1.5876288659793811
+    },
+    "total": 1023,
+    "avg_len": 2635.0779220779223
+  },
+  "command-r": {
+    "model": "command-r",
+    "score": 6.673828125,
+    "adjusted_score": 3.34765625,
+    "task_macro_score": 2.913261163871285,
+    "adjusted_task_macro_score": 2.913261163871285,
+    "task_categorized_scores": {
+      "Creative Tasks": 4.853448275862069,
+      "Coding & Debugging": 1.75,
+      "Planning & Reasoning": 3.4813793103448276,
+      "Information/Advice seeking": 4.478672985781991,
+      "Math & Data Analysis": 1.2222222222222214
+    },
+    "total": 1024,
+    "avg_len": 2490.4947368421053
+  },
+  "Nous-Hermes-2-Mixtral-8x7B-DPO": {
+    "model": "Nous-Hermes-2-Mixtral-8x7B-DPO",
+    "score": 6.651322233104799,
+    "adjusted_score": 3.302644466209598,
+    "task_macro_score": 3.2174301544632034,
+    "adjusted_task_macro_score": 3.2174301544632034,
+    "task_categorized_scores": {
+      "Creative Tasks": 3.891129032258064,
+      "Coding & Debugging": 2.7263157894736842,
+      "Planning & Reasoning": 3.6293222683264172,
+      "Information/Advice seeking": 4.218527315914489,
+      "Math & Data Analysis": 2.10600706713781
+    },
+    "total": 1021,
+    "avg_len": 2498.233333333333
+  },
+  "Hermes-2-Theta-Llama-3-8B": {
+    "model": "Hermes-2-Theta-Llama-3-8B",
+    "score": 6.626223091976517,
+    "adjusted_score": 3.252446183953033,
+    "task_macro_score": 3.01394833956708,
+    "adjusted_task_macro_score": 3.01394833956708,
+    "task_categorized_scores": {
+      "Creative Tasks": 4.088974854932301,
+      "Coding & Debugging": 2.3814432989690726,
+      "Planning & Reasoning": 3.388079470198676,
+      "Information/Advice seeking": 4.307339449541285,
+      "Math & Data Analysis": 1.6712328767123292
+    },
+    "total": 1022,
+    "avg_len": 2528.0030333670375
+  },
+  "tulu-2-dpo-70b": {
+    "model": "tulu-2-dpo-70b",
+    "score": 6.620723362658847,
+    "adjusted_score": 3.2414467253176937,
+    "task_macro_score": 2.907515221227398,
+    "adjusted_task_macro_score": 2.907515221227398,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 3.366847826086957,
+      "Information/Advice seeking": 4.169811320754716,
+      "Coding & Debugging": 2.1151832460732987,
+      "Creative Tasks": 4.552147239263803,
+      "Math & Data Analysis": 1.3566433566433567
+    },
+    "total": 1023,
+    "avg_len": 2447.3076923076924
+  },
+  "Meta-Llama-3-8B-Instruct": {
+    "model": "Meta-Llama-3-8B-Instruct",
+    "score": 6.6158357771261,
+    "adjusted_score": 3.2316715542522,
+    "task_macro_score": 2.9889000632153775,
+    "adjusted_task_macro_score": 2.9889000632153775,
+    "task_categorized_scores": {
+      "Creative Tasks": 4.465753424657533,
+      "Coding & Debugging": 2.2303664921465973,
+      "Planning & Reasoning": 3.5687331536388136,
+      "Information/Advice seeking": 3.995305164319248,
+      "Math & Data Analysis": 1.5294117647058822
+    },
+    "total": 1023,
+    "avg_len": 2700.8572895277207
+  },
+  "gpt-3.5-turbo-0125": {
+    "model": "gpt-3.5-turbo-0125",
+    "score": 6.606060606060606,
+    "adjusted_score": 3.212121212121213,
+    "task_macro_score": 3.030023198705947,
+    "adjusted_task_macro_score": 3.030023198705947,
+    "task_categorized_scores": {
+      "Creative Tasks": 3.8171428571428567,
+      "Coding & Debugging": 2.647619047619047,
+      "Planning & Reasoning": 3.3557567917205695,
+      "Information/Advice seeking": 3.728506787330316,
+      "Math & Data Analysis": 2.0878378378378386
+    },
+    "total": 1023,
+    "avg_len": 1792.939842209073
+  },
+  "SELM-Zephyr-7B-iter-3": {
+    "model": "SELM-Zephyr-7B-iter-3",
+    "score": 6.5419921875,
+    "adjusted_score": 3.083984375,
+    "task_macro_score": 2.5549021579153703,
+    "adjusted_task_macro_score": 2.5549021579153703,
+    "task_categorized_scores": {
+      "Creative Tasks": 4.411538461538461,
+      "Coding & Debugging": 0.9435897435897438,
+      "Planning & Reasoning": 3.249336870026525,
+      "Information/Advice seeking": 4.271028037383177,
+      "Math & Data Analysis": 1.0827586206896544
+    },
+    "total": 1024,
+    "avg_len": 2613.1275303643724
+  },
+  "Mistral-7B-Instruct-v0.2": {
+    "model": "Mistral-7B-Instruct-v0.2",
+    "score": 6.5229716520039105,
+    "adjusted_score": 3.045943304007821,
+    "task_macro_score": 2.6680680919061035,
+    "adjusted_task_macro_score": 2.6680680919061035,
+    "task_categorized_scores": {
+      "Creative Tasks": 4.264299802761341,
+      "Coding & Debugging": 1.8888888888888893,
+      "Planning & Reasoning": 3.1834002677376176,
+      "Information/Advice seeking": 4.098823529411765,
+      "Math & Data Analysis": 0.9318996415770613
+    },
+    "total": 1023,
+    "avg_len": 2561.5342886386898
+  },
+  "Phi-3-medium-128k-instruct": {
+    "model": "Phi-3-medium-128k-instruct",
+    "score": 6.4794921875,
+    "adjusted_score": 2.958984375,
+    "task_macro_score": 2.9499669099828565,
+    "adjusted_task_macro_score": 2.9499669099828565,
+    "task_categorized_scores": {
+      "Creative Tasks": 3.759183673469387,
+      "Coding & Debugging": 1.9803921568627452,
+      "Planning & Reasoning": 3.304347826086957,
+      "Information/Advice seeking": 3.886792452830189,
+      "Math & Data Analysis": 2.3693379790940767
+    },
+    "total": 1024,
+    "avg_len": 2406.6045081967213
+  },
+  "neo_7b_instruct_v0.1": {
+    "model": "neo_7b_instruct_v0.1",
+    "score": 6.4404296875,
+    "adjusted_score": 2.880859375,
+    "task_macro_score": 2.6866888367882327,
+    "adjusted_task_macro_score": 2.6866888367882327,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 3.3173970783532543,
+      "Information/Advice seeking": 3.921296296296296,
+      "Coding & Debugging": 1.6439790575916238,
+      "Creative Tasks": 4.031683168316832,
+      "Math & Data Analysis": 1.3425605536332181
+    },
+    "total": 1024,
+    "avg_len": 3493.871033776868
+  },
+  "Qwen1.5-7B-Chat@together": {
+    "model": "Qwen1.5-7B-Chat@together",
+    "score": 6.343108504398827,
+    "adjusted_score": 2.6862170087976533,
+    "task_macro_score": 2.393717305013661,
+    "adjusted_task_macro_score": 2.393717305013661,
+    "task_categorized_scores": {
+      "Creative Tasks": 3.8106060606060606,
+      "Coding & Debugging": 1.507537688442211,
+      "Planning & Reasoning": 2.9790026246719155,
+      "Information/Advice seeking": 3.540909090909091,
+      "Math & Data Analysis": 0.9794520547945211
+    },
+    "total": 1023,
+    "avg_len": 2428.7994011976048
+  },
+  "Llama-2-70b-chat-hf": {
+    "model": "Llama-2-70b-chat-hf",
+    "score": 6.3212890625,
+    "adjusted_score": 2.642578125,
+    "task_macro_score": 2.1370967368056886,
+    "adjusted_task_macro_score": 2.1370967368056886,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 2.8925170068027217,
+      "Information/Advice seeking": 3.8429561200923796,
+      "Coding & Debugging": 0.9375,
+      "Creative Tasks": 4.17004048582996,
+      "Math & Data Analysis": 0.09655172413793167
+    },
+    "total": 1024,
+    "avg_len": 2890.216271884655
+  },
+  "Phi-3-mini-128k-instruct": {
+    "model": "Phi-3-mini-128k-instruct",
+    "score": 6.283757338551859,
+    "adjusted_score": 2.567514677103718,
+    "task_macro_score": 2.5754136416350786,
+    "adjusted_task_macro_score": 2.5754136416350786,
+    "task_categorized_scores": {
+      "Creative Tasks": 3.203125,
+      "Coding & Debugging": 2.1871921182266014,
+      "Planning & Reasoning": 2.9157894736842103,
+      "Information/Advice seeking": 3.102803738317757,
+      "Math & Data Analysis": 1.8287671232876708
+    },
+    "total": 1022,
+    "avg_len": 2206.120080726539
+  },
+  "Yi-1.5-6B-Chat": {
+    "model": "Yi-1.5-6B-Chat",
+    "score": 6.275659824046921,
+    "adjusted_score": 2.551319648093841,
+    "task_macro_score": 2.517361227580851,
+    "adjusted_task_macro_score": 2.517361227580851,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 2.8926553672316384,
+      "Information/Advice seeking": 3.460000000000001,
+      "Coding & Debugging": 1.815384615384616,
+      "Creative Tasks": 3.3644067796610173,
+      "Math & Data Analysis": 1.619718309859154
+    },
+    "total": 1023,
+    "avg_len": 3029.2032258064514
+  },
+  "reka-edge": {
+    "model": "reka-edge",
+    "score": 6.15347018572825,
+    "adjusted_score": 2.3069403714565,
+    "task_macro_score": 2.129528396062506,
+    "adjusted_task_macro_score": 2.129528396062506,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 2.478494623655914,
+      "Information/Advice seeking": 3.5439429928741095,
+      "Coding & Debugging": 1.3268292682926823,
+      "Creative Tasks": 3.6201550387596892,
+      "Math & Data Analysis": 0.6898954703832754
+    },
+    "total": 1023,
+    "avg_len": 2365.2746693794506
+  },
+  "Llama-2-7b-chat-hf": {
+    "model": "Llama-2-7b-chat-hf",
+    "score": 5.738747553816047,
+    "adjusted_score": 1.4774951076320946,
+    "task_macro_score": 0.9135449158070933,
+    "adjusted_task_macro_score": 0.9135449158070933,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 1.7396121883656512,
+      "Information/Advice seeking": 2.927738927738927,
+      "Coding & Debugging": -0.7526881720430101,
+      "Creative Tasks": 3.007843137254902,
+      "Math & Data Analysis": -1.010600706713781
+    },
+    "total": 1022,
+    "avg_len": 2684.011410788382
+  },
+  "gemma-7b-it": {
+    "model": "gemma-7b-it",
+    "score": 5.4990234375,
+    "adjusted_score": 0.998046875,
+    "task_macro_score": 0.6532233075091088,
+    "adjusted_task_macro_score": 0.6532233075091088,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 1.1583011583011587,
+      "Information/Advice seeking": 1.307865168539326,
+      "Coding & Debugging": 0.18181818181818166,
+      "Creative Tasks": 2.0450281425891177,
+      "Math & Data Analysis": -0.6936026936026938
+    },
+    "total": 1024,
+    "avg_len": 1714.8362745098038
+  },
+  "gemma-2b-it": {
+    "model": "gemma-2b-it",
+    "score": 4.726738491674829,
+    "adjusted_score": -0.5465230166503421,
+    "task_macro_score": -0.942971276712607,
+    "adjusted_task_macro_score": -0.942971276712607,
+    "task_categorized_scores": {
+      "Planning & Reasoning": -0.40568475452196395,
+      "Information/Advice seeking": -0.18918918918918948,
+      "Coding & Debugging": -1.7799043062200965,
+      "Creative Tasks": 0.6278195488721803,
+      "Math & Data Analysis": -2.128378378378378
+    },
+    "total": 1021,
+    "avg_len": 1568.740412979351
+  }
+}

@@ -44,7 +44,7 @@ for item in results:
     try:
         eval_output_parsed = json.loads(eval_output)
     except Exception as e:
-        print(f"Error parsing eval_output.")
+        # print(f"Error parsing eval_output.")
         # eval_output_parsed = eval_output
         continue
     results_item = {
@@ -63,7 +63,7 @@ for item in results:
         model_B = custom_id_splits[2].replace("B:", "")
         # reason = eval_output_parsed["reason"]
         if "choice" not in eval_output_parsed:
-            print(f"Error: choice not found in eval_output_parsed.")
+            # print(f"Error: choice not found in eval_output_parsed.")
             continue
         choice = eval_output_parsed["choice"]
         winner = "tie"

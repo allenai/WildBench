@@ -42,10 +42,14 @@ The final formatted results will be saved as follows:
 
 #### 4. View the results
 
-- WB Reward on GPT-4-turbo: `python src/view_wb_eval.py pairwise-gpt4t 500`
+Please run `bash leaderboard/show_eval.sh` to view the results. 
+
+Note if you only did Score-based eval, then `bash leaderboard/show_eval.sh score_only` will be okay.
+
+<!-- - WB Reward on GPT-4-turbo: `python src/view_wb_eval.py pairwise-gpt4t 500`
 - WB Reward on Claude-3-Haiku: `python src/view_wb_eval.py pairwise-haiku 500`
 - WB Reward on Llama-2-70b-chat: `python src/view_wb_eval.py pairwise-llama 500`
-- WB Score on Llama-2-70b-chat: `python src/view_wb_eval.py score`
+- WB Score on Llama-2-70b-chat: `python src/view_wb_eval.py score` -->
 
 
 The 2nd argument is `K`, the length margin for the length penalty. You can set it to -1 or leave it empty to disable the length penalty.

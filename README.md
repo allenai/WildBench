@@ -134,12 +134,19 @@ You can:
 
 When Step 3 in the above section is finished, you can view the results by running the following commands:
 
+<!-- 
 - WB Score: `python src/view_wb_eval.py score`
 - WB Reward on GPT-4-turbo: `python src/view_wb_eval.py pairwise-gpt4t 500`
 - WB Reward on Claude-3-Haiku: `python src/view_wb_eval.py pairwise-haiku 500`
 - WB Reward on Llama-2-70b-chat: `python src/view_wb_eval.py pairwise-llama 500`
 
-The 2nd argument is `K`, the length margin for the length penalty. You can set it to -1 or leave it empty to disable the length penalty.
+The 2nd argument is `K`, the length margin for the length penalty. You can set it to -1 or leave it empty to disable the length penalty. -->
+
+```bash
+bash leaderboard/show_eval.sh # run all and show the main leaderboard
+python leaderboard/show_table.py --mode main  # (optional) to show the main leaderboard w/o recomputing 
+python leaderboard/show_table.py --mode taskwise_score # (optional) to show the taskwise score
+```
 
 
 ## Correlation Analysis: How well does WildBench (v2) correlate with human preferences?
@@ -161,7 +168,8 @@ To analyze the correlation between WildBench (v2) and human evaluation, we consi
 - [ ] DeepSeek-V2-Code
 - [ ] Yi-large-preview
 - [ ] THUDM/glm-4-9b-chat
-- [ ] ZhangShenao/SELM-Llama-3-8B-Instruct-iter-3 
+- [ ] chujiezheng/neo_7b_instruct_v0.1-ExPO
+- [x] ZhangShenao/SELM-Llama-3-8B-Instruct-iter-3 
 - [x] m-a-p/neo_7b_instruct_v0.1
 - [x] Reka Flash
 - [x] DeepSeekV2-Chat
@@ -210,7 +218,7 @@ Create an Issue if you'd like to add a model that you wanna see on our leaderboa
 bash scripts/_common_vllm.sh ZhangShenao/SELM-Llama-3-8B-Instruct-iter-3 SELM-Llama-3-8B-Instruct-iter-3 4 
 bash scripts/_common_vllm.sh THUDM/glm-4-9b-chat glm-4-9b-chat 4 
 bash scripts/_common_vllm.sh LLM360/K2-Chat K2-Chat 1 
-
+bash scripts/_common_vllm.sh chujiezheng/neo_7b_instruct_v0.1-ExPO neo_7b_instruct_v0.1-ExPO 4
 
 
 python src/upload_results.py gemini-1.5-flash
@@ -225,9 +233,10 @@ python src/upload_results.py deepseekv2-chat
 python src/upload_results.py reka-edge
 python src/upload_results.py reka-core-20240501
 python src/upload_results.py neo_7b_instruct_v0.1
-
-
-
+python src/upload_results.py SELM-Llama-3-8B-Instruct-iter-3
+python src/upload_results.py glm-4-9b-chat
+python src/upload_results.py chujiezheng/neo_7b_instruct_v0.1-ExPO
+python src/upload_results.py deepseek-coder-v2
 
 
 ### Submit Batch Jobs
@@ -238,21 +247,24 @@ bash evaluation/run_all_eval_batch.sh Phi-3-mini-128k-instruct
 bash evaluation/run_all_eval_batch.sh Phi-3-medium-128k-instruct
 bash evaluation/run_all_eval_batch.sh SELM-Zephyr-7B-iter-3
 bash evaluation/run_all_eval_batch.sh Qwen2-72B-Instruct
-
 bash evaluation/run_all_eval_batch.sh gemini-1.5-flash
 bash evaluation/run_all_eval_batch.sh gemini-1.5-pro
-
 bash evaluation/run_all_eval_batch.sh Llama-3-Instruct-8B-SimPO-ExPO
 bash evaluation/run_all_eval_batch.sh Starling-LM-7B-beta-ExPO
 bash evaluation/run_all_eval_batch.sh Qwen1.5-72B-Chat-greedy
-
 bash evaluation/run_all_eval_batch.sh yi-large
 bash evaluation/run_all_eval_batch.sh reka-flash-20240226
 bash evaluation/run_all_eval_batch.sh deepseekv2-chat
-
 bash evaluation/run_all_eval_batch.sh reka-edge
 bash evaluation/run_all_eval_batch.sh reka-core-20240501
 bash evaluation/run_all_eval_batch.sh neo_7b_instruct_v0.1
+bash evaluation/run_all_eval_batch.sh SELM-Llama-3-8B-Instruct-iter-3
+bash evaluation/run_all_eval_batch.sh chujiezheng/neo_7b_instruct_v0.1-ExPO
+bash evaluation/run_all_eval_batch.sh glm-4-9b-chat
+bash evaluation/run_all_eval_batch.sh deepseek-coder-v2
+
+### Submit Score-only Batch Jobs
+bash evaluation/run_score_eval_batch.sh chujiezheng/neo_7b_instruct_v0.1-ExPO
 
 ### Check Batch Status
 python src/openai_batch_eval/check_batch_status_with_model_name.py command-r-plus
@@ -272,16 +284,26 @@ python src/openai_batch_eval/check_batch_status_with_model_name.py reka-flash-20
 python src/openai_batch_eval/check_batch_status_with_model_name.py deepseekv2-chat
 python src/openai_batch_eval/check_batch_status_with_model_name.py reka-edge
 python src/openai_batch_eval/check_batch_status_with_model_name.py reka-core-20240501
-
 python src/openai_batch_eval/check_batch_status_with_model_name.py neo_7b_instruct_v0.1
+python src/openai_batch_eval/check_batch_status_with_model_name.py SELM-Llama-3-8B-Instruct-iter-3
+python src/openai_batch_eval/check_batch_status_with_model_name.py glm-4-9b-chat
 
-python src/view_wb_eval.py score
-python src/view_wb_eval.py pairwise-gpt4t -1
-python src/view_wb_eval.py pairwise-haiku -1
-python src/view_wb_eval.py pairwise-llama -1
+python src/openai_batch_eval/check_batch_status_with_model_name.py deepseek-coder-v2
+
+# python src/view_wb_eval.py score
+# python src/view_wb_eval.py pairwise-gpt4t -1
+# python src/view_wb_eval.py pairwise-haiku -1
+# python src/view_wb_eval.py pairwise-llama -1
+
+bash leaderboard/show_eval.sh
+
+python leaderboard/show_table.py --mode main
+python leaderboard/show_table.py --mode taskwise_score
+
+-->
 
 
-bash evaluation/run_score_eval_batch.sh reka-flash-20240226
+<!-- 
 
 ### For Magpie evaluaiton 
 bash evaluation/run_score_eval_batch.sh Magpie-Pro-SFT-v0.1
@@ -325,5 +347,4 @@ python src/openai_batch_eval/check_batch_status_with_model_name.py Llama-3-8B-Op
 python src/openai_batch_eval/check_batch_status_with_model_name.py Llama-3-8B-Ultrachat-200K
 python src/openai_batch_eval/check_batch_status_with_model_name.py Llama-3-8B-WizardLM-196K
 python src/openai_batch_eval/check_batch_status_with_model_name.py Llama-3-8B-ShareGPT-112K
-
--->
+ -->

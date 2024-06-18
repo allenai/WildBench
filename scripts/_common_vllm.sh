@@ -14,7 +14,7 @@ output_dir="result_dirs/wild_bench_v2/"
 # If the n_shards is 1, then we can directly run the model
 # else, use  Data-parallellism
 if [ $n_shards -eq 1 ]; then
-    gpu="0,1,2,3"; num_gpus=4; 
+    gpu="0,1,2,3"; num_gpus=4; # change the number of gpus to your preference
     echo "tsp = 1"
     CUDA_VISIBLE_DEVICES=$gpu \
     python src/unified_infer.py \

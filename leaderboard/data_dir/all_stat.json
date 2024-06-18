@@ -1,0 +1,292 @@
+{
+    "gpt-4o-2024-05-13": {
+        "Arena Elo (hard) - 2024-05-20": 1293,
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "57.5",
+        "AE2.0": "51.3",
+        "Arena Elo (hard-en) - 2024-06-06": 1283
+    },
+    "gpt-4-turbo-2024-04-09": {
+        "Arena Elo (hard) - 2024-05-20": 1251,
+        "Arena-Hard v0.1": "82.6",
+        "AE2.0 LC": "55",
+        "AE2.0": "46.1",
+        "Arena Elo (hard-en) - 2024-06-06": 1249
+    },
+    "gpt-4-0125-preview": {
+        "Arena Elo (hard) - 2024-05-20": 1239,
+        "Arena-Hard v0.1": "78",
+        "AE2.0 LC": "-",
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-06": 1239
+    },
+    "claude-3-opus-20240229": {
+        "Arena Elo (hard) - 2024-05-20": 1232,
+        "Arena-Hard v0.1": "60.4",
+        "AE2.0 LC": "40.5",
+        "AE2.0": "29.1",
+        "Arena Elo (hard-en) - 2024-06-06": 1231
+    },
+    "Meta-Llama-3-70B-Instruct": {
+        "Arena Elo (hard) - 2024-05-20": 1213,
+        "Arena-Hard v0.1": "41.1",
+        "AE2.0 LC": "34.4",
+        "AE2.0": "33.2",
+        "Arena Elo (hard-en) - 2024-06-06": 1214
+    },
+    "Qwen1.5-72B-Chat": {
+        "Arena Elo (hard) - 2024-05-20": 1143,
+        "Arena-Hard v0.1": "36.1",
+        "AE2.0 LC": "36.6",
+        "AE2.0": "26.5",
+        "Arena Elo (hard-en) - 2024-06-06": 1143
+    },
+    "Qwen1.5-72B-Chat-greedy": {
+        "Arena Elo (hard) - 2024-05-20": 1143,
+        "Arena-Hard v0.1": "36.1",
+        "AE2.0 LC": "36.6",
+        "AE2.0": "26.5",
+        "Arena Elo (hard-en) - 2024-06-06": 1143
+    },
+    "claude-3-sonnet-20240229": {
+        "Arena Elo (hard) - 2024-05-20": 1187,
+        "Arena-Hard v0.1": "46.8",
+        "AE2.0 LC": "34.9",
+        "AE2.0": "25.6",
+        "Arena Elo (hard-en) - 2024-06-06": 1188
+    },
+    "mistral-large-2402": {
+        "Arena Elo (hard) - 2024-05-20": 1158,
+        "Arena-Hard v0.1": "37.7",
+        "AE2.0 LC": "32.7",
+        "AE2.0": "21.4",
+        "Arena Elo (hard-en) - 2024-06-06": 1158
+    },
+    "claude-3-haiku-20240307": {
+        "Arena Elo (hard) - 2024-05-20": 1169,
+        "Arena-Hard v0.1": "41.5",
+        "AE2.0 LC": "-",
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-06": 1170
+    },
+    "dbrx-instruct@together": {
+        "Arena Elo (hard) - 2024-05-20": 1106,
+        "Arena-Hard v0.1": "23.9",
+        "AE2.0 LC": "25.4",
+        "AE2.0": "18.4",
+        "Arena Elo (hard-en) - 2024-06-06": 1111
+    },
+    "Mixtral-8x7B-Instruct-v0.1": {
+        "Arena Elo (hard) - 2024-05-20": 1114,
+        "Arena-Hard v0.1": "23.4",
+        "AE2.0 LC": "23.7",
+        "AE2.0": "18.3",
+        "Arena Elo (hard-en) - 2024-06-06": 1114
+    },
+    "Starling-LM-7B-beta": {
+        "Arena Elo (hard) - 2024-05-20": 1111,
+        "Arena-Hard v0.1": "23",
+        "AE2.0 LC": "-",
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-06": 1114
+    },
+    "command-r": {
+        "Arena Elo (hard) - 2024-05-20": 1106,
+        "Arena-Hard v0.1": "17",
+        "AE2.0 LC": "-",
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-06": 1107
+    },
+    "command-r-plus": {
+        "Arena Elo (hard) - 2024-05-20": 1155,
+        "Arena-Hard v0.1": "33.1",
+        "AE2.0 LC": "-",
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-06": 1154
+    },
+    "Meta-Llama-3-8B-Instruct": {
+        "Arena Elo (hard) - 2024-05-20": 1144,
+        "Arena-Hard v0.1": "20.6",
+        "AE2.0 LC": "22.9",
+        "AE2.0": "22.6",
+        "Arena Elo (hard-en) - 2024-06-06": 1146
+    },
+    "tulu-2-dpo-70b": {
+        "Arena Elo (hard) - 2024-05-20": 1099,
+        "Arena-Hard v0.1": "15",
+        "AE2.0 LC": "21.2",
+        "AE2.0": "16",
+        "Arena Elo (hard-en) - 2024-06-06": 1101
+    },
+    "Nous-Hermes-2-Mixtral-8x7B-DPO": {
+        "Arena Elo (hard) - 2024-05-20": 1048,
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "-",
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-06": 1047
+    },
+    "Mistral-7B-Instruct-v0.2": {
+        "Arena Elo (hard) - 2024-05-20": 1071,
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "17.1",
+        "AE2.0": "14.7",
+        "Arena Elo (hard-en) - 2024-06-06": 1073
+    },
+    "gpt-3.5-turbo-0125": {
+        "Arena Elo (hard) - 2024-05-20": 1105,
+        "Arena-Hard v0.1": "23.3",
+        "AE2.0 LC": "-",
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-06": 1107
+    },
+    "Qwen1.5-7B-Chat@together": {
+        "Arena Elo (hard) - 2024-05-20": 1059,
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "14.7",
+        "AE2.0": "11.8",
+        "Arena Elo (hard-en) - 2024-06-06": "-"
+    },
+    "Llama-2-70b-chat-hf": {
+        "Arena Elo (hard) - 2024-05-20": 1070,
+        "Arena-Hard v0.1": "11.6",
+        "AE2.0 LC": "14.7",
+        "AE2.0": "13.9",
+        "Arena Elo (hard-en) - 2024-06-06": 1072
+    },
+    "Llama-2-7b-chat-hf": {
+        "Arena Elo (hard) - 2024-05-20": 1012,
+        "Arena-Hard v0.1": "4.6",
+        "AE2.0 LC": "5.4",
+        "AE2.0": "5",
+        "Arena Elo (hard-en) - 2024-06-06": 1013
+    },
+    "gemma-7b-it": {
+        "Arena Elo (hard) - 2024-05-20": 1047,
+        "Arena-Hard v0.1": "7.5",
+        "AE2.0 LC": "10.4",
+        "AE2.0": "6.9",
+        "Arena Elo (hard-en) - 2024-06-06": 1047
+    },
+    "gemma-2b-it": {
+        "Arena Elo (hard) - 2024-05-20": 980,
+        "Arena-Hard v0.1": "3",
+        "AE2.0 LC": "5.4",
+        "AE2.0": "3.4",
+        "Arena Elo (hard-en) - 2024-06-06": 978
+    },
+    "Llama-3-Instruct-8B-SimPO": {
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "33.8",
+        "AE2.0 LC": "44.7",
+        "AE2.0": "40.5",
+        "Arena Elo (hard-en) - 2024-06-06": "-"
+    },
+    "Phi-3-mini-128k-instruct": {
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "15.4",
+        "AE2.0 LC": "-",
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-06": 1038
+    },
+    "SELM-Zephyr-7B-iter-3": {
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "24.00",
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-06": "-"
+    },
+    "Qwen2-72B-Instruct": {
+        "Arena Elo (hard-en) - 2024-06-06": 1184,
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "48.1",
+        "AE2.0 LC": "-",
+        "AE2.0": "-"
+    },
+    "Qwen1.5-7B-Chat": {
+        "Arena Elo (hard-en) - 2024-06-06": 1058,
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "-",
+        "AE2.0": "-"
+    },
+    "Llama-2-13b-chat-hf": {
+        "Arena Elo (hard-en) - 2024-06-06": 1050,
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "-",
+        "AE2.0": "-"
+    },
+    "Mistral-7B-Instruct-v0.1": {
+        "Arena Elo (hard-en) - 2024-06-06": 1006,
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "-",
+        "AE2.0": "-"
+    },
+    "Hermes-2-Theta-Llama-3-8B": {
+        "Arena Elo (hard-en) - 2024-06-06": "-"
+    },
+    "yi-large": {
+        "Arena Elo (hard-en) - 2024-06-06": 1234,
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "63.7",
+        "AE2.0 LC": "51.9",
+        "AE2.0": "57.5"
+    },
+    "Yi-34B-Chat": {
+        "Arena Elo (hard-en) - 2024-06-06": 1099,
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "-",
+        "AE2.0": "-"
+    },
+    "Yi-1.5-34B-Chat": {
+        "Arena Elo (hard-en) - 2024-06-06": 1155,
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "-",
+        "AE2.0": "-"
+    },
+    "reka-flash-20240226": {
+        "Arena Elo (hard-en) - 2024-06-06": 1129,
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "-",
+        "AE2.0": "-"
+    },
+    "gemini-1.5-pro": {
+        "Arena Elo (hard-en) - 2024-06-06": 1254,
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "72.0",
+        "AE2.0 LC": "-",
+        "AE2.0": "-"
+    },
+    "gemini-1.5-flash": {
+        "Arena Elo (hard-en) - 2024-06-06": 1214,
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "49.6",
+        "AE2.0 LC": "-",
+        "AE2.0": "-"
+    },
+    "zephyr-7b-beta": {
+        "Arena Elo (hard-en) - 2024-06-06": 1029,
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "-",
+        "AE2.0": "-"
+    },
+    "reka-core-20240501": {
+        "Arena Elo (hard-en) - 2024-06-06": 1176,
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "-",
+        "AE2.0": "-"
+    },
+    "dbrx-instruct": {
+        "Arena Elo (hard-en) - 2024-06-06": 1111,
+        "Arena Elo (hard) - 2024-05-20": "-",
+        "Arena-Hard v0.1": "-",
+        "AE2.0 LC": "-",
+        "AE2.0": "-"
+    }
+}
