@@ -63,9 +63,10 @@ You can take the files under `scripts` as a reference to add a new model to the 
 5. Run your script to make sure it works. You can run the script by running `bash scripts/Yi-1.5-9B-Chat.sh` in the root folder. 
 6. Create a PR to add your script to the benchmark.
 
+### Shortcut to run a model
 For Step 3-5, you can also use this common command to run the model if your model is supported by vLLM and has a conversation template on hf's tokenizer config:
 ```bash
-bash scripts/_common_hf.sh m-a-p/neo_7b_instruct_v0.1 neo_7b_instruct_v0.1 4 
+bash scripts/_common_vllm.sh m-a-p/neo_7b_instruct_v0.1 neo_7b_instruct_v0.1 4 
 # 1st arg is hf_name; 2nd is the pretty name; 3rd is the number of shards (gpus)
 ```
 
@@ -156,13 +157,16 @@ To analyze the correlation between WildBench (v2) and human evaluation, we consi
 
 ### Models pending to test 
 
+- [ ] LLM360/K2-Chat
+- [ ] DeepSeek-V2-Code
+- [ ] Yi-large-preview
+- [ ] THUDM/glm-4-9b-chat
+- [ ] ZhangShenao/SELM-Llama-3-8B-Instruct-iter-3 
 - [x] m-a-p/neo_7b_instruct_v0.1
-- [ ] GLM-4
 - [x] Reka Flash
 - [x] DeepSeekV2-Chat
 - [x] Reka Core
 - [x] Yi-Large (via OpenAI-like APIs)
-- [ ] ZhangShenao/SELM-Llama-3-8B-Instruct-iter-3 
 - [x] chujiezheng/Llama-3-Instruct-8B-SimPO-ExPO
 - [x] chujiezheng/Starling-LM-7B-beta-ExPO
 - [x] Gemini 1.5 series
@@ -202,6 +206,13 @@ Create an Issue if you'd like to add a model that you wanna see on our leaderboa
 
 <!-- 
 
+
+bash scripts/_common_vllm.sh ZhangShenao/SELM-Llama-3-8B-Instruct-iter-3 SELM-Llama-3-8B-Instruct-iter-3 4 
+bash scripts/_common_vllm.sh THUDM/glm-4-9b-chat glm-4-9b-chat 4 
+bash scripts/_common_vllm.sh LLM360/K2-Chat K2-Chat 1 
+
+
+
 python src/upload_results.py gemini-1.5-flash
 python src/upload_results.py gemini-1.5-pro
 python src/upload_results.py Qwen2-72B-Instruct
@@ -214,6 +225,9 @@ python src/upload_results.py deepseekv2-chat
 python src/upload_results.py reka-edge
 python src/upload_results.py reka-core-20240501
 python src/upload_results.py neo_7b_instruct_v0.1
+
+
+
 
 
 ### Submit Batch Jobs
