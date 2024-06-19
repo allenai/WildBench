@@ -261,6 +261,7 @@ bash evaluation/run_all_eval_batch.sh neo_7b_instruct_v0.1
 bash evaluation/run_all_eval_batch.sh SELM-Llama-3-8B-Instruct-iter-3
 bash evaluation/run_all_eval_batch.sh glm-4-9b-chat
 bash evaluation/run_all_eval_batch.sh deepseek-coder-v2
+bash evaluation/run_all_eval_batch.sh neo_7b_instruct_v0.1-ExPO
 
 ### Submit Score-only Batch Jobs
 bash evaluation/run_score_eval_batch.sh neo_7b_instruct_v0.1-ExPO
