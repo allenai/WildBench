@@ -165,10 +165,10 @@ To analyze the correlation between WildBench (v2) and human evaluation, we consi
 ### Models pending to test 
 
 - [ ] LLM360/K2-Chat
-- [ ] DeepSeek-V2-Code
+- [x] DeepSeek-V2-Code
 - [ ] Yi-large-preview
-- [ ] THUDM/glm-4-9b-chat
-- [ ] chujiezheng/neo_7b_instruct_v0.1-ExPO
+- [x] THUDM/glm-4-9b-chat
+- [x] chujiezheng/neo_7b_instruct_v0.1-ExPO
 - [x] ZhangShenao/SELM-Llama-3-8B-Instruct-iter-3 
 - [x] m-a-p/neo_7b_instruct_v0.1
 - [x] Reka Flash
@@ -235,7 +235,7 @@ python src/upload_results.py reka-core-20240501
 python src/upload_results.py neo_7b_instruct_v0.1
 python src/upload_results.py SELM-Llama-3-8B-Instruct-iter-3
 python src/upload_results.py glm-4-9b-chat
-python src/upload_results.py chujiezheng/neo_7b_instruct_v0.1-ExPO
+python src/upload_results.py neo_7b_instruct_v0.1-ExPO
 python src/upload_results.py deepseek-coder-v2
 
 
@@ -259,12 +259,11 @@ bash evaluation/run_all_eval_batch.sh reka-edge
 bash evaluation/run_all_eval_batch.sh reka-core-20240501
 bash evaluation/run_all_eval_batch.sh neo_7b_instruct_v0.1
 bash evaluation/run_all_eval_batch.sh SELM-Llama-3-8B-Instruct-iter-3
-bash evaluation/run_all_eval_batch.sh chujiezheng/neo_7b_instruct_v0.1-ExPO
 bash evaluation/run_all_eval_batch.sh glm-4-9b-chat
 bash evaluation/run_all_eval_batch.sh deepseek-coder-v2
 
 ### Submit Score-only Batch Jobs
-bash evaluation/run_score_eval_batch.sh chujiezheng/neo_7b_instruct_v0.1-ExPO
+bash evaluation/run_score_eval_batch.sh neo_7b_instruct_v0.1-ExPO
 
 ### Check Batch Status
 python src/openai_batch_eval/check_batch_status_with_model_name.py command-r-plus
@@ -287,15 +286,18 @@ python src/openai_batch_eval/check_batch_status_with_model_name.py reka-core-202
 python src/openai_batch_eval/check_batch_status_with_model_name.py neo_7b_instruct_v0.1
 python src/openai_batch_eval/check_batch_status_with_model_name.py SELM-Llama-3-8B-Instruct-iter-3
 python src/openai_batch_eval/check_batch_status_with_model_name.py glm-4-9b-chat
-
 python src/openai_batch_eval/check_batch_status_with_model_name.py deepseek-coder-v2
+
+python src/openai_batch_eval/check_batch_status_with_model_name.py neo_7b_instruct_v0.1-ExPO
 
 # python src/view_wb_eval.py score
 # python src/view_wb_eval.py pairwise-gpt4t -1
 # python src/view_wb_eval.py pairwise-haiku -1
 # python src/view_wb_eval.py pairwise-llama -1
 
-bash leaderboard/show_eval.sh
+
+bash leaderboard/show_eval.sh 
+bash leaderboard/show_eval.sh score_only
 
 python leaderboard/show_table.py --mode main
 python leaderboard/show_table.py --mode taskwise_score

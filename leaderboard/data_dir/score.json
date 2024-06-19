@@ -623,6 +623,22 @@
     "total": 1024,
     "avg_len": 3493.871033776868
   },
+  "neo_7b_instruct_v0.1-ExPO": {
+    "model": "neo_7b_instruct_v0.1-ExPO",
+    "score": 6.375366568914956,
+    "adjusted_score": 2.7507331378299114,
+    "task_macro_score": 2.513189962175261,
+    "adjusted_task_macro_score": 2.513189962175261,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 3.099863201094392,
+      "Information/Advice seeking": 3.8047619047619055,
+      "Creative Tasks": 3.931034482758621,
+      "Math & Data Analysis": 1.041666666666666,
+      "Coding & Debugging": 1.5737704918032787
+    },
+    "total": 1023,
+    "avg_len": 3620.9245283018868
+  },
   "Qwen1.5-7B-Chat@together": {
     "model": "Qwen1.5-7B-Chat@together",
     "score": 6.343108504398827,
