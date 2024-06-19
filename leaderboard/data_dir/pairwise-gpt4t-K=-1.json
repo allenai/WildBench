@@ -1253,6 +1253,63 @@
     "task_macro_reward": -0.4468929302115957,
     "K": -1
   },
+  "neo_7b_instruct_v0.1-ExPO": {
+    "model": "neo_7b_instruct_v0.1-ExPO",
+    "win_much": 23,
+    "win": 168,
+    "tie": 62,
+    "lose": 332,
+    "lose_much": 356,
+    "total": 1023,
+    "avg_len": 3611.371944739639,
+    "task_categorized_results": {
+      "Planning & Reasoning": {
+        "win_much": 16,
+        "win": 128,
+        "tie": 53,
+        "lose": 262,
+        "lose_much": 259
+      },
+      "Information/Advice seeking": {
+        "win_much": 10,
+        "win": 84,
+        "tie": 37,
+        "lose": 188,
+        "lose_much": 98
+      },
+      "Creative Tasks": {
+        "win_much": 20,
+        "win": 118,
+        "tie": 27,
+        "lose": 205,
+        "lose_much": 119
+      },
+      "Math & Data Analysis": {
+        "win_much": 4,
+        "win": 25,
+        "tie": 17,
+        "lose": 78,
+        "lose_much": 158
+      },
+      "Coding & Debugging": {
+        "win_much": 3,
+        "win": 15,
+        "tie": 3,
+        "lose": 35,
+        "lose_much": 120
+      }
+    },
+    "task_categorized_rewards": {
+      "Planning & Reasoning": -0.43175487465181056,
+      "Information/Advice seeking": -0.33573141486810554,
+      "Creative Tasks": -0.29141104294478526,
+      "Math & Data Analysis": -0.6400709219858156,
+      "Coding & Debugging": -0.7215909090909091
+    },
+    "reward": -0.4056695992179863,
+    "task_macro_reward": -0.5108576682255466,
+    "K": -1
+  },
   "neo_7b_instruct_v0.1": {
     "model": "neo_7b_instruct_v0.1",
     "win_much": 29,

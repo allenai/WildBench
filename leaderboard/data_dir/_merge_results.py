@@ -54,7 +54,7 @@ def merge_scores(K=-1):
     for model in all_models:
         if model not in all_stat:
             all_stat[model] = {}
-            all_stat[model]["Arena Elo (hard) - 2024-05-20"] = "-"
+            all_stat[model]["Arena Elo (hard-en) - latest"] = "-"
             all_stat[model]["Arena-Hard v0.1"] = "-"
             all_stat[model]["AE2.0 LC"] = "-"
             all_stat[model]["AE2.0"] = "-"

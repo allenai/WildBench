@@ -1025,6 +1025,63 @@
     "task_macro_reward": 0.10534745664572215,
     "K": 1000
   },
+  "SELM-Llama-3-8B-Instruct-iter-3": {
+    "model": "SELM-Llama-3-8B-Instruct-iter-3",
+    "win_much": 180,
+    "win": 274,
+    "tie": 173,
+    "lose": 206,
+    "lose_much": 118,
+    "total": 1024,
+    "avg_len": 2702.2344900105154,
+    "task_categorized_results": {
+      "Creative Tasks": {
+        "win_much": 115,
+        "win": 160,
+        "tie": 94,
+        "lose": 103,
+        "lose_much": 16
+      },
+      "Coding & Debugging": {
+        "win_much": 23,
+        "win": 54,
+        "tie": 17,
+        "lose": 38,
+        "lose_much": 44
+      },
+      "Planning & Reasoning": {
+        "win_much": 118,
+        "win": 199,
+        "tie": 157,
+        "lose": 160,
+        "lose_much": 85
+      },
+      "Information/Advice seeking": {
+        "win_much": 78,
+        "win": 115,
+        "tie": 110,
+        "lose": 94,
+        "lose_much": 30
+      },
+      "Math & Data Analysis": {
+        "win_much": 50,
+        "win": 70,
+        "tie": 30,
+        "lose": 73,
+        "lose_much": 63
+      }
+    },
+    "task_categorized_rewards": {
+      "Creative Tasks": 0.2612704918032787,
+      "Coding & Debugging": -0.07386363636363637,
+      "Planning & Reasoning": 0.07301808066759388,
+      "Information/Advice seeking": 0.13700234192037472,
+      "Math & Data Analysis": -0.050699300699300696
+    },
+    "reward": 0.09375,
+    "task_macro_reward": 0.0444659258029946,
+    "K": 1000
+  },
   "command-r-plus": {
     "model": "command-r-plus",
     "win_much": 174,
@@ -1878,6 +1935,63 @@
     },
     "reward": -0.16226783968719452,
     "task_macro_reward": -0.21517759025210592,
+    "K": 1000
+  },
+  "neo_7b_instruct_v0.1-ExPO": {
+    "model": "neo_7b_instruct_v0.1-ExPO",
+    "win_much": 127,
+    "win": 88,
+    "tie": 236,
+    "lose": 255,
+    "lose_much": 212,
+    "total": 1024,
+    "avg_len": 3572.305010893246,
+    "task_categorized_results": {
+      "Planning & Reasoning": {
+        "win_much": 74,
+        "win": 76,
+        "tie": 191,
+        "lose": 203,
+        "lose_much": 159
+      },
+      "Information/Advice seeking": {
+        "win_much": 47,
+        "win": 44,
+        "tie": 142,
+        "lose": 117,
+        "lose_much": 63
+      },
+      "Creative Tasks": {
+        "win_much": 108,
+        "win": 49,
+        "tie": 135,
+        "lose": 118,
+        "lose_much": 53
+      },
+      "Math & Data Analysis": {
+        "win_much": 28,
+        "win": 18,
+        "tie": 49,
+        "lose": 95,
+        "lose_much": 93
+      },
+      "Coding & Debugging": {
+        "win_much": 10,
+        "win": 14,
+        "tie": 14,
+        "lose": 55,
+        "lose_much": 76
+      }
+    },
+    "task_categorized_rewards": {
+      "Planning & Reasoning": -0.2112375533428165,
+      "Information/Advice seeking": -0.1271186440677966,
+      "Creative Tasks": 0.04427645788336933,
+      "Math & Data Analysis": -0.3657243816254417,
+      "Coding & Debugging": -0.5118343195266272
+    },
+    "reward": -0.16455078125,
+    "task_macro_reward": -0.2699569770977227,
     "K": 1000
   },
   "Nous-Hermes-2-Mixtral-8x7B-DPO": {

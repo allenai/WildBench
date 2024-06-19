@@ -1025,6 +1025,63 @@
     "task_macro_reward": 0.08290726871311752,
     "K": 500
   },
+  "SELM-Llama-3-8B-Instruct-iter-3": {
+    "model": "SELM-Llama-3-8B-Instruct-iter-3",
+    "win_much": 180,
+    "win": 199,
+    "tie": 273,
+    "lose": 181,
+    "lose_much": 118,
+    "total": 1024,
+    "avg_len": 2702.2344900105154,
+    "task_categorized_results": {
+      "Creative Tasks": {
+        "win_much": 115,
+        "win": 120,
+        "tie": 148,
+        "lose": 89,
+        "lose_much": 16
+      },
+      "Coding & Debugging": {
+        "win_much": 23,
+        "win": 43,
+        "tie": 34,
+        "lose": 32,
+        "lose_much": 44
+      },
+      "Planning & Reasoning": {
+        "win_much": 118,
+        "win": 157,
+        "tie": 221,
+        "lose": 138,
+        "lose_much": 85
+      },
+      "Information/Advice seeking": {
+        "win_much": 78,
+        "win": 75,
+        "tie": 160,
+        "lose": 84,
+        "lose_much": 30
+      },
+      "Math & Data Analysis": {
+        "win_much": 50,
+        "win": 54,
+        "tie": 53,
+        "lose": 66,
+        "lose_much": 63
+      }
+    },
+    "task_categorized_rewards": {
+      "Creative Tasks": 0.2346311475409836,
+      "Coding & Debugging": -0.08806818181818182,
+      "Planning & Reasoning": 0.05910987482614743,
+      "Information/Advice seeking": 0.10187353629976581,
+      "Math & Data Analysis": -0.06643356643356643
+    },
+    "reward": 0.0693359375,
+    "task_macro_reward": 0.02513473806138937,
+    "K": 500
+  },
   "command-r-plus": {
     "model": "command-r-plus",
     "win_much": 174,
@@ -2049,6 +2106,63 @@
     },
     "reward": -0.18994140625,
     "task_macro_reward": -0.2735006599404363,
+    "K": 500
+  },
+  "neo_7b_instruct_v0.1-ExPO": {
+    "model": "neo_7b_instruct_v0.1-ExPO",
+    "win_much": 127,
+    "win": 33,
+    "tie": 294,
+    "lose": 252,
+    "lose_much": 212,
+    "total": 1024,
+    "avg_len": 3572.305010893246,
+    "task_categorized_results": {
+      "Planning & Reasoning": {
+        "win_much": 74,
+        "win": 24,
+        "tie": 247,
+        "lose": 199,
+        "lose_much": 159
+      },
+      "Information/Advice seeking": {
+        "win_much": 47,
+        "win": 11,
+        "tie": 176,
+        "lose": 116,
+        "lose_much": 63
+      },
+      "Creative Tasks": {
+        "win_much": 108,
+        "win": 25,
+        "tie": 162,
+        "lose": 115,
+        "lose_much": 53
+      },
+      "Math & Data Analysis": {
+        "win_much": 28,
+        "win": 3,
+        "tie": 64,
+        "lose": 95,
+        "lose_much": 93
+      },
+      "Coding & Debugging": {
+        "win_much": 10,
+        "win": 7,
+        "tie": 21,
+        "lose": 55,
+        "lose_much": 76
+      }
+    },
+    "task_categorized_rewards": {
+      "Planning & Reasoning": -0.2453769559032717,
+      "Information/Advice seeking": -0.16585956416464892,
+      "Creative Tasks": 0.02159827213822894,
+      "Math & Data Analysis": -0.392226148409894,
+      "Coding & Debugging": -0.5325443786982249
+    },
+    "reward": -0.18994140625,
+    "task_macro_reward": -0.29890827978701795,
     "K": 500
   },
   "Mistral-7B-Instruct-v0.2": {

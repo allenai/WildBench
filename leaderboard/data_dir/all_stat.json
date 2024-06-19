@@ -4,35 +4,45 @@
         "Arena-Hard v0.1": "-",
         "AE2.0 LC": "57.5",
         "AE2.0": "51.3",
-        "Arena Elo (hard-en) - 2024-06-06": 1283
+        "Arena Elo (hard-en) - 2024-06-06": 1283,
+        "Arena Elo (hard-en) - 2024-06-17": 1283,
+        "Arena Elo (hard-en) - latest": 1283
     },
     "gpt-4-turbo-2024-04-09": {
         "Arena Elo (hard) - 2024-05-20": 1251,
         "Arena-Hard v0.1": "82.6",
         "AE2.0 LC": "55",
         "AE2.0": "46.1",
-        "Arena Elo (hard-en) - 2024-06-06": 1249
+        "Arena Elo (hard-en) - 2024-06-06": 1249,
+        "Arena Elo (hard-en) - 2024-06-17": 1248,
+        "Arena Elo (hard-en) - latest": 1248
     },
     "gpt-4-0125-preview": {
         "Arena Elo (hard) - 2024-05-20": 1239,
         "Arena-Hard v0.1": "78",
         "AE2.0 LC": "-",
         "AE2.0": "-",
-        "Arena Elo (hard-en) - 2024-06-06": 1239
+        "Arena Elo (hard-en) - 2024-06-06": 1239,
+        "Arena Elo (hard-en) - 2024-06-17": 1238,
+        "Arena Elo (hard-en) - latest": 1238
     },
     "claude-3-opus-20240229": {
         "Arena Elo (hard) - 2024-05-20": 1232,
         "Arena-Hard v0.1": "60.4",
         "AE2.0 LC": "40.5",
         "AE2.0": "29.1",
-        "Arena Elo (hard-en) - 2024-06-06": 1231
+        "Arena Elo (hard-en) - 2024-06-06": 1231,
+        "Arena Elo (hard-en) - 2024-06-17": 1230,
+        "Arena Elo (hard-en) - latest": 1230
     },
     "Meta-Llama-3-70B-Instruct": {
         "Arena Elo (hard) - 2024-05-20": 1213,
         "Arena-Hard v0.1": "41.1",
         "AE2.0 LC": "34.4",
         "AE2.0": "33.2",
-        "Arena Elo (hard-en) - 2024-06-06": 1214
+        "Arena Elo (hard-en) - 2024-06-06": 1214,
+        "Arena Elo (hard-en) - 2024-06-17": 1214,
+        "Arena Elo (hard-en) - latest": 1214
     },
     "Qwen1.5-72B-Chat": {
         "Arena Elo (hard) - 2024-05-20": 1143,
@@ -46,28 +56,36 @@
         "Arena-Hard v0.1": "36.1",
         "AE2.0 LC": "36.6",
         "AE2.0": "26.5",
-        "Arena Elo (hard-en) - 2024-06-06": 1143
+        "Arena Elo (hard-en) - 2024-06-06": 1143,
+        "Arena Elo (hard-en) - 2024-06-17": 1142,
+        "Arena Elo (hard-en) - latest": 1142
     },
     "claude-3-sonnet-20240229": {
         "Arena Elo (hard) - 2024-05-20": 1187,
         "Arena-Hard v0.1": "46.8",
         "AE2.0 LC": "34.9",
         "AE2.0": "25.6",
-        "Arena Elo (hard-en) - 2024-06-06": 1188
+        "Arena Elo (hard-en) - 2024-06-06": 1188,
+        "Arena Elo (hard-en) - 2024-06-17": 1188,
+        "Arena Elo (hard-en) - latest": 1188
     },
     "mistral-large-2402": {
         "Arena Elo (hard) - 2024-05-20": 1158,
         "Arena-Hard v0.1": "37.7",
         "AE2.0 LC": "32.7",
         "AE2.0": "21.4",
-        "Arena Elo (hard-en) - 2024-06-06": 1158
+        "Arena Elo (hard-en) - 2024-06-06": 1158,
+        "Arena Elo (hard-en) - 2024-06-17": 1157,
+        "Arena Elo (hard-en) - latest": 1157
     },
     "claude-3-haiku-20240307": {
         "Arena Elo (hard) - 2024-05-20": 1169,
         "Arena-Hard v0.1": "41.5",
         "AE2.0 LC": "-",
         "AE2.0": "-",
-        "Arena Elo (hard-en) - 2024-06-06": 1170
+        "Arena Elo (hard-en) - 2024-06-06": 1170,
+        "Arena Elo (hard-en) - 2024-06-17": 1170,
+        "Arena Elo (hard-en) - latest": 1170
     },
     "dbrx-instruct@together": {
         "Arena Elo (hard) - 2024-05-20": 1106,
@@ -81,63 +99,81 @@
         "Arena-Hard v0.1": "23.4",
         "AE2.0 LC": "23.7",
         "AE2.0": "18.3",
-        "Arena Elo (hard-en) - 2024-06-06": 1114
+        "Arena Elo (hard-en) - 2024-06-06": 1114,
+        "Arena Elo (hard-en) - 2024-06-17": 1114,
+        "Arena Elo (hard-en) - latest": 1114
     },
     "Starling-LM-7B-beta": {
         "Arena Elo (hard) - 2024-05-20": 1111,
         "Arena-Hard v0.1": "23",
         "AE2.0 LC": "-",
         "AE2.0": "-",
-        "Arena Elo (hard-en) - 2024-06-06": 1114
+        "Arena Elo (hard-en) - 2024-06-06": 1114,
+        "Arena Elo (hard-en) - 2024-06-17": 1114,
+        "Arena Elo (hard-en) - latest": 1114
     },
     "command-r": {
         "Arena Elo (hard) - 2024-05-20": 1106,
         "Arena-Hard v0.1": "17",
         "AE2.0 LC": "-",
         "AE2.0": "-",
-        "Arena Elo (hard-en) - 2024-06-06": 1107
+        "Arena Elo (hard-en) - 2024-06-06": 1107,
+        "Arena Elo (hard-en) - 2024-06-17": 1106,
+        "Arena Elo (hard-en) - latest": 1106
     },
     "command-r-plus": {
         "Arena Elo (hard) - 2024-05-20": 1155,
         "Arena-Hard v0.1": "33.1",
         "AE2.0 LC": "-",
         "AE2.0": "-",
-        "Arena Elo (hard-en) - 2024-06-06": 1154
+        "Arena Elo (hard-en) - 2024-06-06": 1154,
+        "Arena Elo (hard-en) - 2024-06-17": 1155,
+        "Arena Elo (hard-en) - latest": 1155
     },
     "Meta-Llama-3-8B-Instruct": {
         "Arena Elo (hard) - 2024-05-20": 1144,
         "Arena-Hard v0.1": "20.6",
         "AE2.0 LC": "22.9",
         "AE2.0": "22.6",
-        "Arena Elo (hard-en) - 2024-06-06": 1146
+        "Arena Elo (hard-en) - 2024-06-06": 1146,
+        "Arena Elo (hard-en) - 2024-06-17": 1145,
+        "Arena Elo (hard-en) - latest": 1145
     },
     "tulu-2-dpo-70b": {
         "Arena Elo (hard) - 2024-05-20": 1099,
         "Arena-Hard v0.1": "15",
         "AE2.0 LC": "21.2",
         "AE2.0": "16",
-        "Arena Elo (hard-en) - 2024-06-06": 1101
+        "Arena Elo (hard-en) - 2024-06-06": 1101,
+        "Arena Elo (hard-en) - 2024-06-17": 1100,
+        "Arena Elo (hard-en) - latest": 1100
     },
     "Nous-Hermes-2-Mixtral-8x7B-DPO": {
         "Arena Elo (hard) - 2024-05-20": 1048,
         "Arena-Hard v0.1": "-",
         "AE2.0 LC": "-",
         "AE2.0": "-",
-        "Arena Elo (hard-en) - 2024-06-06": 1047
+        "Arena Elo (hard-en) - 2024-06-06": 1047,
+        "Arena Elo (hard-en) - 2024-06-17": 1047,
+        "Arena Elo (hard-en) - latest": 1047
     },
     "Mistral-7B-Instruct-v0.2": {
         "Arena Elo (hard) - 2024-05-20": 1071,
         "Arena-Hard v0.1": "-",
         "AE2.0 LC": "17.1",
         "AE2.0": "14.7",
-        "Arena Elo (hard-en) - 2024-06-06": 1073
+        "Arena Elo (hard-en) - 2024-06-06": 1073,
+        "Arena Elo (hard-en) - 2024-06-17": 1073,
+        "Arena Elo (hard-en) - latest": 1073
     },
     "gpt-3.5-turbo-0125": {
         "Arena Elo (hard) - 2024-05-20": 1105,
         "Arena-Hard v0.1": "23.3",
         "AE2.0 LC": "-",
         "AE2.0": "-",
-        "Arena Elo (hard-en) - 2024-06-06": 1107
+        "Arena Elo (hard-en) - 2024-06-06": 1107,
+        "Arena Elo (hard-en) - 2024-06-17": 1107,
+        "Arena Elo (hard-en) - latest": 1107
     },
     "Qwen1.5-7B-Chat@together": {
         "Arena Elo (hard) - 2024-05-20": 1059,
@@ -151,28 +187,36 @@
         "Arena-Hard v0.1": "11.6",
         "AE2.0 LC": "14.7",
         "AE2.0": "13.9",
-        "Arena Elo (hard-en) - 2024-06-06": 1072
+        "Arena Elo (hard-en) - 2024-06-06": 1072,
+        "Arena Elo (hard-en) - 2024-06-17": 1072,
+        "Arena Elo (hard-en) - latest": 1072
     },
     "Llama-2-7b-chat-hf": {
         "Arena Elo (hard) - 2024-05-20": 1012,
         "Arena-Hard v0.1": "4.6",
         "AE2.0 LC": "5.4",
         "AE2.0": "5",
-        "Arena Elo (hard-en) - 2024-06-06": 1013
+        "Arena Elo (hard-en) - 2024-06-06": 1013,
+        "Arena Elo (hard-en) - 2024-06-17": 1012,
+        "Arena Elo (hard-en) - latest": 1012
     },
     "gemma-7b-it": {
         "Arena Elo (hard) - 2024-05-20": 1047,
         "Arena-Hard v0.1": "7.5",
         "AE2.0 LC": "10.4",
         "AE2.0": "6.9",
-        "Arena Elo (hard-en) - 2024-06-06": 1047
+        "Arena Elo (hard-en) - 2024-06-06": 1047,
+        "Arena Elo (hard-en) - 2024-06-17": 1047,
+        "Arena Elo (hard-en) - latest": 1047
     },
     "gemma-2b-it": {
         "Arena Elo (hard) - 2024-05-20": 980,
         "Arena-Hard v0.1": "3",
         "AE2.0 LC": "5.4",
         "AE2.0": "3.4",
-        "Arena Elo (hard-en) - 2024-06-06": 978
+        "Arena Elo (hard-en) - 2024-06-06": 978,
+        "Arena Elo (hard-en) - 2024-06-17": 978,
+        "Arena Elo (hard-en) - latest": 978
     },
     "Llama-3-Instruct-8B-SimPO": {
         "Arena Elo (hard) - 2024-05-20": "-",
@@ -186,7 +230,9 @@
         "Arena-Hard v0.1": "15.4",
         "AE2.0 LC": "-",
         "AE2.0": "-",
-        "Arena Elo (hard-en) - 2024-06-06": 1038
+        "Arena Elo (hard-en) - 2024-06-06": 1038,
+        "Arena Elo (hard-en) - 2024-06-17": 1038,
+        "Arena Elo (hard-en) - latest": 1038
     },
     "SELM-Zephyr-7B-iter-3": {
         "Arena Elo (hard) - 2024-05-20": "-",
@@ -200,28 +246,36 @@
         "Arena Elo (hard) - 2024-05-20": "-",
         "Arena-Hard v0.1": "48.1",
         "AE2.0 LC": "-",
-        "AE2.0": "-"
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-17": 1183,
+        "Arena Elo (hard-en) - latest": 1183
     },
     "Qwen1.5-7B-Chat": {
         "Arena Elo (hard-en) - 2024-06-06": 1058,
         "Arena Elo (hard) - 2024-05-20": "-",
         "Arena-Hard v0.1": "-",
         "AE2.0 LC": "-",
-        "AE2.0": "-"
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-17": 1058,
+        "Arena Elo (hard-en) - latest": 1058
     },
     "Llama-2-13b-chat-hf": {
         "Arena Elo (hard-en) - 2024-06-06": 1050,
         "Arena Elo (hard) - 2024-05-20": "-",
         "Arena-Hard v0.1": "-",
         "AE2.0 LC": "-",
-        "AE2.0": "-"
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-17": 1050,
+        "Arena Elo (hard-en) - latest": 1050
     },
     "Mistral-7B-Instruct-v0.1": {
         "Arena Elo (hard-en) - 2024-06-06": 1006,
         "Arena Elo (hard) - 2024-05-20": "-",
         "Arena-Hard v0.1": "-",
         "AE2.0 LC": "-",
-        "AE2.0": "-"
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-17": 1005,
+        "Arena Elo (hard-en) - latest": 1005
     },
     "Hermes-2-Theta-Llama-3-8B": {
         "Arena Elo (hard-en) - 2024-06-06": "-"
@@ -231,62 +285,80 @@
         "Arena Elo (hard) - 2024-05-20": "-",
         "Arena-Hard v0.1": "63.7",
         "AE2.0 LC": "51.9",
-        "AE2.0": "57.5"
+        "AE2.0": "57.5",
+        "Arena Elo (hard-en) - 2024-06-17": 1232,
+        "Arena Elo (hard-en) - latest": 1232
     },
     "Yi-34B-Chat": {
         "Arena Elo (hard-en) - 2024-06-06": 1099,
         "Arena Elo (hard) - 2024-05-20": "-",
         "Arena-Hard v0.1": "-",
         "AE2.0 LC": "-",
-        "AE2.0": "-"
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-17": 1099,
+        "Arena Elo (hard-en) - latest": 1099
     },
     "Yi-1.5-34B-Chat": {
         "Arena Elo (hard-en) - 2024-06-06": 1155,
         "Arena Elo (hard) - 2024-05-20": "-",
         "Arena-Hard v0.1": "-",
         "AE2.0 LC": "-",
-        "AE2.0": "-"
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-17": 1163,
+        "Arena Elo (hard-en) - latest": 1163
     },
     "reka-flash-20240226": {
         "Arena Elo (hard-en) - 2024-06-06": 1129,
         "Arena Elo (hard) - 2024-05-20": "-",
         "Arena-Hard v0.1": "-",
         "AE2.0 LC": "-",
-        "AE2.0": "-"
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-17": 1128,
+        "Arena Elo (hard-en) - latest": 1128
     },
     "gemini-1.5-pro": {
         "Arena Elo (hard-en) - 2024-06-06": 1254,
         "Arena Elo (hard) - 2024-05-20": "-",
         "Arena-Hard v0.1": "72.0",
         "AE2.0 LC": "-",
-        "AE2.0": "-"
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-17": 1255,
+        "Arena Elo (hard-en) - latest": 1255
     },
     "gemini-1.5-flash": {
         "Arena Elo (hard-en) - 2024-06-06": 1214,
         "Arena Elo (hard) - 2024-05-20": "-",
         "Arena-Hard v0.1": "49.6",
         "AE2.0 LC": "-",
-        "AE2.0": "-"
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-17": 1213,
+        "Arena Elo (hard-en) - latest": 1213
     },
     "zephyr-7b-beta": {
         "Arena Elo (hard-en) - 2024-06-06": 1029,
         "Arena Elo (hard) - 2024-05-20": "-",
         "Arena-Hard v0.1": "-",
         "AE2.0 LC": "-",
-        "AE2.0": "-"
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-17": 1029,
+        "Arena Elo (hard-en) - latest": 1029
     },
     "reka-core-20240501": {
         "Arena Elo (hard-en) - 2024-06-06": 1176,
         "Arena Elo (hard) - 2024-05-20": "-",
         "Arena-Hard v0.1": "-",
         "AE2.0 LC": "-",
-        "AE2.0": "-"
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-17": 1176,
+        "Arena Elo (hard-en) - latest": 1176
     },
     "dbrx-instruct": {
         "Arena Elo (hard-en) - 2024-06-06": 1111,
         "Arena Elo (hard) - 2024-05-20": "-",
         "Arena-Hard v0.1": "-",
         "AE2.0 LC": "-",
-        "AE2.0": "-"
+        "AE2.0": "-",
+        "Arena Elo (hard-en) - 2024-06-17": 1111,
+        "Arena Elo (hard-en) - latest": 1111
     }
 }

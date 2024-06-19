@@ -2,9 +2,8 @@ MODE=$1
 
 # Score only 
 python leaderboard/data_dir/_create_tables.py score
-FOLDER="leaderboard/data_dir"
-margin=3;tie_margin=1;K=4;dynamic=True;
-python -m leaderboard.wb_elo --loo -1 --K $K --margin $margin --tie_margin $tie_margin --num_rounds 100 --dynamic $dynamic
+margin=3;tie_margin=2;K=4;dynamic=True
+python -m leaderboard.wb_elo --K $K --margin $margin --tie_margin $tie_margin --num_rounds 100 --dynamic $dynamic
 
 # if MODE is not score 
 if [ "$MODE" != "score_only" ];

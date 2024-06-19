@@ -154,7 +154,7 @@ def compute_elo_based_on_votes(votes, K=4, num_rounds=1000, init_elos=None, dyna
     elo_median = {model: np.median(ratings) for model, ratings in elo_cumulative.items()}
     return elo_avg, elo_std, elo_median, elo_ci
 
-def load_init_elo(filepath = "leaderboard/data_dir/all_stat.json", elo_key = "Arena Elo (hard-en) - 2024-06-06"):
+def load_init_elo(filepath = "leaderboard/data_dir/all_stat.json", elo_key = "Arena Elo (hard-en) - latest"):
     init_elos = {} 
     with open(filepath, "r") as f:
         data = json.load(f)
