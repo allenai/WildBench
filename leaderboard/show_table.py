@@ -19,6 +19,9 @@ def show_table(K=-1, mode="main"):
     elif mode == "taskwise_score":
         all_column_names_to_show = ["WB_Elo", "WB_score.task_macro", "WB_score.Creative Tasks", "WB_score.Planning & Reasoning", "WB_score.Math & Data Analysis", "WB_score.Information/Advice seeking", "WB_score.Coding & Debugging", "Length"]
         rank_column = "WB_score.task_macro"
+    elif mode == "taskwise_reward":
+        all_column_names_to_show = ["WB_Elo", f"task_macro_reward.K={K}", f"mixture_of_rewards.Creative Tasks.K={K}", f"mixture_of_rewards.Planning & Reasoning.K={K}", f"mixture_of_rewards.Math & Data Analysis.K={K}", f"mixture_of_rewards.Information/Advice seeking.K={K}", f"mixture_of_rewards.Coding & Debugging.K={K}", "Length"]
+        rank_column = f"task_macro_reward.K={K}"
     else:
         raise NotImplementedError
     
@@ -31,10 +34,12 @@ def show_table(K=-1, mode="main"):
         rows.append(row) 
     
     
+    if mode == "taskwise_reward":
+        all_column_names_to_show = [x.replace(f".K={K}", "").replace("mixture_of_rewards.","") for x in all_column_names_to_show]
     
     # show a table for the local leaderboard
     # add a rank column 
-    print(tabulate(rows, headers=["Model"] + all_column_names_to_show, tablefmt="github", showindex="always"))
+    print(tabulate(rows, headers=["Model"] + all_column_names_to_show, tablefmt="github", showindex="always", floatfmt=".2f"))
 
 
 # main 
