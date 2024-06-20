@@ -237,7 +237,9 @@ python src/upload_results.py SELM-Llama-3-8B-Instruct-iter-3
 python src/upload_results.py glm-4-9b-chat
 python src/upload_results.py neo_7b_instruct_v0.1-ExPO
 python src/upload_results.py deepseek-coder-v2
-
+python src/upload_results.py yi-large-preview
+python src/upload_results.py nemotron-4-340b-instruct
+python src/upload_results.py claude-3-5-sonnet-20240620
 
 ### Submit Batch Jobs
 bash evaluation/run_all_eval_batch.sh command-r-plus
@@ -262,6 +264,9 @@ bash evaluation/run_all_eval_batch.sh SELM-Llama-3-8B-Instruct-iter-3
 bash evaluation/run_all_eval_batch.sh glm-4-9b-chat
 bash evaluation/run_all_eval_batch.sh deepseek-coder-v2
 bash evaluation/run_all_eval_batch.sh neo_7b_instruct_v0.1-ExPO
+bash evaluation/run_all_eval_batch.sh yi-large-preview
+bash evaluation/run_all_eval_batch.sh nemotron-4-340b-instruct
+bash evaluation/run_all_eval_batch.sh claude-3-5-sonnet-20240620
 
 ### Submit Score-only Batch Jobs
 bash evaluation/run_score_eval_batch.sh neo_7b_instruct_v0.1-ExPO
@@ -288,8 +293,11 @@ python src/openai_batch_eval/check_batch_status_with_model_name.py neo_7b_instru
 python src/openai_batch_eval/check_batch_status_with_model_name.py SELM-Llama-3-8B-Instruct-iter-3
 python src/openai_batch_eval/check_batch_status_with_model_name.py glm-4-9b-chat
 python src/openai_batch_eval/check_batch_status_with_model_name.py deepseek-coder-v2
-
 python src/openai_batch_eval/check_batch_status_with_model_name.py neo_7b_instruct_v0.1-ExPO
+
+python src/openai_batch_eval/check_batch_status_with_model_name.py yi-large-preview
+python src/openai_batch_eval/check_batch_status_with_model_name.py nemotron-4-340b-instruct
+python src/openai_batch_eval/check_batch_status_with_model_name.py claude-3-5-sonnet-20240620
 
 # python src/view_wb_eval.py score
 # python src/view_wb_eval.py pairwise-gpt4t -1

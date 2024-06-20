@@ -31,6 +31,38 @@
     "total": 1023,
     "avg_len": 3026.7115768463073
   },
+  "yi-large-preview": {
+    "model": "yi-large-preview",
+    "score": 7.685239491691105,
+    "adjusted_score": 5.37047898338221,
+    "task_macro_score": 5.565050347398131,
+    "adjusted_task_macro_score": 5.565050347398131,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 5.716643741403026,
+      "Information/Advice seeking": 5.803278688524591,
+      "Coding & Debugging": 5.561497326203208,
+      "Creative Tasks": 5.777777777777779,
+      "Math & Data Analysis": 5.094076655052264
+    },
+    "total": 1023,
+    "avg_len": 3307.9133611691022
+  },
+  "claude-3-5-sonnet-20240620": {
+    "model": "claude-3-5-sonnet-20240620",
+    "score": 7.6484375,
+    "adjusted_score": 5.296875,
+    "task_macro_score": 5.400749535992413,
+    "adjusted_task_macro_score": 5.400749535992413,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 5.5117891816920945,
+      "Information/Advice seeking": 5.587822014051522,
+      "Coding & Debugging": 5.627118644067796,
+      "Creative Tasks": 5.5940803382663855,
+      "Math & Data Analysis": 4.798611111111111
+    },
+    "total": 1024,
+    "avg_len": 2448.8615221987316
+  },
   "gpt-4-0125-preview": {
     "model": "gpt-4-0125-preview",
     "score": 7.63671875,
@@ -78,6 +110,22 @@
     },
     "total": 1023,
     "avg_len": 2685.4115267947423
+  },
+  "nemotron-4-340b-instruct": {
+    "model": "nemotron-4-340b-instruct",
+    "score": 7.419921875,
+    "adjusted_score": 4.83984375,
+    "task_macro_score": 4.785206976931115,
+    "adjusted_task_macro_score": 4.785206976931115,
+    "task_categorized_scores": {
+      "Planning & Reasoning": 4.936339522546419,
+      "Information/Advice seeking": 5.300000000000001,
+      "Coding & Debugging": 4.67,
+      "Creative Tasks": 5.296153846153846,
+      "Math & Data Analysis": 4.06993006993007
+    },
+    "total": 1024,
+    "avg_len": 2651.0674044265593
   },
   "deepseek-coder-v2": {
     "model": "deepseek-coder-v2",

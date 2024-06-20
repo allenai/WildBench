@@ -56,6 +56,120 @@
     "task_macro_reward": 0.6382600381948721,
     "K": 1000
   },
+  "claude-3-5-sonnet-20240620": {
+    "model": "claude-3-5-sonnet-20240620",
+    "win_much": 436,
+    "win": 298,
+    "tie": 95,
+    "lose": 49,
+    "lose_much": 42,
+    "total": 1024,
+    "avg_len": 2433.7684782608694,
+    "task_categorized_results": {
+      "Planning & Reasoning": {
+        "win_much": 324,
+        "win": 254,
+        "tie": 68,
+        "lose": 26,
+        "lose_much": 26
+      },
+      "Information/Advice seeking": {
+        "win_much": 170,
+        "win": 162,
+        "tie": 48,
+        "lose": 26,
+        "lose_much": 16
+      },
+      "Coding & Debugging": {
+        "win_much": 123,
+        "win": 31,
+        "tie": 14,
+        "lose": 2,
+        "lose_much": 2
+      },
+      "Creative Tasks": {
+        "win_much": 138,
+        "win": 172,
+        "tie": 70,
+        "lose": 35,
+        "lose_much": 39
+      },
+      "Math & Data Analysis": {
+        "win_much": 194,
+        "win": 64,
+        "tie": 11,
+        "lose": 9,
+        "lose_much": 4
+      }
+    },
+    "task_categorized_rewards": {
+      "Planning & Reasoning": 0.5902578796561605,
+      "Information/Advice seeking": 0.5260663507109005,
+      "Coding & Debugging": 0.7877906976744186,
+      "Creative Tasks": 0.368942731277533,
+      "Math & Data Analysis": 0.7712765957446809
+    },
+    "reward": 0.50634765625,
+    "task_macro_reward": 0.6390912825913871,
+    "K": 1000
+  },
+  "yi-large-preview": {
+    "model": "yi-large-preview",
+    "win_much": 433,
+    "win": 275,
+    "tie": 125,
+    "lose": 61,
+    "lose_much": 25,
+    "total": 1023,
+    "avg_len": 3256.9325353645268,
+    "task_categorized_results": {
+      "Planning & Reasoning": {
+        "win_much": 330,
+        "win": 218,
+        "tie": 89,
+        "lose": 42,
+        "lose_much": 12
+      },
+      "Information/Advice seeking": {
+        "win_much": 160,
+        "win": 160,
+        "tie": 65,
+        "lose": 24,
+        "lose_much": 9
+      },
+      "Coding & Debugging": {
+        "win_much": 116,
+        "win": 33,
+        "tie": 16,
+        "lose": 7,
+        "lose_much": 2
+      },
+      "Creative Tasks": {
+        "win_much": 156,
+        "win": 168,
+        "tie": 76,
+        "lose": 44,
+        "lose_much": 20
+      },
+      "Math & Data Analysis": {
+        "win_much": 187,
+        "win": 47,
+        "tie": 26,
+        "lose": 16,
+        "lose_much": 4
+      }
+    },
+    "task_categorized_rewards": {
+      "Planning & Reasoning": 0.5875542691751086,
+      "Information/Advice seeking": 0.5239234449760766,
+      "Coding & Debugging": 0.7298850574712644,
+      "Creative Tasks": 0.4267241379310345,
+      "Math & Data Analysis": 0.7089285714285715
+    },
+    "reward": 0.5034213098729228,
+    "task_macro_reward": 0.617680248459177,
+    "K": 1000
+  },
   "gpt-4o-2024-05-13": {
     "model": "gpt-4o-2024-05-13",
     "win_much": 456,
@@ -282,6 +396,63 @@
     },
     "reward": 0.4525904203323558,
     "task_macro_reward": 0.5526264754250167,
+    "K": 1000
+  },
+  "nemotron-4-340b-instruct": {
+    "model": "nemotron-4-340b-instruct",
+    "win_much": 344,
+    "win": 367,
+    "tie": 122,
+    "lose": 88,
+    "lose_much": 31,
+    "total": 1024,
+    "avg_len": 2591.8245798319326,
+    "task_categorized_results": {
+      "Planning & Reasoning": {
+        "win_much": 255,
+        "win": 287,
+        "tie": 96,
+        "lose": 58,
+        "lose_much": 22
+      },
+      "Information/Advice seeking": {
+        "win_much": 107,
+        "win": 197,
+        "tie": 65,
+        "lose": 49,
+        "lose_much": 11
+      },
+      "Coding & Debugging": {
+        "win_much": 111,
+        "win": 45,
+        "tie": 12,
+        "lose": 12,
+        "lose_much": 6
+      },
+      "Creative Tasks": {
+        "win_much": 113,
+        "win": 219,
+        "tie": 76,
+        "lose": 48,
+        "lose_much": 28
+      },
+      "Math & Data Analysis": {
+        "win_much": 158,
+        "win": 68,
+        "tie": 26,
+        "lose": 26,
+        "lose_much": 6
+      }
+    },
+    "task_categorized_rewards": {
+      "Planning & Reasoning": 0.483983286908078,
+      "Information/Advice seeking": 0.3962703962703963,
+      "Coding & Debugging": 0.6532258064516129,
+      "Creative Tasks": 0.3522727272727273,
+      "Math & Data Analysis": 0.6091549295774648
+    },
+    "reward": 0.44189453125,
+    "task_macro_reward": 0.5201553345562969,
     "K": 1000
   },
   "Llama-3-Instruct-8B-SimPO": {
