@@ -30,6 +30,9 @@ for item in wb_data:
     task_mapping[item["id"]] = []
     for tag in tags:
         task_mapping[item["id"]].append(task_group_new[tag])
+
+    # deduplicate
+    task_mapping[item["id"]] = list(set(task_mapping[item["id"]]))
         
         
     # # remove "Others"
@@ -38,9 +41,16 @@ for item in wb_data:
 
 # all_task_types = ['Information seeking', 'Creative Writing', 'Coding & Debugging', 'Reasoning', 'Editing', 'Math', 'Planning', 'Brainstorming', 'Role playing', 'Advice seeking', 'Data Analysis']
 
-FOLDER = "eval_results/v2.0522"
+PAIRWISE_FOLDER = "eval_results/v2.0522"
+SCORE_FOLDER = "eval_results/v2.0625"
 ACTION = sys.argv[1] 
 K = -1 # for pairwise length margin
+
+if ACTION.startswith("pairwise"):
+    FOLDER = PAIRWISE_FOLDER
+elif ACTION.startswith("score"):
+    FOLDER = SCORE_FOLDER
+
 if ACTION == "pairwise-gpt4t":
     folder = FOLDER+"/pairwise.v2/eval=gpt-4-turbo-2024-04-09/ref=gpt-4-turbo-2024-04-09"  
     MODE = "pairwise"
@@ -105,8 +115,7 @@ for file in tqdm(files, desc=f"Processing {folder.replace(FOLDER, '')}"):
                 if test_model_truncated or ref_model_truncated:
                     continue
                 if test_model_empty or ref_model_empty:
-                    continue
-                
+                    continue 
 
                 extent = item["extent"] 
                 winner = item["winner"]
@@ -181,24 +190,13 @@ for file in tqdm(files, desc=f"Processing {folder.replace(FOLDER, '')}"):
                 "task_categorized_rewards": task_cat_reward
             }
             row_item["reward"] = row_item["win"]*0.5 + row_item["win_much"] * 1 + row_item["tie"] * 0 - row_item["lose"]*0.5 - row_item["lose_much"] * 1
-            row_item["reward"] = row_item["reward"] / row_item["total"]
-
-            # haiku_reward.Creative Tasks.K=-1                      0.779473
-            # haiku_reward.Planning & Reasoning.K=-1                0.890501
-            # haiku_reward.Math & Data Analysis.K=-1                0.893201
-            # haiku_reward.Information/Advice seeking.K=-1          0.849821
-            # haiku_reward.Coding & Debugging.K=-1                  0.909884
-            weights_by_task = {
-                # "Creative Tasks": 0.779473,
-                # "Planning & Reasoning": 0.890501,
-                # "Math & Data Analysis": 0.893201,
-                # "Information/Advice seeking": 0.849821,
-                # "Coding & Debugging": 0.909884
+            row_item["reward"] = row_item["reward"] / row_item["total"] 
+            weights_by_task = { 
                 "Creative Tasks": 0.5,
                 "Planning & Reasoning": 1.25,
                 "Math & Data Analysis": 1,
                 "Information/Advice seeking": 0.75,
-                "Coding & Debugging": 1
+                "Coding & Debugging": 1.25
             }
             # row_item["task_macro_reward"] = sum(task_cat_reward.values()) / len(task_cat_reward)
             row_item["task_macro_reward"] = sum([task_cat_reward[tag] * weights_by_task[tag] for tag in task_cat_reward]) / sum(weights_by_task.values())
@@ -225,24 +223,13 @@ for file in tqdm(files, desc=f"Processing {folder.replace(FOLDER, '')}"):
             for tag in task_cat_results:
                 task_cat_score[tag] = sum(task_cat_results[tag]) / len(task_cat_results[tag])
                 # adjust 
-                task_cat_score[tag] = (task_cat_score[tag] - 5) * 2
-            # weighted average of the task scores
-                # WB_score.Creative Tasks                               0.731490
-                # WB_score.Planning & Reasoning                         0.918280
-                # WB_score.Math & Data Analysis                         0.887665
-                # WB_score.Information/Advice seeking                   0.811913
-                # WB_score.Coding & Debugging                           0.921157
-            weights_by_task = {
-                # "Creative Tasks": 0.731490,
-                # "Planning & Reasoning": 0.918280,
-                # "Math & Data Analysis": 0.887665,
-                # "Information/Advice seeking": 0.811913,
-                # "Coding & Debugging": 0.921157
+                task_cat_score[tag] = (task_cat_score[tag] - 5) * 2 
+            weights_by_task = { 
                 "Creative Tasks": 0.5,
                 "Planning & Reasoning": 1.25,
                 "Math & Data Analysis": 1,
                 "Information/Advice seeking": 0.75,
-                "Coding & Debugging": 1
+                "Coding & Debugging": 1.25
             }
             # task_macro_score = sum(task_cat_score.values()) / len(task_cat_score)
             task_macro_score = sum([task_cat_score[tag] * weights_by_task[tag] for tag in task_cat_score]) / sum(weights_by_task.values())
