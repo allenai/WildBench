@@ -166,7 +166,7 @@ To analyze the correlation between WildBench (v2) and human evaluation, we consi
 
 - [ ] LLM360/K2-Chat
 - [x] DeepSeek-V2-Code
-- [ ] Yi-large-preview
+- [x] Yi-large-preview
 - [x] THUDM/glm-4-9b-chat
 - [x] chujiezheng/neo_7b_instruct_v0.1-ExPO
 - [x] ZhangShenao/SELM-Llama-3-8B-Instruct-iter-3 

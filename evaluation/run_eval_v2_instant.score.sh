@@ -19,10 +19,10 @@ if [ "$num_shards" -eq 1 ]; then
     python src/eval.py \
         --action eval \
         --model $gpt_eval_name \
-        --max_words_to_eval 1000 \
         --mode score \
         --eval_template $eval_template \
         --target_model_name $model_name \
+        --max_words_to_eval -1 \
         --eval_output_file $eval_file 
 else
     echo "Using $num_shards shards"
@@ -35,10 +35,10 @@ else
         python src/eval.py \
             --action eval \
             --model $gpt_eval_name \
-            --max_words_to_eval 1000 \
             --mode score \
             --eval_template $eval_template \
             --target_model_name $model_name \
+            --max_words_to_eval -1 \
             --eval_output_file $eval_file \
             --start_idx $start --end_idx $end &
     done 

@@ -1,4 +1,5 @@
 !evaluation/results_v2.0522/pairwise.v2/eval=gpt-4-turbo-2024-04-09/ref=gpt-4-turbo-2024-04-09/*.json
+!eval_results/v2.0625/score.v2
 local_scripts/
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -203,5 +204,5 @@ evaluation/eval_template.no_checklist.md
 *.768-1024.json
 
 result_dirs/
-*.instant.json
- 
+*.instant.json 
+eval_results/v2.0625/score.v2/eval=gpt-4o-2024-05-13/_merged_0625_truncation.json

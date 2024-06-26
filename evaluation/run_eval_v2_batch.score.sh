@@ -9,12 +9,14 @@ gpt_eval_name=${2:-"gpt-4o-2024-05-13"} # evaluator name  # gpt-4-0125-preview
 # if gpt_eval_name == gpt-4-turbo-2024-04-09; then use `evaluation/eval_template.score.v2.0522.md`
 # if gpt_eval_name == gpt-4-0125-preview; then use `evaluation/eval_template.score.v2.md`
 if [ $gpt_eval_name == "gpt-4-turbo-2024-04-09" ]; then
-    eval_template="evaluation/eval_template.score.v2.0522.md"
+    # eval_template="evaluation/eval_template.score.v2.0522.md"
+    echo "not supported any more for the concern of cost"
+    exit 0
 else
     eval_template="evaluation/eval_template.score.v2.md"
 fi
 
-eval_folder="eval_results/v2.0522/score.v2/eval=${gpt_eval_name}/"
+eval_folder="eval_results/v2.0625/score.v2/eval=${gpt_eval_name}/"
 echo "Evaluating $model_name using $gpt_eval_name with $eval_template"
 mkdir -p $eval_folder 
 eval_file="${eval_folder}/${model_name}.batch-submit.jsonl"
@@ -30,8 +32,8 @@ python src/eval.py \
     --batch_mode \
     --action eval \
     --model $gpt_eval_name \
-    --max_words_to_eval 1000 \
     --mode score \
+    --max_words_to_eval -1 \
     --eval_template $eval_template \
     --target_model_name $model_name \
     --eval_output_file $eval_file 
