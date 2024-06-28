@@ -31,9 +31,7 @@
 ## How to add a new model to 🦁 WildBench benchmark 
 
 > [!NOTE]
-> If your model is on HuggingFace and/or it is supported by [vLLM](https://github.com/vllm-project/vllm), please create an **Issue** here to tell us your model id, chat template, and your preferred sampling parameters. We will add the script to run your model to the repo here and run inference and evaluation for you.
-
-If you'd like to try to run inference on your model by yourself or you'd like to create a PR for adding your model here, you can follow the instructions below. 
+> If your model is on HuggingFace and/or it is supported by [vLLM](https://github.com/vllm-project/vllm), please add the chat template to the tokenizer config and follow the Shortcut below. If your model is not supported by vLLM, you can still create an Issue and let us know how to run your model.
 
 
 ### Installation
@@ -69,7 +67,7 @@ export HF_HOME=/net/nfs/climate/tmp_cache/
  -->
 
 
-### Shortcut to run a model
+<h3 style="color: red;">🚨 Shortcut to run a model</h3>
 
 ```bash
 bash scripts/_common_vllm.sh [hf_model_id] [model_pretty_name] [num_gpus]
@@ -125,6 +123,17 @@ You should change the code to add these APIs, for example, gemini, cohere, claud
 
 > [!NOTE]
 > If you'd like to have your model results verified and published on our leaderboard, please create an issue telling us and we'll do the inference and evaluation for you. 
+
+<h3 style="color: red;"> 🚨 Shortcut to evaluate a model with WB-Score and WB-Elo.</h3>
+
+#### Individual Evaluate (OpenAI-Batch Mode)
+
+`bash evaluation/run_score_eval_batch.sh ${MODEL_PRETTY_NAME}`
+
+#### Show scores 
+
+`bash leaderboard/show_eval.sh score_only`
+
 
 ### Metrics
 

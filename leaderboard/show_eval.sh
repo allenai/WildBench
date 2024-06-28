@@ -30,4 +30,10 @@ wait
 python leaderboard/data_dir/_create_tables.py score
 
 python leaderboard/data_dir/_merge_results.py
-python leaderboard/show_table.py --mode taskwise_score
+
+if [ "$MODE" != "score_only" ];
+then 
+    python leaderboard/show_table.py --mode taskwise_score
+else 
+    python leaderboard/show_table.py --mode main
+fi
