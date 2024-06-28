@@ -72,7 +72,8 @@ export HF_HOME=/net/nfs/climate/tmp_cache/
 ### Shortcut to run a model
 
 ```bash
-bash scripts/_common_vllm.sh m-a-p/neo_7b_instruct_v0.1 neo_7b_instruct_v0.1 4 
+bash scripts/_common_vllm.sh [hf_model_id] [model_pretty_name] [num_gpus]
+# bash scripts/_common_vllm.sh m-a-p/neo_7b_instruct_v0.1 neo_7b_instruct_v0.1 4 # example
 # 1st arg is hf_name; 2nd is the pretty name; 3rd is the number of shards (gpus)
 ```
 
