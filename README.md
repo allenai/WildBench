@@ -9,11 +9,21 @@
 
 
 ### Evaluation Framework
-![img1](docs/wb_eval.png)
+<details>
+  <summary>Click to expand</summary>
+
+  ![img1](docs/wb_eval.png)
+
+</details>
 
 ### Dataset Overview
-![img1](docs/wb_table.png)
-![img1](docs/wb_stat.png)
+<details>
+  <summary>Click to expand</summary>
+
+  ![img1](docs/wb_table.png)
+  ![img1](docs/wb_stat.png)
+
+</details>
 
 
 
@@ -53,7 +63,19 @@ export HF_HOME=/net/nfs/climate/tmp_cache/
  -->
 
 
-**Case 1: Models supported by vLLM**
+### Shortcut to run a model
+
+```bash
+bash scripts/_common_vllm.sh m-a-p/neo_7b_instruct_v0.1 neo_7b_instruct_v0.1 4 
+# 1st arg is hf_name; 2nd is the pretty name; 3rd is the number of shards (gpus)
+```
+
+### Longer versions ⬇️
+
+<details>
+	<summary>  
+<b> Case 1: Models supported by vLLM</b>
+    </summary>
 
 You can take the files under `scripts` as a reference to add a new model to the benchmark, for example, to add `Yi-1.5-9B-Chat.sh` to the benchmark, you can follow the following steps:
 1. Create a script named "Yi-1.5-9B-Chat.sh.py" under `scripts` folder.
@@ -63,22 +85,30 @@ You can take the files under `scripts` as a reference to add a new model to the 
 5. Run your script to make sure it works. You can run the script by running `bash scripts/Yi-1.5-9B-Chat.sh` in the root folder. 
 6. Create a PR to add your script to the benchmark.
 
-### Shortcut to run a model
-For Step 3-5, you can also use this common command to run the model if your model is supported by vLLM and has a conversation template on hf's tokenizer config:
-```bash
-bash scripts/_common_vllm.sh m-a-p/neo_7b_instruct_v0.1 neo_7b_instruct_v0.1 4 
-# 1st arg is hf_name; 2nd is the pretty name; 3rd is the number of shards (gpus)
-```
+
+For Step 3-5, you can also use the above shortcut common command to run the model if your model is supported by vLLM and has a conversation template on hf's tokenizer config.
+
+</details>
+
+
 
 <details>
 	<summary> Case 2: Models that are only supported by native HuggingFace API </summary>
+
+
 Some new models may not be supported by vLLM for now. You can do the same thing as above but use `--engine hf` in the script instead, and test your script. Note that some models may need more specific configurations, and you will need to read the code and modify them accordingly. In these cases, you should add name-checking conditions to ensure that the model-specific changes are only applied to the specific model.
+
+
 </details>
 
 
 <details>
     <summary> Case 3: Private API-based Models </summary>
+
+
 You should change the code to add these APIs, for example, gemini, cohere, claude, and reka. You can refer to the `--engine openai` logic in the existing scripts to add your own API-based models. Please make sure that you do not expose your API keys in the code. If your model is on Together.AI platform, you can use the `--engine together` option to run your model, see `scripts/dbrx-instruct@together.sh` for an example.
+
+
 </details>
 
 
