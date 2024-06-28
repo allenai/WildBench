@@ -42,6 +42,10 @@ If you'd like to try to run inference on your model by yourself or you'd like to
 conda create -p /net/nfs/mosaic/yuchenl/envs/wbnfs python=3.10 
 conda activate /net/nfs/mosaic/yuchenl/envs/wbnfs
 -->
+
+<details>
+  <summary> Click to expand </summary>
+
 ```bash
 conda create -n wildbench python=3.10
 conda activate wildbench
@@ -53,6 +57,8 @@ pip install anthropic==0.19.0
 pip install reka-api==3.0.8
 # export HF_HOME=/path/to/your/custom/cache_dir/
 ```
+
+</details>
 
 <!-- 
 pip install vllm==0.3.1
