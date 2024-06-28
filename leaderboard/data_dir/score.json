@@ -8,8 +8,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 6.0473933649289116,
       "Creative Tasks": 5.912144702842378,
-      "Information/Advice seeking": 5.861386138613861,
       "Planning & Reasoning": 6.020958083832337,
+      "Information/Advice seeking": 5.861386138613861,
       "Math & Data Analysis": 5.729083665338646
     },
     "total": 1023,
@@ -24,8 +24,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 5.507109004739336,
       "Creative Tasks": 5.865633074935401,
-      "Information/Advice seeking": 5.717821782178218,
       "Planning & Reasoning": 5.6203288490284,
+      "Information/Advice seeking": 5.717821782178218,
       "Math & Data Analysis": 5.099601593625499
     },
     "total": 1023,
@@ -38,11 +38,11 @@
     "task_macro_score": 5.529462523202478,
     "adjusted_task_macro_score": 5.529462523202478,
     "task_categorized_scores": {
-      "Information/Advice seeking": 5.772277227722773,
       "Planning & Reasoning": 5.66066066066066,
+      "Information/Advice seeking": 5.772277227722773,
       "Coding & Debugging": 5.428571428571429,
-      "Creative Tasks": 5.7643979057591626,
-      "Math & Data Analysis": 5.192
+      "Math & Data Analysis": 5.192,
+      "Creative Tasks": 5.7643979057591626
     },
     "total": 1023,
     "avg_len": 3512.678149606299
@@ -56,8 +56,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 5.650943396226415,
       "Creative Tasks": 5.560723514211887,
-      "Information/Advice seeking": 5.554455445544555,
       "Planning & Reasoning": 5.563527653213752,
+      "Information/Advice seeking": 5.554455445544555,
       "Math & Data Analysis": 5.015873015873016
     },
     "total": 1024,
@@ -72,8 +72,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 5.2924528301886795,
       "Creative Tasks": 5.757105943152455,
-      "Information/Advice seeking": 5.435643564356436,
       "Planning & Reasoning": 5.345291479820627,
+      "Information/Advice seeking": 5.435643564356436,
       "Math & Data Analysis": 4.579365079365079
     },
     "total": 1024,
@@ -88,8 +88,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 5.330188679245284,
       "Creative Tasks": 5.302325581395349,
-      "Information/Advice seeking": 5.346534653465346,
       "Planning & Reasoning": 5.252615844544096,
+      "Information/Advice seeking": 5.346534653465346,
       "Math & Data Analysis": 4.674603174603174
     },
     "total": 1024,
@@ -104,8 +104,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 4.443396226415095,
       "Creative Tasks": 5.359173126614987,
-      "Information/Advice seeking": 5.181141439205955,
       "Planning & Reasoning": 5.062874251497005,
+      "Information/Advice seeking": 5.181141439205955,
       "Math & Data Analysis": 4.4523809523809526
     },
     "total": 1023,
@@ -115,13 +115,13 @@
     "model": "Meta-Llama-3-70B-Instruct",
     "score": 7.478983382209188,
     "adjusted_score": 4.9579667644183765,
-    "task_macro_score": 4.777080449630634,
-    "adjusted_task_macro_score": 4.777080449630634,
+    "task_macro_score": 4.777080449630633,
+    "adjusted_task_macro_score": 4.777080449630633,
     "task_categorized_scores": {
       "Coding & Debugging": 4.471698113207546,
       "Creative Tasks": 5.430051813471502,
-      "Information/Advice seeking": 5.227722772277227,
       "Planning & Reasoning": 5.0074738415545585,
+      "Information/Advice seeking": 5.227722772277227,
       "Math & Data Analysis": 4.206349206349206
     },
     "total": 1023,
@@ -134,11 +134,11 @@
     "task_macro_score": 4.892726960200772,
     "adjusted_task_macro_score": 4.892726960200772,
     "task_categorized_scores": {
-      "Information/Advice seeking": 5.096774193548388,
       "Planning & Reasoning": 5.133834586466165,
+      "Information/Advice seeking": 5.096774193548388,
       "Coding & Debugging": 4.771428571428572,
-      "Creative Tasks": 5.180156657963446,
-      "Math & Data Analysis": 4.446215139442231
+      "Math & Data Analysis": 4.446215139442231,
+      "Creative Tasks": 5.180156657963446
     },
     "total": 1023,
     "avg_len": 3095.335952848723
@@ -152,8 +152,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 4.485714285714286,
       "Creative Tasks": 5.449350649350649,
-      "Information/Advice seeking": 5.154228855721392,
       "Planning & Reasoning": 4.924698795180722,
+      "Information/Advice seeking": 5.154228855721392,
       "Math & Data Analysis": 4.159362549800797
     },
     "total": 1023,
@@ -166,11 +166,11 @@
     "task_macro_score": 4.767250981186394,
     "adjusted_task_macro_score": 4.767250981186394,
     "task_categorized_scores": {
-      "Information/Advice seeking": 5.300248138957816,
       "Planning & Reasoning": 4.912912912912914,
+      "Information/Advice seeking": 5.300248138957816,
       "Coding & Debugging": 4.625592417061611,
-      "Creative Tasks": 5.33160621761658,
-      "Math & Data Analysis": 4.0803212851405615
+      "Math & Data Analysis": 4.0803212851405615,
+      "Creative Tasks": 5.33160621761658
     },
     "total": 1024,
     "avg_len": 2754.0098039215686
@@ -182,11 +182,11 @@
     "task_macro_score": 5.295184246265066,
     "adjusted_task_macro_score": 5.295184246265066,
     "task_categorized_scores": {
-      "Information/Advice seeking": 5.222506393861893,
       "Planning & Reasoning": 5.373271889400922,
+      "Information/Advice seeking": 5.222506393861893,
       "Coding & Debugging": 5.522388059701493,
-      "Creative Tasks": 5.512465373961218,
-      "Math & Data Analysis": 4.859437751004016
+      "Math & Data Analysis": 4.859437751004016,
+      "Creative Tasks": 5.512465373961218
     },
     "total": 1024,
     "avg_len": 3247.9673135852913
@@ -198,11 +198,11 @@
     "task_macro_score": 4.561346347759096,
     "adjusted_task_macro_score": 4.561346347759096,
     "task_categorized_scores": {
-      "Information/Advice seeking": 5.029702970297029,
       "Planning & Reasoning": 4.8108108108108105,
+      "Information/Advice seeking": 5.029702970297029,
       "Coding & Debugging": 4.208530805687204,
-      "Creative Tasks": 5.352331606217616,
-      "Math & Data Analysis": 3.9437751004016057
+      "Math & Data Analysis": 3.9437751004016057,
+      "Creative Tasks": 5.352331606217616
     },
     "total": 1023,
     "avg_len": 3523.557843137255
@@ -216,8 +216,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 3.981132075471699,
       "Creative Tasks": 4.992248062015504,
-      "Information/Advice seeking": 4.950495049504951,
       "Planning & Reasoning": 4.684603886397609,
+      "Information/Advice seeking": 4.950495049504951,
       "Math & Data Analysis": 4.095238095238095
     },
     "total": 1024,
@@ -232,8 +232,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 4.609523809523809,
       "Creative Tasks": 4.630490956072352,
-      "Information/Advice seeking": 4.7128712871287135,
       "Planning & Reasoning": 4.742514970059879,
+      "Information/Advice seeking": 4.7128712871287135,
       "Math & Data Analysis": 4.063745019920319
     },
     "total": 1022,
@@ -243,14 +243,14 @@
     "model": "gemini-1.5-flash",
     "score": 7.2074363992172215,
     "adjusted_score": 4.414872798434443,
-    "task_macro_score": 4.885062170599163,
-    "adjusted_task_macro_score": 4.885062170599163,
+    "task_macro_score": 4.885062170599165,
+    "adjusted_task_macro_score": 4.885062170599165,
     "task_categorized_scores": {
-      "Information/Advice seeking": 4.866666666666667,
       "Planning & Reasoning": 5.078582434514638,
+      "Information/Advice seeking": 4.866666666666667,
       "Coding & Debugging": 4.872549019607844,
-      "Creative Tasks": 5.165745856353592,
-      "Math & Data Analysis": 4.53225806451613
+      "Math & Data Analysis": 4.53225806451613,
+      "Creative Tasks": 5.165745856353592
     },
     "total": 1022,
     "avg_len": 3654.3993871297243
@@ -264,8 +264,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 3.5355450236966828,
       "Creative Tasks": 5.036269430051814,
-      "Information/Advice seeking": 4.821782178217822,
       "Planning & Reasoning": 4.345345345345345,
+      "Information/Advice seeking": 4.821782178217822,
       "Math & Data Analysis": 2.9800796812748995
     },
     "total": 1021,
@@ -280,8 +280,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 3.374407582938389,
       "Creative Tasks": 4.966408268733851,
-      "Information/Advice seeking": 4.613861386138614,
       "Planning & Reasoning": 4.179910044977511,
+      "Information/Advice seeking": 4.613861386138614,
       "Math & Data Analysis": 3.087999999999999
     },
     "total": 1023,
@@ -296,8 +296,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 2.843601895734597,
       "Creative Tasks": 5.2558139534883725,
-      "Information/Advice seeking": 4.915841584158416,
       "Planning & Reasoning": 4.194902548725636,
+      "Information/Advice seeking": 4.915841584158416,
       "Math & Data Analysis": 2.3492063492063497
     },
     "total": 1022,
@@ -312,8 +312,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 3.1753554502369674,
       "Creative Tasks": 5.064599483204134,
-      "Information/Advice seeking": 4.7871287128712865,
       "Planning & Reasoning": 4.086696562032884,
+      "Information/Advice seeking": 4.7871287128712865,
       "Math & Data Analysis": 2.3984063745019917
     },
     "total": 1023,
@@ -328,8 +328,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 3.537735849056604,
       "Creative Tasks": 4.775193798449612,
-      "Information/Advice seeking": 4.628712871287128,
       "Planning & Reasoning": 4.248502994011975,
+      "Information/Advice seeking": 4.628712871287128,
       "Math & Data Analysis": 2.9800796812748995
     },
     "total": 1023,
@@ -342,11 +342,11 @@
     "task_macro_score": 4.590279465292558,
     "adjusted_task_macro_score": 4.590279465292558,
     "task_categorized_scores": {
-      "Information/Advice seeking": 5.225464190981432,
       "Planning & Reasoning": 4.800632911392405,
+      "Information/Advice seeking": 5.225464190981432,
       "Coding & Debugging": 4.060301507537689,
-      "Creative Tasks": 5.548746518105849,
-      "Math & Data Analysis": 4.034188034188034
+      "Math & Data Analysis": 4.034188034188034,
+      "Creative Tasks": 5.548746518105849
     },
     "total": 1024,
     "avg_len": 2592.589397089397
@@ -360,8 +360,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 3.69811320754717,
       "Creative Tasks": 4.294573643410853,
-      "Information/Advice seeking": 4.534653465346535,
       "Planning & Reasoning": 4.128550074738415,
+      "Information/Advice seeking": 4.534653465346535,
       "Math & Data Analysis": 3.1428571428571423
     },
     "total": 1024,
@@ -376,8 +376,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 2.7333333333333325,
       "Creative Tasks": 5.105943152454781,
-      "Information/Advice seeking": 4.605459057071961,
       "Planning & Reasoning": 3.9789789789789793,
+      "Information/Advice seeking": 4.605459057071961,
       "Math & Data Analysis": 2.3505976095617527
     },
     "total": 1020,
@@ -390,11 +390,11 @@
     "task_macro_score": 3.8665353515172316,
     "adjusted_task_macro_score": 3.8665353515172316,
     "task_categorized_scores": {
-      "Information/Advice seeking": 4.262376237623762,
       "Planning & Reasoning": 4.237237237237236,
+      "Information/Advice seeking": 4.262376237623762,
       "Coding & Debugging": 3.4976303317535553,
-      "Creative Tasks": 4.5595854922279795,
-      "Math & Data Analysis": 3.2208835341365454
+      "Math & Data Analysis": 3.2208835341365454,
+      "Creative Tasks": 4.5595854922279795
     },
     "total": 1023,
     "avg_len": 3468.23431372549
@@ -408,8 +408,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 2.8584905660377355,
       "Creative Tasks": 4.9147286821705425,
-      "Information/Advice seeking": 4.732673267326733,
       "Planning & Reasoning": 3.9461077844311383,
+      "Information/Advice seeking": 4.732673267326733,
       "Math & Data Analysis": 2.1195219123505975
     },
     "total": 1023,
@@ -424,8 +424,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 2.644549763033176,
       "Creative Tasks": 4.232558139534884,
-      "Information/Advice seeking": 4.108910891089108,
       "Planning & Reasoning": 3.6227544910179645,
+      "Information/Advice seeking": 4.108910891089108,
       "Math & Data Analysis": 2.4523809523809526
     },
     "total": 1023,
@@ -440,8 +440,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 1.933962264150944,
       "Creative Tasks": 4.7441860465116275,
-      "Information/Advice seeking": 4.410891089108912,
       "Planning & Reasoning": 3.461883408071749,
+      "Information/Advice seeking": 4.410891089108912,
       "Math & Data Analysis": 1.6031746031746028
     },
     "total": 1024,
@@ -456,8 +456,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 2.5023696682464447,
       "Creative Tasks": 4.275324675324676,
-      "Information/Advice seeking": 4.193548387096774,
       "Planning & Reasoning": 3.458646616541353,
+      "Information/Advice seeking": 4.193548387096774,
       "Math & Data Analysis": 2.2142857142857135
     },
     "total": 1022,
@@ -470,11 +470,11 @@
     "task_macro_score": 3.1559353823619887,
     "adjusted_task_macro_score": 3.1559353823619887,
     "task_categorized_scores": {
-      "Information/Advice seeking": 4.2871287128712865,
       "Planning & Reasoning": 3.631736526946108,
+      "Information/Advice seeking": 4.2871287128712865,
       "Coding & Debugging": 2.5308056872037916,
-      "Creative Tasks": 4.430051813471502,
-      "Math & Data Analysis": 1.8571428571428577
+      "Math & Data Analysis": 1.8571428571428577,
+      "Creative Tasks": 4.430051813471502
     },
     "total": 1023,
     "avg_len": 2835.826810176125
@@ -486,11 +486,11 @@
     "task_macro_score": 3.0363615402031146,
     "adjusted_task_macro_score": 3.0363615402031146,
     "task_categorized_scores": {
-      "Information/Advice seeking": 4.153465346534654,
       "Planning & Reasoning": 3.501501501501501,
+      "Information/Advice seeking": 4.153465346534654,
       "Coding & Debugging": 2.2085308056872037,
-      "Creative Tasks": 4.244155844155845,
-      "Math & Data Analysis": 2.048
+      "Math & Data Analysis": 2.048,
+      "Creative Tasks": 4.244155844155845
     },
     "total": 1023,
     "avg_len": 2103.0098039215686
@@ -499,14 +499,14 @@
     "model": "Starling-LM-7B-beta",
     "score": 6.70869990224829,
     "adjusted_score": 3.417399804496579,
-    "task_macro_score": 3.0169449808290145,
-    "adjusted_task_macro_score": 3.0169449808290145,
+    "task_macro_score": 3.016944980829014,
+    "adjusted_task_macro_score": 3.016944980829014,
     "task_categorized_scores": {
-      "Information/Advice seeking": 4.188118811881187,
       "Planning & Reasoning": 3.405082212257101,
+      "Information/Advice seeking": 4.188118811881187,
       "Coding & Debugging": 2.436018957345972,
-      "Creative Tasks": 4.379220779220779,
-      "Math & Data Analysis": 1.6984126984126977
+      "Math & Data Analysis": 1.6984126984126977,
+      "Creative Tasks": 4.379220779220779
     },
     "total": 1023,
     "avg_len": 2797.807240704501
@@ -515,13 +515,13 @@
     "model": "Nous-Hermes-2-Mixtral-8x7B-DPO",
     "score": 6.6611165523996085,
     "adjusted_score": 3.322233104799217,
-    "task_macro_score": 3.0711400306676127,
-    "adjusted_task_macro_score": 3.0711400306676127,
+    "task_macro_score": 3.071140030667612,
+    "adjusted_task_macro_score": 3.071140030667612,
     "task_categorized_scores": {
       "Coding & Debugging": 2.6037735849056602,
       "Creative Tasks": 3.792207792207792,
-      "Information/Advice seeking": 3.9752475247524757,
       "Planning & Reasoning": 3.424287856071963,
+      "Information/Advice seeking": 3.9752475247524757,
       "Math & Data Analysis": 2.1752988047808763
     },
     "total": 1021,
@@ -536,8 +536,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 2.19811320754717,
       "Creative Tasks": 4.356589147286822,
-      "Information/Advice seeking": 3.9306930693069315,
       "Planning & Reasoning": 3.4401197604790426,
+      "Information/Advice seeking": 3.9306930693069315,
       "Math & Data Analysis": 1.6972111553784863
     },
     "total": 1023,
@@ -552,8 +552,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 2.3113207547169807,
       "Creative Tasks": 3.9793281653746764,
-      "Information/Advice seeking": 4.158415841584159,
       "Planning & Reasoning": 3.365269461077844,
+      "Information/Advice seeking": 4.158415841584159,
       "Math & Data Analysis": 1.8725099601593627
     },
     "total": 1023,
@@ -566,11 +566,11 @@
     "task_macro_score": 2.7983756123225105,
     "adjusted_task_macro_score": 2.7983756123225105,
     "task_categorized_scores": {
-      "Information/Advice seeking": 4.0693069306930685,
       "Planning & Reasoning": 3.230538922155688,
+      "Information/Advice seeking": 4.0693069306930685,
       "Coding & Debugging": 2.0663507109004744,
-      "Creative Tasks": 4.270129870129869,
-      "Math & Data Analysis": 1.4841269841269842
+      "Math & Data Analysis": 1.4841269841269842,
+      "Creative Tasks": 4.270129870129869
     },
     "total": 1023,
     "avg_len": 2908.0714285714284
@@ -584,8 +584,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 2.654028436018958,
       "Creative Tasks": 3.7416020671834627,
-      "Information/Advice seeking": 3.6485148514851478,
       "Planning & Reasoning": 3.3393124065769797,
+      "Information/Advice seeking": 3.6485148514851478,
       "Math & Data Analysis": 2.158730158730158
     },
     "total": 1023,
@@ -600,8 +600,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 1.1037735849056602,
       "Creative Tasks": 4.470284237726098,
-      "Information/Advice seeking": 4.099009900990099,
       "Planning & Reasoning": 3.158682634730539,
+      "Information/Advice seeking": 4.099009900990099,
       "Math & Data Analysis": 1.2669322709163353
     },
     "total": 1024,
@@ -611,13 +611,13 @@
     "model": "Mistral-7B-Instruct-v0.2",
     "score": 6.534701857282503,
     "adjusted_score": 3.0694037145650057,
-    "task_macro_score": 2.5633728318953883,
-    "adjusted_task_macro_score": 2.5633728318953883,
+    "task_macro_score": 2.563372831895388,
+    "adjusted_task_macro_score": 2.563372831895388,
     "task_categorized_scores": {
       "Coding & Debugging": 1.8396226415094343,
       "Creative Tasks": 4.207253886010363,
-      "Information/Advice seeking": 4.009925558312656,
       "Planning & Reasoning": 3.0059880239520957,
+      "Information/Advice seeking": 4.009925558312656,
       "Math & Data Analysis": 1.007936507936508
     },
     "total": 1023,
@@ -632,8 +632,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 1.8207547169811313,
       "Creative Tasks": 3.3178294573643416,
-      "Information/Advice seeking": 3.5742574257425748,
       "Planning & Reasoning": 3.22754491017964,
+      "Information/Advice seeking": 3.5742574257425748,
       "Math & Data Analysis": 2.3027888446215137
     },
     "total": 1023,
@@ -646,11 +646,11 @@
     "task_macro_score": 2.5019233576987165,
     "adjusted_task_macro_score": 2.5019233576987165,
     "task_categorized_scores": {
-      "Information/Advice seeking": 3.6336633663366342,
       "Planning & Reasoning": 3.144992526158445,
+      "Information/Advice seeking": 3.6336633663366342,
       "Coding & Debugging": 1.402843601895734,
-      "Creative Tasks": 3.948186528497409,
-      "Math & Data Analysis": 1.5
+      "Math & Data Analysis": 1.5,
+      "Creative Tasks": 3.948186528497409
     },
     "total": 1024,
     "avg_len": 3735.800586510264
@@ -662,11 +662,11 @@
     "task_macro_score": 2.3114172189706186,
     "adjusted_task_macro_score": 2.3114172189706186,
     "task_categorized_scores": {
-      "Information/Advice seeking": 3.4851485148514847,
       "Planning & Reasoning": 2.8669656203288483,
+      "Information/Advice seeking": 3.4851485148514847,
       "Coding & Debugging": 1.276190476190477,
-      "Creative Tasks": 3.8549222797927456,
-      "Math & Data Analysis": 1.2589641434262955
+      "Math & Data Analysis": 1.2589641434262955,
+      "Creative Tasks": 3.8549222797927456
     },
     "total": 1023,
     "avg_len": 4107.917808219178
@@ -680,8 +680,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 1.488151658767773,
       "Creative Tasks": 3.829457364341085,
-      "Information/Advice seeking": 3.400990099009901,
       "Planning & Reasoning": 2.8878923766816147,
+      "Information/Advice seeking": 3.400990099009901,
       "Math & Data Analysis": 1.1904761904761898
     },
     "total": 1023,
@@ -691,14 +691,14 @@
     "model": "Llama-2-70b-chat-hf",
     "score": 6.345703125,
     "adjusted_score": 2.69140625,
-    "task_macro_score": 2.065963691286665,
-    "adjusted_task_macro_score": 2.065963691286665,
+    "task_macro_score": 2.0659636912866643,
+    "adjusted_task_macro_score": 2.0659636912866643,
     "task_categorized_scores": {
-      "Information/Advice seeking": 3.830845771144279,
       "Planning & Reasoning": 2.684684684684685,
+      "Information/Advice seeking": 3.830845771144279,
       "Coding & Debugging": 0.9333333333333336,
-      "Creative Tasks": 4.0,
-      "Math & Data Analysis": 0.41767068273092356
+      "Math & Data Analysis": 0.41767068273092356,
+      "Creative Tasks": 4.0
     },
     "total": 1024,
     "avg_len": 3138.3179587831205
@@ -712,8 +712,8 @@
     "task_categorized_scores": {
       "Coding & Debugging": 2.1619047619047613,
       "Creative Tasks": 3.0594315245478043,
-      "Information/Advice seeking": 2.8613861386138613,
       "Planning & Reasoning": 2.806596701649175,
+      "Information/Advice seeking": 2.8613861386138613,
       "Math & Data Analysis": 1.8571428571428577
     },
     "total": 1022,
@@ -723,14 +723,14 @@
     "model": "Yi-1.5-6B-Chat",
     "score": 6.263929618768328,
     "adjusted_score": 2.5278592375366564,
-    "task_macro_score": 2.331811668914988,
-    "adjusted_task_macro_score": 2.331811668914988,
+    "task_macro_score": 2.3318116689149884,
+    "adjusted_task_macro_score": 2.3318116689149884,
     "task_categorized_scores": {
-      "Information/Advice seeking": 3.1414392059553347,
       "Planning & Reasoning": 2.72972972972973,
+      "Information/Advice seeking": 3.1414392059553347,
       "Coding & Debugging": 1.6587677725118475,
-      "Creative Tasks": 3.108808290155441,
-      "Math & Data Analysis": 1.6799999999999997
+      "Math & Data Analysis": 1.6799999999999997,
+      "Creative Tasks": 3.108808290155441
     },
     "total": 1023,
     "avg_len": 3899.4686274509804
@@ -739,14 +739,14 @@
     "model": "reka-edge",
     "score": 6.159335288367546,
     "adjusted_score": 2.3186705767350926,
-    "task_macro_score": 2.125225793299967,
-    "adjusted_task_macro_score": 2.125225793299967,
+    "task_macro_score": 2.1252257932999665,
+    "adjusted_task_macro_score": 2.1252257932999665,
     "task_categorized_scores": {
-      "Information/Advice seeking": 3.4389610389610397,
       "Planning & Reasoning": 2.5007727975270484,
+      "Information/Advice seeking": 3.4389610389610397,
       "Coding & Debugging": 1.3526570048309186,
-      "Creative Tasks": 3.618037135278515,
-      "Math & Data Analysis": 0.8897959183673461
+      "Math & Data Analysis": 0.8897959183673461,
+      "Creative Tasks": 3.618037135278515
     },
     "total": 1023,
     "avg_len": 2417.351106639839
@@ -755,14 +755,14 @@
     "model": "Llama-2-7b-chat-hf",
     "score": 5.761252446183953,
     "adjusted_score": 1.5225048923679054,
-    "task_macro_score": 0.8262075264042466,
-    "adjusted_task_macro_score": 0.8262075264042466,
+    "task_macro_score": 0.8262075264042464,
+    "adjusted_task_macro_score": 0.8262075264042464,
     "task_categorized_scores": {
-      "Information/Advice seeking": 2.766169154228855,
       "Planning & Reasoning": 1.5428571428571427,
+      "Information/Advice seeking": 2.766169154228855,
       "Coding & Debugging": -0.6794258373205739,
-      "Creative Tasks": 2.976623376623376,
-      "Math & Data Analysis": -0.7177419354838701
+      "Math & Data Analysis": -0.7177419354838701,
+      "Creative Tasks": 2.976623376623376
     },
     "total": 1022,
     "avg_len": 2985.1052114060963
@@ -774,11 +774,11 @@
     "task_macro_score": 0.661975914869064,
     "adjusted_task_macro_score": 0.661975914869064,
     "task_categorized_scores": {
-      "Information/Advice seeking": 1.272277227722773,
       "Planning & Reasoning": 1.0164424514200299,
+      "Information/Advice seeking": 1.272277227722773,
       "Coding & Debugging": 0.18009478672985857,
-      "Creative Tasks": 2.119170984455959,
-      "Math & Data Analysis": -0.36507936507936556
+      "Math & Data Analysis": -0.36507936507936556,
+      "Creative Tasks": 2.119170984455959
     },
     "total": 1024,
     "avg_len": 1726.3440860215053
@@ -790,11 +790,11 @@
     "task_macro_score": -0.9691930072258819,
     "adjusted_task_macro_score": -0.9691930072258819,
     "task_categorized_scores": {
-      "Information/Advice seeking": -0.2133995037220835,
       "Planning & Reasoning": -0.5795795795795797,
+      "Information/Advice seeking": -0.2133995037220835,
       "Coding & Debugging": -1.7725118483412317,
-      "Creative Tasks": 0.7220779220779221,
-      "Math & Data Analysis": -1.8645418326693228
+      "Math & Data Analysis": -1.8645418326693228,
+      "Creative Tasks": 0.7220779220779221
     },
     "total": 1021,
     "avg_len": 1590.0833333333333
