@@ -2,8 +2,8 @@ MODE=$1
 
 
 
-margin=3;tie_margin=2;K=4;dynamic=True
-python -m leaderboard.wb_elo --K $K --margin $margin --tie_margin $tie_margin --num_rounds 100 --dynamic $dynamic
+margin=3;tie_margin=2;K=4;dynamic=True;interval=16
+python -m leaderboard.wb_elo --K $K --margin $margin --tie_margin $tie_margin --num_rounds 100 --dynamic $dynamic --interval $interval --num_processes 4
 
 # if MODE is not score 
 if [ "$MODE" != "score_only" ];

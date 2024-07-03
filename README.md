@@ -27,6 +27,22 @@
 
 
 
+## Quick Start 
+
+```bash 
+HF_MODEL_ID="Magpie-Align/Llama-3-8B-Magpie-Align-v0.1" # example model id 
+MODEL_PRETTY_NAME="Llama-3-8B-Magpie-Align-v0.1" # example model name
+NUM_GPUS=4 # depending on your hardwares;
+# do inference on WildBench 
+bash scripts/_common_vllm.sh $HF_MODEL_ID $MODEL_PRETTY_NAME $NUM_GPUS 
+# submit to OpenAI for eval (WB-Score)
+bash evaluation/run_score_eval_batch.sh ${MODEL_PRETTY_NAME} 
+# check the batch job status
+python src/openai_batch_eval/check_batch_status_with_model_name.py ${MODEL_PRETTY_NAME} 
+# show the table 
+bash leaderboard/show_eval.sh score_only 
+```
+
 
 ## How to add a new model to 🦁 WildBench benchmark 
 
