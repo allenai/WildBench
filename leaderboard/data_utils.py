@@ -15,7 +15,7 @@ model_len_info = None
 bench_data = None 
 eval_results = None 
 score_eval_results = None 
-BASE_SCORE_RESULTS_PATH = "eval_results/v2.0522/score.v2/eval=gpt-4o-2024-05-13/"
+BASE_SCORE_RESULTS_PATH = "eval_results/v2.0625/score.v2/eval=gpt-4o-2024-05-13/"
 BASE_EVAL_RESULTS_PATH = "eval_results/v2.0522/pairwise.v2/eval=gpt-4-turbo-2024-04-09/"
 
 

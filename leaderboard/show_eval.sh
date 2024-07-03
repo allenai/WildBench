@@ -2,9 +2,6 @@ MODE=$1
 
 
 
-margin=3;tie_margin=2;K=4;dynamic=True;interval=16
-python -m leaderboard.wb_elo --K $K --margin $margin --tie_margin $tie_margin --num_rounds 100 --dynamic $dynamic --interval $interval --num_processes 4
-
 # if MODE is not score 
 if [ "$MODE" != "score_only" ];
 then 
@@ -31,7 +28,12 @@ python leaderboard/data_dir/_create_tables.py score
 
 python leaderboard/data_dir/_merge_results.py
 
-if [ "$MODE" != "score_only" ];
+margin=3;tie_margin=2;K=4;dynamic=True;interval=16
+python -m leaderboard.wb_elo --K $K --margin $margin --tie_margin $tie_margin --num_rounds 100 --dynamic $dynamic --interval $interval --num_processes 4
+
+python leaderboard/data_dir/_merge_results.py
+
+if [ "$MODE" == "score_only" ];
 then 
     python leaderboard/show_table.py --mode taskwise_score
 else 

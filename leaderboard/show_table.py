@@ -18,7 +18,8 @@ def show_table(K=-1, mode="main"):
         rank_column = "WB_Elo"
     elif mode == "taskwise_score":
         all_column_names_to_show = ["WB_Elo", "WB_score.task_macro", "WB_score.Creative Tasks", "WB_score.Planning & Reasoning", "WB_score.Math & Data Analysis", "WB_score.Information/Advice seeking", "WB_score.Coding & Debugging", "Length"]
-        rank_column = "WB_score.task_macro"
+        # rank_column = "WB_score.task_macro"
+        rank_column = "WB_Elo"
     elif mode == "taskwise_reward":
         all_column_names_to_show = ["WB_Elo", f"task_macro_reward.K={K}", f"mixture_of_rewards.Creative Tasks.K={K}", f"mixture_of_rewards.Planning & Reasoning.K={K}", f"mixture_of_rewards.Math & Data Analysis.K={K}", f"mixture_of_rewards.Information/Advice seeking.K={K}", f"mixture_of_rewards.Coding & Debugging.K={K}", "Length"]
         rank_column = f"task_macro_reward.K={K}"
@@ -26,6 +27,7 @@ def show_table(K=-1, mode="main"):
         raise NotImplementedError
     
     # rank by rank_column   
+    print(f"Ranking by {rank_column}")
     all_stat = {k: v for k, v in sorted(all_stat.items(), key=lambda item: item[1][rank_column], reverse=True)}
      
     rows = [] 
