@@ -360,9 +360,12 @@ python src/openai_batch_eval/check_batch_status_with_model_name.py glm-4-9b-chat
 python src/openai_batch_eval/check_batch_status_with_model_name.py deepseek-coder-v2
 python src/openai_batch_eval/check_batch_status_with_model_name.py neo_7b_instruct_v0.1-ExPO
 
+
 python src/openai_batch_eval/check_batch_status_with_model_name.py yi-large-preview
 python src/openai_batch_eval/check_batch_status_with_model_name.py nemotron-4-340b-instruct
 python src/openai_batch_eval/check_batch_status_with_model_name.py claude-3-5-sonnet-20240620
+
+python src/openai_batch_eval/check_batch_status_with_model_name.py Llama-3-8B-Magpie-Align-v0.1
 
 # python src/view_wb_eval.py score
 # python src/view_wb_eval.py pairwise-gpt4t -1
