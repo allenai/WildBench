@@ -302,6 +302,8 @@ python src/upload_results.py deepseek-coder-v2
 python src/upload_results.py yi-large-preview
 python src/upload_results.py nemotron-4-340b-instruct
 python src/upload_results.py claude-3-5-sonnet-20240620
+python src/upload_results.py Llama-3-8B-Magpie-Align-v0.1
+
 
 ### Submit Batch Jobs
 bash evaluation/run_all_eval_batch.sh command-r-plus
@@ -329,6 +331,7 @@ bash evaluation/run_all_eval_batch.sh neo_7b_instruct_v0.1-ExPO
 bash evaluation/run_all_eval_batch.sh yi-large-preview
 bash evaluation/run_all_eval_batch.sh nemotron-4-340b-instruct
 bash evaluation/run_all_eval_batch.sh claude-3-5-sonnet-20240620
+bash evaluation/run_all_eval_batch.sh Llama-3-8B-Magpie-Align-v0.1
 
 ### Submit Score-only Batch Jobs
 bash evaluation/run_score_eval_batch.sh neo_7b_instruct_v0.1-ExPO
