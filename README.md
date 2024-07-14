@@ -226,6 +226,9 @@ To analyze the correlation between WildBench (v2) and human evaluation, we consi
 
 ### Models pending to test 
 
+- [ ] gemma-2 
+- [ ] SimPO-v0.2
+- [ ] Qwen2-7B-Chat
 - [ ] LLM360/K2-Chat
 - [x] DeepSeek-V2-Code
 - [x] Yi-large-preview
