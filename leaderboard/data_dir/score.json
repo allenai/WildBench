@@ -319,6 +319,22 @@
     "total": 1022,
     "avg_len": 3293.812133072407
   },
+  "Llama-3-Instruct-8B-SimPO-v0.2": {
+    "model": "Llama-3-Instruct-8B-SimPO-v0.2",
+    "score": 7.075268817204301,
+    "adjusted_score": 4.150537634408602,
+    "task_macro_score": 3.7155419825936797,
+    "adjusted_task_macro_score": 3.7155419825936797,
+    "task_categorized_scores": {
+      "Creative Tasks": 5.183462532299741,
+      "Coding & Debugging": 3.150943396226415,
+      "Information/Advice seeking": 4.7871287128712865,
+      "Planning & Reasoning": 4.071856287425149,
+      "Math & Data Analysis": 2.438247011952191
+    },
+    "total": 1023,
+    "avg_len": 2533.764418377322
+  },
   "Llama-3-Instruct-8B-SimPO": {
     "model": "Llama-3-Instruct-8B-SimPO",
     "score": 7.058651026392962,

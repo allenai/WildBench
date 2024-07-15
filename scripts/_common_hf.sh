@@ -4,7 +4,7 @@ n_shards=$3
 
 TEMP=0; TOP_P=1.0; MAX_TOKENS=4096; 
 batch_size=1;
-
+# gpu="0,1,2,3"; num_gpus=4; 
 
 CACHE_DIR=${HF_HOME:-"default"}
 output_dir="result_dirs/wild_bench_v2/"
@@ -18,6 +18,7 @@ if [ $n_shards -eq 1 ]; then
     echo "tsp = 1"
     CUDA_VISIBLE_DEVICES=$gpu \
     python src/unified_infer.py \
+        --engine hf \
         --data_name wild_bench \
         --model_name $model_name \
         --use_hf_conv_template --use_imend_stop \
@@ -40,6 +41,7 @@ elif [ $n_shards -gt 1 ]; then
 
         CUDA_VISIBLE_DEVICES=$gpu \
         python src/unified_infer.py \
+            --engine hf \
             --start_index $start --end_index $end \
             --data_name wild_bench \
             --model_name $model_name \
