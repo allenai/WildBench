@@ -14,8 +14,13 @@ output_dir="result_dirs/wild_bench_v2/"
 # If the n_shards is 1, then we can directly run the model
 # else, use  Data-parallellism
 if [ $n_shards -eq 1 ]; then
-    gpu="0,1,2,3"; num_gpus=4; # change the number of gpus to your preference
-    echo "tsp = 1"
+    # gpu="0,1,2,3"; num_gpus=4; # change the number of gpus to your preference
+    # decide the number gpus automatically from cuda 
+    num_gpus=$(nvidia-smi --query-gpu=count --format=csv,noheader | head -n 1)
+    # gpu= # from 0 to the last gpu id
+    gpu=$(seq -s, 0 $((num_gpus - 1)))
+
+    echo "n_shards = 1; num_gpus = $num_gpus; gpu = $gpu"
     CUDA_VISIBLE_DEVICES=$gpu \
     python src/unified_infer.py \
         --data_name wild_bench \
