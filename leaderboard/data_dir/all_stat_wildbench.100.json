@@ -6,8 +6,9 @@
     "AE2.0": "51.3",
     "Arena Elo (hard-en) - 2024-06-06": 1283,
     "Arena Elo (hard-en) - 2024-06-17": 1283,
-    "Arena Elo (hard-en) - latest": 1282,
+    "Arena Elo (hard-en) - latest": 1281,
     "Arena Elo (hard-en) - 2024-06-23": 1282,
+    "Arena Elo (hard-en) - 2024-07-08": 1281,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -48,7 +49,7 @@
     "Rank_TaskMacroReward.K": 1,
     "Rank_Avg": 1.0,
     "RewardScore_Avg": 29.649089401759777,
-    "WB_Elo": 1274.6613891288703
+    "WB_Elo": 1253.974397218325
   },
   "gpt-4-turbo-2024-04-09": {
     "Arena Elo (hard) - 2024-05-20": 1251,
@@ -59,6 +60,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1248,
     "Arena Elo (hard-en) - latest": 1248,
     "Arena Elo (hard-en) - 2024-06-23": 1248,
+    "Arena Elo (hard-en) - 2024-07-08": 1248,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -99,7 +101,7 @@
     "Rank_TaskMacroReward.K": 2,
     "Rank_Avg": 2.5,
     "RewardScore_Avg": 27.610612405196346,
-    "WB_Elo": 1242.2845836224587
+    "WB_Elo": 1228.4847778275364
   },
   "gpt-4-0125-preview": {
     "Arena Elo (hard) - 2024-05-20": 1239,
@@ -110,6 +112,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1238,
     "Arena Elo (hard-en) - latest": 1237,
     "Arena Elo (hard-en) - 2024-06-23": 1237,
+    "Arena Elo (hard-en) - 2024-07-08": 1237,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -150,7 +153,7 @@
     "Rank_TaskMacroReward.K": 3,
     "Rank_Avg": 4.5,
     "RewardScore_Avg": 26.13876959128449,
-    "WB_Elo": 1231.7329420930414
+    "WB_Elo": 1215.0825393928922
   },
   "claude-3-opus-20240229": {
     "Arena Elo (hard) - 2024-05-20": 1232,
@@ -159,8 +162,9 @@
     "AE2.0": "29.1",
     "Arena Elo (hard-en) - 2024-06-06": 1231,
     "Arena Elo (hard-en) - 2024-06-17": 1230,
-    "Arena Elo (hard-en) - latest": 1230,
+    "Arena Elo (hard-en) - latest": 1231,
     "Arena Elo (hard-en) - 2024-06-23": 1230,
+    "Arena Elo (hard-en) - 2024-07-08": 1231,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -201,7 +205,7 @@
     "Rank_TaskMacroReward.K": 4,
     "Rank_Avg": 5.5,
     "RewardScore_Avg": 25.857023800143768,
-    "WB_Elo": 1225.052134071428
+    "WB_Elo": 1211.575738290222
   },
   "Meta-Llama-3-70B-Instruct": {
     "Arena Elo (hard) - 2024-05-20": 1213,
@@ -212,6 +216,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1214,
     "Arena Elo (hard-en) - latest": 1213,
     "Arena Elo (hard-en) - 2024-06-23": 1213,
+    "Arena Elo (hard-en) - 2024-07-08": 1213,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -246,13 +251,13 @@
     "WB_score.Information/Advice seeking": 52.27722772277227,
     "WB_score.Coding & Debugging": 44.71698113207546,
     "WB_score": 49.579667644183765,
-    "WB_score.task_macro": 47.770804496306326,
+    "WB_score.task_macro": 47.77080449630634,
     "Length": 3046.6383186705766,
     "Rank_ScoreMacro": 11,
     "Rank_TaskMacroReward.K": 5,
     "Rank_Avg": 8.0,
-    "RewardScore_Avg": 23.885402248153163,
-    "WB_Elo": 1209.6841814827958
+    "RewardScore_Avg": 23.88540224815317,
+    "WB_Elo": 1199.6111643871368
   },
   "Qwen1.5-72B-Chat-greedy": {
     "Arena Elo (hard) - 2024-05-20": 1143,
@@ -263,6 +268,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1142,
     "Arena Elo (hard-en) - latest": 1142,
     "Arena Elo (hard-en) - 2024-06-23": 1142,
+    "Arena Elo (hard-en) - 2024-07-08": 1142,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -303,7 +309,7 @@
     "Rank_TaskMacroReward.K": 6,
     "Rank_Avg": 12.5,
     "RewardScore_Avg": 19.963856832912327,
-    "WB_Elo": 1143.8620774136832
+    "WB_Elo": 1151.3602029835972
   },
   "claude-3-sonnet-20240229": {
     "Arena Elo (hard) - 2024-05-20": 1187,
@@ -312,8 +318,9 @@
     "AE2.0": "25.6",
     "Arena Elo (hard-en) - 2024-06-06": 1188,
     "Arena Elo (hard-en) - 2024-06-17": 1188,
-    "Arena Elo (hard-en) - latest": 1187,
+    "Arena Elo (hard-en) - latest": 1188,
     "Arena Elo (hard-en) - 2024-06-23": 1187,
+    "Arena Elo (hard-en) - 2024-07-08": 1188,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -354,7 +361,7 @@
     "Rank_TaskMacroReward.K": 7,
     "Rank_Avg": 11.5,
     "RewardScore_Avg": 22.740728881876464,
-    "WB_Elo": 1184.717172219622
+    "WB_Elo": 1171.091582109617
   },
   "mistral-large-2402": {
     "Arena Elo (hard) - 2024-05-20": 1158,
@@ -363,8 +370,9 @@
     "AE2.0": "21.4",
     "Arena Elo (hard-en) - 2024-06-06": 1158,
     "Arena Elo (hard-en) - 2024-06-17": 1157,
-    "Arena Elo (hard-en) - latest": 1158,
+    "Arena Elo (hard-en) - latest": 1159,
     "Arena Elo (hard-en) - 2024-06-23": 1158,
+    "Arena Elo (hard-en) - 2024-07-08": 1159,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -405,7 +413,7 @@
     "Rank_TaskMacroReward.K": 8,
     "Rank_Avg": 15.0,
     "RewardScore_Avg": 19.446839167227115,
-    "WB_Elo": 1158.097229919259
+    "WB_Elo": 1158.4086695264775
   },
   "claude-3-haiku-20240307": {
     "Arena Elo (hard) - 2024-05-20": 1169,
@@ -414,8 +422,9 @@
     "AE2.0": "-",
     "Arena Elo (hard-en) - 2024-06-06": 1170,
     "Arena Elo (hard-en) - 2024-06-17": 1170,
-    "Arena Elo (hard-en) - latest": 1171,
+    "Arena Elo (hard-en) - latest": 1170,
     "Arena Elo (hard-en) - 2024-06-23": 1171,
+    "Arena Elo (hard-en) - 2024-07-08": 1170,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -456,7 +465,7 @@
     "Rank_TaskMacroReward.K": 9,
     "Rank_Avg": 16.0,
     "RewardScore_Avg": 19.446803333083633,
-    "WB_Elo": 1168.6631411717956
+    "WB_Elo": 1161.7945250668074
   },
   "dbrx-instruct@together": {
     "Arena Elo (hard) - 2024-05-20": 1106,
@@ -504,7 +513,7 @@
     "Rank_TaskMacroReward.K": 10,
     "Rank_Avg": 20.0,
     "RewardScore_Avg": 16.299445797925422,
-    "WB_Elo": 1113.9147557971921
+    "WB_Elo": 1121.3518240675453
   },
   "Mixtral-8x7B-Instruct-v0.1": {
     "Arena Elo (hard) - 2024-05-20": 1114,
@@ -515,6 +524,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1114,
     "Arena Elo (hard-en) - latest": 1114,
     "Arena Elo (hard-en) - 2024-06-23": 1114,
+    "Arena Elo (hard-en) - 2024-07-08": 1114,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -555,7 +565,7 @@
     "Rank_TaskMacroReward.K": 11,
     "Rank_Avg": 21.5,
     "RewardScore_Avg": 15.735136524479344,
-    "WB_Elo": 1116.0205668594951
+    "WB_Elo": 1126.1431274424194
   },
   "Starling-LM-7B-beta": {
     "Arena Elo (hard) - 2024-05-20": 1111,
@@ -566,6 +576,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1114,
     "Arena Elo (hard-en) - latest": 1114,
     "Arena Elo (hard-en) - 2024-06-23": 1114,
+    "Arena Elo (hard-en) - 2024-07-08": 1114,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -606,7 +617,7 @@
     "Rank_TaskMacroReward.K": 12,
     "Rank_Avg": 23.5,
     "RewardScore_Avg": 15.08472490414507,
-    "WB_Elo": 1116.8166103787769
+    "WB_Elo": 1121.1729141591977
   },
   "command-r": {
     "Arena Elo (hard) - 2024-05-20": 1106,
@@ -615,8 +626,9 @@
     "AE2.0": "-",
     "Arena Elo (hard-en) - 2024-06-06": 1107,
     "Arena Elo (hard-en) - 2024-06-17": 1106,
-    "Arena Elo (hard-en) - latest": 1106,
+    "Arena Elo (hard-en) - latest": 1107,
     "Arena Elo (hard-en) - 2024-06-23": 1106,
+    "Arena Elo (hard-en) - 2024-07-08": 1107,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -657,7 +669,7 @@
     "Rank_TaskMacroReward.K": 13,
     "Rank_Avg": 25.5,
     "RewardScore_Avg": 14.766571614253124,
-    "WB_Elo": 1109.0970670230608
+    "WB_Elo": 1119.0842810726504
   },
   "command-r-plus": {
     "Arena Elo (hard) - 2024-05-20": 1155,
@@ -668,6 +680,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1155,
     "Arena Elo (hard-en) - latest": 1155,
     "Arena Elo (hard-en) - 2024-06-23": 1155,
+    "Arena Elo (hard-en) - 2024-07-08": 1155,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -708,7 +721,7 @@
     "Rank_TaskMacroReward.K": 14,
     "Rank_Avg": 20.5,
     "RewardScore_Avg": 18.381184283836465,
-    "WB_Elo": 1154.327063560155
+    "WB_Elo": 1152.240877784266
   },
   "Meta-Llama-3-8B-Instruct": {
     "Arena Elo (hard) - 2024-05-20": 1144,
@@ -717,8 +730,9 @@
     "AE2.0": "22.6",
     "Arena Elo (hard-en) - 2024-06-06": 1146,
     "Arena Elo (hard-en) - 2024-06-17": 1145,
-    "Arena Elo (hard-en) - latest": 1146,
+    "Arena Elo (hard-en) - latest": 1145,
     "Arena Elo (hard-en) - 2024-06-23": 1146,
+    "Arena Elo (hard-en) - 2024-07-08": 1145,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -759,7 +773,7 @@
     "Rank_TaskMacroReward.K": 15,
     "Rank_Avg": 27.0,
     "RewardScore_Avg": 14.60138604319459,
-    "WB_Elo": 1144.8630147898025
+    "WB_Elo": 1141.1086660963954
   },
   "tulu-2-dpo-70b": {
     "Arena Elo (hard) - 2024-05-20": 1099,
@@ -770,6 +784,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1100,
     "Arena Elo (hard-en) - latest": 1100,
     "Arena Elo (hard-en) - 2024-06-23": 1100,
+    "Arena Elo (hard-en) - 2024-07-08": 1100,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -810,7 +825,7 @@
     "Rank_TaskMacroReward.K": 16,
     "Rank_Avg": 28.0,
     "RewardScore_Avg": 13.991878061612553,
-    "WB_Elo": 1104.239917137956
+    "WB_Elo": 1110.7273020154564
   },
   "Nous-Hermes-2-Mixtral-8x7B-DPO": {
     "Arena Elo (hard) - 2024-05-20": 1048,
@@ -821,6 +836,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1047,
     "Arena Elo (hard-en) - latest": 1047,
     "Arena Elo (hard-en) - 2024-06-23": 1047,
+    "Arena Elo (hard-en) - 2024-07-08": 1047,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -855,13 +871,13 @@
     "WB_score.Information/Advice seeking": 39.75247524752476,
     "WB_score.Coding & Debugging": 26.037735849056602,
     "WB_score": 33.22233104799217,
-    "WB_score.task_macro": 30.711400306676122,
+    "WB_score.task_macro": 30.711400306676126,
     "Length": 2874.541625857003,
     "Rank_ScoreMacro": 33,
     "Rank_TaskMacroReward.K": 17,
     "Rank_Avg": 25.0,
-    "RewardScore_Avg": 15.355700153338061,
-    "WB_Elo": 1054.912608494316
+    "RewardScore_Avg": 15.355700153338063,
+    "WB_Elo": 1096.254760582692
   },
   "Mistral-7B-Instruct-v0.2": {
     "Arena Elo (hard) - 2024-05-20": 1071,
@@ -872,6 +888,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1073,
     "Arena Elo (hard-en) - latest": 1073,
     "Arena Elo (hard-en) - 2024-06-23": 1073,
+    "Arena Elo (hard-en) - 2024-07-08": 1073,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -906,13 +923,13 @@
     "WB_score.Information/Advice seeking": 40.099255583126556,
     "WB_score.Coding & Debugging": 18.396226415094343,
     "WB_score": 30.694037145650057,
-    "WB_score.task_macro": 25.633728318953878,
+    "WB_score.task_macro": 25.633728318953885,
     "Length": 2832.3440860215055,
     "Rank_ScoreMacro": 42,
     "Rank_TaskMacroReward.K": 18,
     "Rank_Avg": 30.0,
-    "RewardScore_Avg": 12.816864159476939,
-    "WB_Elo": 1078.4245338453427
+    "RewardScore_Avg": 12.816864159476943,
+    "WB_Elo": 1091.9646824492083
   },
   "gpt-3.5-turbo-0125": {
     "Arena Elo (hard) - 2024-05-20": 1105,
@@ -921,8 +938,9 @@
     "AE2.0": "-",
     "Arena Elo (hard-en) - 2024-06-06": 1107,
     "Arena Elo (hard-en) - 2024-06-17": 1107,
-    "Arena Elo (hard-en) - latest": 1107,
+    "Arena Elo (hard-en) - latest": 1108,
     "Arena Elo (hard-en) - 2024-06-23": 1107,
+    "Arena Elo (hard-en) - 2024-07-08": 1108,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -963,7 +981,7 @@
     "Rank_TaskMacroReward.K": 19,
     "Rank_Avg": 27.5,
     "RewardScore_Avg": 15.007993035979656,
-    "WB_Elo": 1109.6920904444282
+    "WB_Elo": 1116.4228294207433
   },
   "Qwen1.5-7B-Chat@together": {
     "Arena Elo (hard) - 2024-05-20": 1059,
@@ -1011,7 +1029,7 @@
     "Rank_TaskMacroReward.K": 20,
     "Rank_Avg": 33.0,
     "RewardScore_Avg": 11.71158156970094,
-    "WB_Elo": 1063.945601232164
+    "WB_Elo": 1078.21173754274
   },
   "Llama-2-70b-chat-hf": {
     "Arena Elo (hard) - 2024-05-20": 1070,
@@ -1022,6 +1040,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1072,
     "Arena Elo (hard-en) - latest": 1072,
     "Arena Elo (hard-en) - 2024-06-23": 1072,
+    "Arena Elo (hard-en) - 2024-07-08": 1072,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1062,7 +1081,7 @@
     "Rank_TaskMacroReward.K": 21,
     "Rank_Avg": 35.5,
     "RewardScore_Avg": 10.329818456433323,
-    "WB_Elo": 1078.540591959016
+    "WB_Elo": 1095.7560758029076
   },
   "Llama-2-7b-chat-hf": {
     "Arena Elo (hard) - 2024-05-20": 1012,
@@ -1071,8 +1090,9 @@
     "AE2.0": "5",
     "Arena Elo (hard-en) - 2024-06-06": 1013,
     "Arena Elo (hard-en) - 2024-06-17": 1012,
-    "Arena Elo (hard-en) - latest": 1012,
+    "Arena Elo (hard-en) - latest": 1013,
     "Arena Elo (hard-en) - 2024-06-23": 1012,
+    "Arena Elo (hard-en) - 2024-07-08": 1013,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1113,7 +1133,7 @@
     "Rank_TaskMacroReward.K": 22,
     "Rank_Avg": 36.5,
     "RewardScore_Avg": 4.131037632021232,
-    "WB_Elo": 1020.8603176530156
+    "WB_Elo": 1040.698721538283
   },
   "gemma-7b-it": {
     "Arena Elo (hard) - 2024-05-20": 1047,
@@ -1124,6 +1144,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1047,
     "Arena Elo (hard-en) - latest": 1047,
     "Arena Elo (hard-en) - 2024-06-23": 1047,
+    "Arena Elo (hard-en) - 2024-07-08": 1047,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1164,7 +1185,7 @@
     "Rank_TaskMacroReward.K": 23,
     "Rank_Avg": 37.5,
     "RewardScore_Avg": 3.30987957434532,
-    "WB_Elo": 1049.6745059117027
+    "WB_Elo": 1055.2851201336712
   },
   "gemma-2b-it": {
     "Arena Elo (hard) - 2024-05-20": 980,
@@ -1175,6 +1196,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 978,
     "Arena Elo (hard-en) - latest": 978,
     "Arena Elo (hard-en) - 2024-06-23": 978,
+    "Arena Elo (hard-en) - 2024-07-08": 978,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1215,7 +1237,7 @@
     "Rank_TaskMacroReward.K": 24,
     "Rank_Avg": 38.5,
     "RewardScore_Avg": -4.845965036129409,
-    "WB_Elo": 979.9308097772977
+    "WB_Elo": 988.3001853888744
   },
   "Llama-3-Instruct-8B-SimPO": {
     "Arena Elo (hard) - 2024-05-20": "-",
@@ -1263,7 +1285,7 @@
     "Rank_TaskMacroReward.K": 25,
     "Rank_Avg": 25.5,
     "RewardScore_Avg": 18.524860701152463,
-    "WB_Elo": 1150.348679143887
+    "WB_Elo": 1150.3337970964483
   },
   "Phi-3-mini-128k-instruct": {
     "Arena Elo (hard) - 2024-05-20": "-",
@@ -1272,8 +1294,9 @@
     "AE2.0": "-",
     "Arena Elo (hard-en) - 2024-06-06": 1038,
     "Arena Elo (hard-en) - 2024-06-17": 1038,
-    "Arena Elo (hard-en) - latest": 1038,
+    "Arena Elo (hard-en) - latest": 1037,
     "Arena Elo (hard-en) - 2024-06-23": 1038,
+    "Arena Elo (hard-en) - 2024-07-08": 1037,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1314,7 +1337,7 @@
     "Rank_TaskMacroReward.K": 26,
     "Rank_Avg": 35.5,
     "RewardScore_Avg": 12.36160531875745,
-    "WB_Elo": 1045.504751136345
+    "WB_Elo": 1083.1229389065882
   },
   "SELM-Zephyr-7B-iter-3": {
     "Arena Elo (hard) - 2024-05-20": "-",
@@ -1362,7 +1385,7 @@
     "Rank_TaskMacroReward.K": 27,
     "Rank_Avg": 35.0,
     "RewardScore_Avg": 12.530949568491799,
-    "WB_Elo": 1125.0911258283988
+    "WB_Elo": 1123.7620299568948
   },
   "Qwen2-72B-Instruct": {
     "Arena Elo (hard-en) - 2024-06-06": 1184,
@@ -1373,6 +1396,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1183,
     "Arena Elo (hard-en) - latest": 1184,
     "Arena Elo (hard-en) - 2024-06-23": 1184,
+    "Arena Elo (hard-en) - 2024-07-08": 1184,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1413,7 +1437,7 @@
     "Rank_TaskMacroReward.K": 28,
     "Rank_Avg": 22.5,
     "RewardScore_Avg": 22.248845648117047,
-    "WB_Elo": 1182.5244860683704
+    "WB_Elo": 1177.735410976192
   },
   "Hermes-2-Theta-Llama-3-8B": {
     "Arena Elo (hard-en) - 2024-06-06": "-",
@@ -1457,7 +1481,7 @@
     "Rank_TaskMacroReward.K": 29,
     "Rank_Avg": 33.0,
     "RewardScore_Avg": 14.817603888187739,
-    "WB_Elo": 1135.2844857600041
+    "WB_Elo": 1136.00553498409
   },
   "yi-large": {
     "Arena Elo (hard-en) - 2024-06-06": 1234,
@@ -1466,8 +1490,9 @@
     "AE2.0 LC": "51.9",
     "AE2.0": "57.5",
     "Arena Elo (hard-en) - 2024-06-17": 1208,
-    "Arena Elo (hard-en) - latest": 1202,
+    "Arena Elo (hard-en) - latest": 1201,
     "Arena Elo (hard-en) - 2024-06-23": 1202,
+    "Arena Elo (hard-en) - 2024-07-08": 1201,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1508,7 +1533,7 @@
     "Rank_TaskMacroReward.K": 30,
     "Rank_Avg": 19.0,
     "RewardScore_Avg": 24.46363480100386,
-    "WB_Elo": 1199.1246162786522
+    "WB_Elo": 1188.8395237661416
   },
   "Yi-1.5-34B-Chat": {
     "Arena Elo (hard-en) - 2024-06-06": 1155,
@@ -1517,8 +1542,9 @@
     "AE2.0 LC": "-",
     "AE2.0": "-",
     "Arena Elo (hard-en) - 2024-06-17": 1163,
-    "Arena Elo (hard-en) - latest": 1160,
+    "Arena Elo (hard-en) - latest": 1159,
     "Arena Elo (hard-en) - 2024-06-23": 1160,
+    "Arena Elo (hard-en) - 2024-07-08": 1159,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1559,7 +1585,7 @@
     "Rank_TaskMacroReward.K": 31,
     "Rank_Avg": 23.0,
     "RewardScore_Avg": 22.806731738795477,
-    "WB_Elo": 1160.9447075721143
+    "WB_Elo": 1162.9405324223328
   },
   "reka-flash-20240226": {
     "Arena Elo (hard-en) - 2024-06-06": 1129,
@@ -1570,6 +1596,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1128,
     "Arena Elo (hard-en) - latest": 1128,
     "Arena Elo (hard-en) - 2024-06-23": 1128,
+    "Arena Elo (hard-en) - 2024-07-08": 1128,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1610,7 +1637,7 @@
     "Rank_TaskMacroReward.K": 32,
     "Rank_Avg": 33.0,
     "RewardScore_Avg": 15.181807701015572,
-    "WB_Elo": 1129.43962825036
+    "WB_Elo": 1134.2459032918891
   },
   "gemini-1.5-pro": {
     "Arena Elo (hard-en) - 2024-06-06": 1254,
@@ -1619,8 +1646,9 @@
     "AE2.0 LC": "-",
     "AE2.0": "-",
     "Arena Elo (hard-en) - 2024-06-17": 1255,
-    "Arena Elo (hard-en) - latest": 1251,
+    "Arena Elo (hard-en) - latest": 1247,
     "Arena Elo (hard-en) - 2024-06-23": 1251,
+    "Arena Elo (hard-en) - 2024-07-08": 1247,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1661,7 +1689,7 @@
     "Rank_TaskMacroReward.K": 33,
     "Rank_Avg": 19.0,
     "RewardScore_Avg": 26.47592123132533,
-    "WB_Elo": 1240.9726971550133
+    "WB_Elo": 1224.232001610078
   },
   "gemini-1.5-flash": {
     "Arena Elo (hard-en) - 2024-06-06": 1214,
@@ -1670,8 +1698,9 @@
     "AE2.0 LC": "-",
     "AE2.0": "-",
     "Arena Elo (hard-en) - 2024-06-17": 1213,
-    "Arena Elo (hard-en) - latest": 1213,
+    "Arena Elo (hard-en) - latest": 1212,
     "Arena Elo (hard-en) - 2024-06-23": 1213,
+    "Arena Elo (hard-en) - 2024-07-08": 1212,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1712,7 +1741,7 @@
     "Rank_TaskMacroReward.K": 34,
     "Rank_Avg": 21.5,
     "RewardScore_Avg": 24.42531085299582,
-    "WB_Elo": 1207.1221961773292
+    "WB_Elo": 1198.241507386202
   },
   "reka-core-20240501": {
     "Arena Elo (hard-en) - 2024-06-06": 1176,
@@ -1723,6 +1752,7 @@
     "Arena Elo (hard-en) - 2024-06-17": 1176,
     "Arena Elo (hard-en) - latest": 1176,
     "Arena Elo (hard-en) - 2024-06-23": 1176,
+    "Arena Elo (hard-en) - 2024-07-08": 1176,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1763,7 +1793,7 @@
     "Rank_TaskMacroReward.K": 35,
     "Rank_Avg": 24.5,
     "RewardScore_Avg": 22.95139732646279,
-    "WB_Elo": 1175.602886786992
+    "WB_Elo": 1173.2154039994487
   },
   "yi-large-preview": {
     "Arena Elo (hard-en) - 2024-06-17": 1232,
@@ -1774,6 +1804,7 @@
     "AE2.0 LC": "-",
     "AE2.0": "-",
     "Arena Elo (hard-en) - 2024-06-23": 1231,
+    "Arena Elo (hard-en) - 2024-07-08": 1231,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1814,17 +1845,18 @@
     "Rank_TaskMacroReward.K": 36,
     "Rank_Avg": 19.0,
     "RewardScore_Avg": 27.647312616012393,
-    "WB_Elo": 1227.0801742931526
+    "WB_Elo": 1217.0265895174375
   },
   "nemotron-4-340b-instruct": {
     "Arena Elo (hard-en) - 2024-06-17": 1187,
-    "Arena Elo (hard-en) - latest": 1179,
+    "Arena Elo (hard-en) - latest": 1185,
     "Arena Elo (hard-en) - 2024-06-06": "-",
     "Arena Elo (hard) - 2024-05-20": "-",
     "Arena-Hard v0.1": "-",
     "AE2.0 LC": "-",
     "AE2.0": "-",
     "Arena Elo (hard-en) - 2024-06-23": 1179,
+    "Arena Elo (hard-en) - 2024-07-08": 1185,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1865,16 +1897,17 @@
     "Rank_TaskMacroReward.K": 37,
     "Rank_Avg": 24.5,
     "RewardScore_Avg": 23.83625490593197,
-    "WB_Elo": 1178.3190377604283
+    "WB_Elo": 1179.0030472255262
   },
   "claude-3-5-sonnet-20240620": {
     "Arena Elo (hard-en) - 2024-06-23": 1266,
-    "Arena Elo (hard-en) - latest": 1266,
+    "Arena Elo (hard-en) - latest": 1271,
     "Arena Elo (hard-en) - 2024-06-06": "-",
     "Arena Elo (hard) - 2024-05-20": "-",
     "Arena-Hard v0.1": "-",
     "AE2.0 LC": "-",
     "AE2.0": "-",
+    "Arena Elo (hard-en) - 2024-07-08": 1271,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1915,16 +1948,17 @@
     "Rank_TaskMacroReward.K": 38,
     "Rank_Avg": 21.0,
     "RewardScore_Avg": 27.347542283092196,
-    "WB_Elo": 1258.371396460545
+    "WB_Elo": 1238.4371172818264
   },
   "deepseek-coder-v2": {
     "Arena Elo (hard-en) - 2024-06-23": 1203,
-    "Arena Elo (hard-en) - latest": 1203,
+    "Arena Elo (hard-en) - latest": 1206,
     "Arena Elo (hard-en) - 2024-06-06": "-",
     "Arena Elo (hard) - 2024-05-20": "-",
     "Arena-Hard v0.1": "-",
     "AE2.0 LC": "-",
     "AE2.0": "-",
+    "Arena Elo (hard-en) - 2024-07-08": 1206,
     "haiku_reward.K=100": 0,
     "llama_reward.K=100": 0,
     "gpt4t_reward.K=100": 0,
@@ -1965,7 +1999,58 @@
     "Rank_TaskMacroReward.K": 39,
     "Rank_Avg": 26.0,
     "RewardScore_Avg": 23.69760617619571,
-    "WB_Elo": 1198.4234401099561
+    "WB_Elo": 1190.407341568292
+  },
+  "gemma-2-9b-it": {
+    "Arena Elo (hard-en) - 2024-06-23": 1203,
+    "Arena Elo (hard-en) - latest": 1150,
+    "Arena Elo (hard-en) - 2024-06-06": "-",
+    "Arena Elo (hard) - 2024-05-20": "-",
+    "Arena-Hard v0.1": "-",
+    "AE2.0 LC": "-",
+    "AE2.0": "-",
+    "Arena Elo (hard-en) - 2024-07-08": 1150,
+    "haiku_reward.K=100": 0,
+    "llama_reward.K=100": 0,
+    "gpt4t_reward.K=100": 0,
+    "haiku_reward.Creative Tasks.K=100": 0,
+    "llama_reward.Creative Tasks.K=100": 0,
+    "gpt4t_reward.Creative Tasks.K=100": 0,
+    "mixture_of_rewards.Creative Tasks.K=100": 0.0,
+    "haiku_reward.Planning & Reasoning.K=100": 0,
+    "llama_reward.Planning & Reasoning.K=100": 0,
+    "gpt4t_reward.Planning & Reasoning.K=100": 0,
+    "mixture_of_rewards.Planning & Reasoning.K=100": 0.0,
+    "haiku_reward.Math & Data Analysis.K=100": 0,
+    "llama_reward.Math & Data Analysis.K=100": 0,
+    "gpt4t_reward.Math & Data Analysis.K=100": 0,
+    "mixture_of_rewards.Math & Data Analysis.K=100": 0.0,
+    "haiku_reward.Information/Advice seeking.K=100": 0,
+    "llama_reward.Information/Advice seeking.K=100": 0,
+    "gpt4t_reward.Information/Advice seeking.K=100": 0,
+    "mixture_of_rewards.Information/Advice seeking.K=100": 0.0,
+    "haiku_reward.Coding & Debugging.K=100": 0,
+    "llama_reward.Coding & Debugging.K=100": 0,
+    "gpt4t_reward.Coding & Debugging.K=100": 0,
+    "mixture_of_rewards.Coding & Debugging.K=100": 0.0,
+    "haiku_reward.task_macro.K=100": 0,
+    "llama_reward.task_macro.K=100": 0,
+    "gpt4t_reward.task_macro.K=100": 0,
+    "mixture_of_rewards.K=100": 0.0,
+    "task_macro_reward.K=100": 0.0,
+    "WB_score.Creative Tasks": 51.007751937984494,
+    "WB_score.Planning & Reasoning": 46.65667166416792,
+    "WB_score.Math & Data Analysis": 36.42857142857142,
+    "WB_score.Information/Advice seeking": 48.960396039603964,
+    "WB_score.Coding & Debugging": 36.66666666666666,
+    "WB_score": 45.36203522504893,
+    "WB_score.task_macro": 42.696193124381026,
+    "Length": 2802.8923679060667,
+    "Rank_ScoreMacro": 18,
+    "Rank_TaskMacroReward.K": 40,
+    "Rank_Avg": 29.0,
+    "RewardScore_Avg": 21.348096562190513,
+    "WB_Elo": 1157.1208804465607
   },
   "deepseekv2-chat": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2009,57 +2094,10 @@
     "WB_score.task_macro": 48.21191935259587,
     "Length": 2896.965786901271,
     "Rank_ScoreMacro": 10,
-    "Rank_TaskMacroReward.K": 40,
-    "Rank_Avg": 25.0,
-    "RewardScore_Avg": 24.105959676297935,
-    "WB_Elo": 1179.1043501313404
-  },
-  "gemma-2-9b-it": {
-    "Arena Elo (hard-en) - latest": "-",
-    "Arena-Hard v0.1": "-",
-    "AE2.0 LC": "-",
-    "AE2.0": "-",
-    "haiku_reward.K=100": 0,
-    "llama_reward.K=100": 0,
-    "gpt4t_reward.K=100": 0,
-    "haiku_reward.Creative Tasks.K=100": 0,
-    "llama_reward.Creative Tasks.K=100": 0,
-    "gpt4t_reward.Creative Tasks.K=100": 0,
-    "mixture_of_rewards.Creative Tasks.K=100": 0.0,
-    "haiku_reward.Planning & Reasoning.K=100": 0,
-    "llama_reward.Planning & Reasoning.K=100": 0,
-    "gpt4t_reward.Planning & Reasoning.K=100": 0,
-    "mixture_of_rewards.Planning & Reasoning.K=100": 0.0,
-    "haiku_reward.Math & Data Analysis.K=100": 0,
-    "llama_reward.Math & Data Analysis.K=100": 0,
-    "gpt4t_reward.Math & Data Analysis.K=100": 0,
-    "mixture_of_rewards.Math & Data Analysis.K=100": 0.0,
-    "haiku_reward.Information/Advice seeking.K=100": 0,
-    "llama_reward.Information/Advice seeking.K=100": 0,
-    "gpt4t_reward.Information/Advice seeking.K=100": 0,
-    "mixture_of_rewards.Information/Advice seeking.K=100": 0.0,
-    "haiku_reward.Coding & Debugging.K=100": 0,
-    "llama_reward.Coding & Debugging.K=100": 0,
-    "gpt4t_reward.Coding & Debugging.K=100": 0,
-    "mixture_of_rewards.Coding & Debugging.K=100": 0.0,
-    "haiku_reward.task_macro.K=100": 0,
-    "llama_reward.task_macro.K=100": 0,
-    "gpt4t_reward.task_macro.K=100": 0,
-    "mixture_of_rewards.K=100": 0.0,
-    "task_macro_reward.K=100": 0.0,
-    "WB_score.Creative Tasks": 51.007751937984494,
-    "WB_score.Planning & Reasoning": 46.65667166416792,
-    "WB_score.Math & Data Analysis": 36.42857142857142,
-    "WB_score.Information/Advice seeking": 48.960396039603964,
-    "WB_score.Coding & Debugging": 36.66666666666666,
-    "WB_score": 45.36203522504893,
-    "WB_score.task_macro": 42.696193124381026,
-    "Length": 2802.8923679060667,
-    "Rank_ScoreMacro": 18,
     "Rank_TaskMacroReward.K": 41,
-    "Rank_Avg": 29.5,
-    "RewardScore_Avg": 21.348096562190513,
-    "WB_Elo": 1162.9220874500047
+    "Rank_Avg": 25.5,
+    "RewardScore_Avg": 24.105959676297935,
+    "WB_Elo": 1178.9585561997774
   },
   "Llama-3-8B-Magpie-Align-v0.1": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2106,7 +2144,7 @@
     "Rank_TaskMacroReward.K": 42,
     "Rank_Avg": 31.0,
     "RewardScore_Avg": 19.645098413731628,
-    "WB_Elo": 1153.7310398731915
+    "WB_Elo": 1153.5734927103485
   },
   "Llama-3-Instruct-8B-SimPO-v0.2": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2153,7 +2191,7 @@
     "Rank_TaskMacroReward.K": 43,
     "Rank_Avg": 34.0,
     "RewardScore_Avg": 18.5777099129684,
-    "WB_Elo": 1149.7998723684377
+    "WB_Elo": 1149.3204949853546
   },
   "glm-4-9b-chat": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2200,7 +2238,7 @@
     "Rank_TaskMacroReward.K": 44,
     "Rank_Avg": 32.5,
     "RewardScore_Avg": 19.54948398715871,
-    "WB_Elo": 1151.9204375261154
+    "WB_Elo": 1152.7658857909746
   },
   "SELM-Llama-3-8B-Instruct-iter-3": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2247,7 +2285,7 @@
     "Rank_TaskMacroReward.K": 45,
     "Rank_Avg": 36.5,
     "RewardScore_Avg": 17.62953038840369,
-    "WB_Elo": 1146.8321178487301
+    "WB_Elo": 1147.6636968140074
   },
   "Yi-1.5-9B-Chat": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2294,7 +2332,7 @@
     "Rank_TaskMacroReward.K": 46,
     "Rank_Avg": 35.0,
     "RewardScore_Avg": 19.332676757586157,
-    "WB_Elo": 1152.8816633066613
+    "WB_Elo": 1150.7239066061195
   },
   "Llama-3-Instruct-8B-SimPO-ExPO": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2341,7 +2379,7 @@
     "Rank_TaskMacroReward.K": 47,
     "Rank_Avg": 38.0,
     "RewardScore_Avg": 17.507514886333695,
-    "WB_Elo": 1145.970160131212
+    "WB_Elo": 1147.6138466102238
   },
   "Starling-LM-7B-beta-ExPO": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2388,7 +2426,7 @@
     "Rank_TaskMacroReward.K": 48,
     "Rank_Avg": 39.5,
     "RewardScore_Avg": 15.779676911809943,
-    "WB_Elo": 1135.9568807434446
+    "WB_Elo": 1136.8030778171142
   },
   "Phi-3-medium-128k-instruct": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2435,7 +2473,7 @@
     "Rank_TaskMacroReward.K": 49,
     "Rank_Avg": 45.0,
     "RewardScore_Avg": 13.634495975327978,
-    "WB_Elo": 1127.1676148929366
+    "WB_Elo": 1126.9756685922173
   },
   "neo_7b_instruct_v0.1": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2482,7 +2520,7 @@
     "Rank_TaskMacroReward.K": 50,
     "Rank_Avg": 47.0,
     "RewardScore_Avg": 12.509616788493583,
-    "WB_Elo": 1121.218110301121
+    "WB_Elo": 1121.3759608139706
   },
   "neo_7b_instruct_v0.1-ExPO": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2529,7 +2567,7 @@
     "Rank_TaskMacroReward.K": 51,
     "Rank_Avg": 49.5,
     "RewardScore_Avg": 11.557086094853092,
-    "WB_Elo": 1116.1177951675063
+    "WB_Elo": 1116.5003851266767
   },
   "Yi-1.5-6B-Chat": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2576,7 +2614,7 @@
     "Rank_TaskMacroReward.K": 52,
     "Rank_Avg": 49.5,
     "RewardScore_Avg": 11.659058344574941,
-    "WB_Elo": 1109.1336782969474
+    "WB_Elo": 1109.0165748119348
   },
   "reka-edge": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2623,6 +2661,6 @@
     "Rank_TaskMacroReward.K": 53,
     "Rank_Avg": 51.0,
     "RewardScore_Avg": 10.626128966499833,
-    "WB_Elo": 1111.304207090846
+    "WB_Elo": 1113.0750080113298
   }
 }
