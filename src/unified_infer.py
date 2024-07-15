@@ -71,20 +71,8 @@ if __name__ == "__main__":
         llm = DecoderOnlyModelManager(args.model_name, args.model_name, cache_dir=args.download_dir,
                                     bf16=args.hf_bf16, gptq=args.hf_gptq)
         llm.load_model()
-    elif args.engine == "openai":
-        pass
-    elif args.engine == "google":
-        pass
-    elif args.engine == "cohere":
-        pass
-    elif args.engine == "anthropic":
-        pass
-    elif args.engine == "together":
-        pass
-    elif args.engine == "reka":
-        pass
-    elif args.engine == "yi":
-        pass
+    elif args.engine in ["openai", "google", "cohere", "anthropic", "together", "reka", "yi"]:
+        pass 
 
     print("loading dataset!")
 
@@ -198,7 +186,7 @@ if __name__ == "__main__":
                 else:
                     openai_msg.append({"role":"assistant","content": chat_item})
             openai_args = {
-                "model": args.model_pretty_name,
+                "model": args.model_name,
                 "prompt": None,
                 "messages": openai_msg,
                 "top_p": args.top_p,

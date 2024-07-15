@@ -33,33 +33,15 @@ import json
 from together import Together
 
 
+ 
 
-
-def apply_template(chat_history, model_name):
-    model_inputs = []
-    conv = None
-    for chats in tqdm(chat_history, desc="Applying template", disable=False):
-        if "gpt-" in model_name.lower() and "share" not in model_name.lower():
+def apply_template(chat_history, model_name, args):
+    model_inputs = [] 
+    conv = None 
+    for chats in tqdm(chat_history, desc="Applying template", disable=True):
+        if args.engine not in ["vllm", "hf"]: 
             model_inputs.append("n/a") # will be handled by another ways.
-            continue
-        elif "gemini-" in model_name.lower():
-            model_inputs.append("n/a") # will be handled by another ways.
-            continue
-        elif "cohere" in model_name.lower():
-            model_inputs.append("n/a") # will be handled by another ways.
-            continue
-        elif "anthropic" in model_name.lower():
-            model_inputs.append("n/a") # will be handled by another ways.
-            continue
-        elif "together" in model_name.lower():
-            model_inputs.append("n/a") # will be handled by another ways.
-            continue
-        elif "reka" in model_name.lower():
-            model_inputs.append("n/a") # will be handled by another ways.
-            continue
-        elif "yi-" in model_name.lower():
-            model_inputs.append("n/a") # will be handled by another ways.
-            continue
+            continue 
         else:
             if conv is None or isinstance(conv, HF_Conversation) == False:
                 conv = map_to_conv(model_name)
@@ -135,7 +117,7 @@ def load_eval_data(args, data_name=None, model_name=None):
             assert key in item, f"Key {key} not found in metadata"
             metadata[key].append(item[key])
     print("Start applying template")
-    model_inputs = apply_template(chat_history, model_name)
+    model_inputs = apply_template(chat_history, model_name, args)
     return id_strs, chat_history, model_inputs, metadata
 
 
@@ -338,7 +320,7 @@ def openai_chat_request(
     if messages is None:
         messages = [{"role":"system","content":"You are a helpful AI assistant."},
                     {"role":"user","content": prompt}]
-
+    
     if openai.__version__ == "0.28.0":
         response = openai.ChatCompletion.create(
             model=model,
@@ -361,22 +343,54 @@ def openai_chat_request(
                 raise ValueError(f"OpenAI Finish Reason Error: {choice['finish_reason']}")
             contents.append(choice['message']['content'])
     else:
+        nvidia_mode = False 
         # for version > 1.0
-        client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
-        # print(f"Requesting chat completion from OpenAI API with model {model}")
-        response = client.chat.completions.create(
-            model=model,
-            response_format = {"type": "json_object"} if json_mode else None,
-            messages=messages,
-            temperature=temperature,
-            max_tokens=max_tokens,
-            top_p=top_p,
-            n=n,
-            frequency_penalty=frequency_penalty,
-            presence_penalty=presence_penalty,
-            stop=stop,
-            **kwargs,
-        )
+        if "deepseek" in model:
+            assert os.environ.get("DEEPSEEK_API_KEY") is not None, "Please set DEEPSEEK_API_KEY in the environment variables."
+            client = OpenAI(api_key=os.environ.get("DEEPSEEK_API_KEY"), base_url="https://api.deepseek.com/v1")
+        elif "yi-" in model:
+            assert os.environ.get("YI_API_KEY") is not None, "Please set YI_API_KEY in the environment variables."
+            client = OpenAI(api_key=os.environ.get("YI_API_KEY"), base_url="https://api.lingyiwanwu.com/v1")
+        elif model.endswith("@nvidia"):             
+            assert os.environ.get("NVIDIA_API_KEY") is not None, "Please set NVIDIA_API_KEY in the environment variables."
+            client = OpenAI(api_key=os.environ.get("NVIDIA_API_KEY"), base_url="https://integrate.api.nvidia.com/v1")
+            model = model.replace("@nvidia", "")
+            nvidia_mode = True 
+            # print(model, client.api_key, client.base_url)
+        else:
+            client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+            model = model.split("/")[-1]
+
+        if nvidia_mode:
+            # print(f"Requesting chat completion from OpenAI API with model {model}")
+            # remove system message
+            if messages[0]["role"] == "system":
+                messages = messages[1:]
+            response = client.chat.completions.create(
+                model=model, 
+                messages=messages,
+                temperature=0.001 if temperature == 0 else temperature,
+                max_tokens=max_tokens,
+                top_p=top_p,
+                # n=n,
+                # stop=stop,
+                **kwargs,
+            )
+        else: 
+            # print(f"Requesting chat completion from OpenAI API with model {model}")
+            response = client.chat.completions.create(
+                model=model, 
+                response_format = {"type": "json_object"} if json_mode else None,
+                messages=messages,
+                temperature=temperature,
+                max_tokens=max_tokens,
+                top_p=top_p,
+                n=n,
+                frequency_penalty=frequency_penalty,
+                presence_penalty=presence_penalty,
+                stop=stop,
+                **kwargs,
+            )
         # print(f"Received response from OpenAI API with model {model}")
         contents = []
         for choice in response.choices:
