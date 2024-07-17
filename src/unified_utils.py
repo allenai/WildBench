@@ -259,6 +259,9 @@ def retry_handler(retry_limit=10):
                             if 'blocked' in err_msg:
                                 print ('blocked output issue!')
                                 return ['Error: this query is blocked by APIs.']
+                            if "`inputs` tokens + `max_new_tokens` must be <=" in err_msg:
+                                print ('Exceeding max tokens issue! (in together.ai)')
+                                return ['']
                                 #raise e
                             print(f"Retrying for the {retried + 1} time..")
                             #if 'output blocked by content filtering policy' in err_msg.lower():
@@ -276,7 +279,7 @@ def retry_handler(retry_limit=10):
                                 return ['']
                             if '504 Gateway Time-out' in err_msg:
                                 print ('Yi issue!')
-                                return ['']
+                                return [''] 
                             print("Retry limit reached. Saving the error message and returning.")
                             print(kwargs["prompt"])
                             raise e
@@ -436,6 +439,13 @@ def together_chat_request(
     if messages is None:
         messages = [{"role":"user","content": prompt}]
     client = Together(api_key=os.environ.get("TOGETHER_API_KEY"))
+    if "gemma-2" in model:
+        max_chars = 6000*4
+        # num_tokens = len(messages[0]["content"])/4 # estimate the number of tokens by dividing the length of the prompt by 4
+        if len(messages[0]["content"]) > max_chars:
+            print("Truncating prompt to 6000 tokens")
+            messages[0]["content"] = messages[0]["content"][:max_chars] + "... (truncated)"
+
     response = client.chat.completions.create(
         model=model,
         messages=messages,
