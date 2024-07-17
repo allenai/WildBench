@@ -69,6 +69,7 @@ pip install google-generativeai
 pip install cohere mistralai 
 pip install anthropic==0.19.0
 pip install reka-api==3.0.8
+pip install jsonlines together fire
 # export HF_HOME=/path/to/your/custom/cache_dir/
 ```
 
