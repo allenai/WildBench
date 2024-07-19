@@ -21,6 +21,7 @@ from unified_utils import (
 )
 from datasets import load_dataset, get_dataset_config_names
 import tiktoken 
+import re 
 
 HF_BENCH_PATH = "allenai/WildBench"
 HF_BENCH_CONFIG = "v2"
@@ -67,13 +68,47 @@ def get_args():
     return args
         
 
-def parse_result(result_str, mode="json"): 
+def extract_values_from_json(json_string, keys = ["score", "strengths", "weaknesses", "choice"], allow_no_quotes = False):
+    extracted_values = {}
+    for key in keys:
+        if key not in json_string:
+            continue
+        # Create a regular expression pattern to find the value for the given key
+        pattern = f'"{key}"\\s*:\\s*"([^"]*?)"'
+        match = re.search(pattern, json_string)
+        if match:
+            extracted_values[key] = match.group(1)
+        else:
+            # Handle the case where the value might contain broken quotes
+            pattern = f'"{key}"\\s*:\\s*"(.*?)"'
+            match = re.search(pattern, json_string, re.DOTALL)
+            if match:
+                extracted_values[key] = match.group(1)
+        if not match and allow_no_quotes:
+            # to allow no quotes on the values
+            pattern = f'"{key}"\\s*:\\s*([^,\\s]*)'
+            match = re.search(pattern, json_string)
+            if match:
+                extracted_values[key] = match.group(1)
+            else:
+                # to allow no quotes on the keys
+                pattern = f'{key}\\s*:\\s*([^,\\s]*)'
+                match = re.search(pattern, json_string)
+                if match:
+                    extracted_values[key] = match.group(1)
+    return extracted_values
+
+def parse_result(result_str, mode="json", eval_mode="score"): 
+    assert eval_mode in ["score", "pairwise"]
     result_str = result_str.strip() 
     try: 
         # result_str = result_str.replace(".\n", ". ")
         # result_str = result_str.replace(".\n\n", ". ")
-        result_str = result_str.replace("\n", " ")
-        parsed_result = json.loads(result_str)
+        # result_str = result_str.replace("\n", " ")
+        try:
+            parsed_result = json.loads(result_str)
+        except:
+            parsed_result = extract_values_from_json(result_str, keys=["score", "choice"])
     except Exception as e:
         print(result_str)
         print(e)
@@ -166,13 +201,14 @@ def run_eval(results, args):
                 t["result"] = e["result"]
                 if "parsed_result" in e: 
                     t["parsed_result"] = e["parsed_result"]
+                    cnt += 1 
             if "error" in e:
                 t["error"] = e["error"]
             
 
             if args.mode == "pairwise" and "winner" in e:
                 t["winner"] = e["winner"]
-                cnt += 1 
+                  
             
         print(f"loading {cnt} results from {args.eval_output_file}")
      
@@ -203,9 +239,11 @@ def run_eval(results, args):
     #import pdb; pdb.set_trace()
     for ind, item in tqdm(enumerate(results), total=len(results), desc=f"Evaluating: {args.eval_output_file} "):
         computed = False
-        if item["result"] != "N/A" and item.get("error", "N/A") == "N/A" and "parsed" in item:  
-            results[ind]["parsed_result"] = parse_result(results[ind]["result"]) 
+        if item["result"] != "N/A" and item.get("error", "N/A") == "N/A" and "parsed_result" in item:  
+            results[ind]["parsed_result"] = parse_result(results[ind]["result"], eval_mode=args.mode) # redo the parsing 
+            results[ind]["parsed"] = True if results[ind]["parsed_result"] is not None else False
             computed = True  
+            continue
             
         openai_args["prompt"] = item["prompt"]
         # if True:
@@ -237,7 +275,7 @@ def run_eval(results, args):
             #     results[ind]["price"] = {"cost": 0, "in_tokens": 0, "out_tokens": 0}
             results[ind]["error"] = "N/A"
         except Exception as e:
-            print(e)
+            # print(e)
             results[ind]["error"] = str(e)
             results[ind]["result"] = result
             results[ind]["parsed_result"] = {"choice": "N/A"}

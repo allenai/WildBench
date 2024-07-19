@@ -622,6 +622,7 @@ def anthropic_chat_request(
     system_msg: str=None,
     messages: List[dict]=None,
     stop: List[str]=None,
+    json_mode: bool=False,
     **kwargs,
 ) -> List[str]:
     """
@@ -640,8 +641,15 @@ def anthropic_chat_request(
         List[str]: The list of generated evaluation prompts.
     """
     assert prompt is not None or messages is not None, "Either prompt or messages should be provided."
-    if messages is None:
-        messages = [{"role":"user","content": prompt}]
+    if messages is None and prompt is not None:
+        messages = [
+            {"role":"user", "content": prompt}
+        ] 
+    if system_msg is None:
+        system_msg = ""
+    prefill = "{"
+    if json_mode:
+        messages.append({"role":"assistant", "content": prefill})
     api_key = os.getenv("ANTHROPIC_API_KEY")
     client = Anthropic(api_key=api_key)
     response = client.messages.create(
@@ -654,7 +662,7 @@ def anthropic_chat_request(
         top_p=top_p,
     )
 
-    contents = [response.content[0].text]
+    contents = [prefill+response.content[0].text]
     return contents
 
 

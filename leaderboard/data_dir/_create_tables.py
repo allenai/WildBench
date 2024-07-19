@@ -67,6 +67,9 @@ elif ACTION == "score":
     # folder = FOLDER+"/score.v2/eval=gpt-4-turbo-2024-04-09/"
     folder = FOLDER+"/score.v2/eval=gpt-4o-2024-05-13/"
     MODE = "score"
+elif ACTION == "score-sonnet":
+    folder = FOLDER+"/score.v2/eval=claude-3-5-sonnet-20240620/"
+    MODE = "score"
 else:
     print("Please provide either 'pairwise' or 'score' as the argument")
     sys.exit()
@@ -80,8 +83,8 @@ if MODE == "pairwise":
 files = os.listdir(folder)
 table = []
 for file in tqdm(files, desc=f"Processing {folder.replace(FOLDER, '')}"):
-    if file.endswith(".json"):
-        # print(f"Processing {file}")
+    if file.endswith(".json") and not any([x in file for x in ["128", "256", "384", "512", "640", "768", "896", "1024"]]):
+        print(f"Processing {file}")
         eval_result = []
         with open(f"{folder}/{file}", "r") as f:
             eval_result = json.load(f)
@@ -205,6 +208,14 @@ for file in tqdm(files, desc=f"Processing {folder.replace(FOLDER, '')}"):
         elif MODE == "score":
             task_cat_results = {}
             for item in eval_result:
+                # print(item.keys())
+                if ACTION == "score-sonnet" and "parsed_result" in item:
+                    item["score"] = item["parsed_result"]["score"]
+                    if type(item["model_output"]) == list:
+                        item["model_output"] = item["model_output"][0]
+                    item["model_test"] = item["generator"]
+                if 'score' not in item:
+                    print(item)
                 scores.append(float(item["score"]))
                 model_output = item["model_output"]
                 if model_output.endswith("... (truncated)"):
@@ -270,6 +281,7 @@ with open(f"leaderboard/data_dir/{ACTION}.json", "w") as f:
     json.dump(result, f, indent=2)
 
 """
+python data_dir/_create_tables.py score-sonnet
 python data_dir/_create_tables.py score
 python data_dir/_create_tables.py pairwise-gpt4t -1
 python data_dir/_create_tables.py pairwise-llama -1
