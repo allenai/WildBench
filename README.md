@@ -61,16 +61,11 @@ conda activate /net/nfs/mosaic/yuchenl/envs/wbnfs
   <summary> Click to expand </summary>
 
 ```bash
-conda create -n wildbench python=3.10
-conda activate wildbench
-pip install vllm -U # pip install -e vllm 
-pip install openai datasets tenacity
-pip install google-generativeai
-pip install cohere mistralai 
-pip install anthropic==0.19.0
-pip install reka-api==3.0.8
-pip install jsonlines together fire
-# export HF_HOME=/path/to/your/custom/cache_dir/
+conda create -n zeroeval python=3.10
+conda activate zeroeval
+# pip install vllm -U # pip install -e vllm 
+pip install vllm==0.5.1
+pip install -r requirements.txt
 ```
 
 </details>
