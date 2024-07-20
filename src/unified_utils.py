@@ -127,6 +127,7 @@ def clear_output(output, model_name):
     You can customize the output clearing logic here based on the model_name.
     """
     output = output.replace("<|endoftext|>", " ")
+    output = output.replace("</s>", " ")
     output = output.strip()
     return output
 

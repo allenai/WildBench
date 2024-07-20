@@ -96,44 +96,27 @@ class ModelManager:
 
 class DecoderOnlyModelManager(ModelManager):
     
-    def __init__(self, model_path, model_name, cache_dir=None, bf16=False, int8=False, bnb4=False, gptq=False, adapt_mode=None, adapt_ckpt=None):
+    def __init__(self, model_path, model_name, cache_dir=None, bf16=False, int8=False, bnb4=False, gptq=False):
         super().__init__(model_path, model_name)
         self.cache_dir = cache_dir
         self.bf16 = bf16
         self.bnb4 = bnb4
         self.int8 = int8
-        self.gptq = gptq
-        self.adapt_mode = adapt_mode
-        self.adapt_ckpt = adapt_ckpt
+        self.gptq = gptq 
+        self.padding_side = "left"
  
-    
-    
-    def _load_adapt_model(self):
-        if self.adapt_ckpt == "fixed":
-            return 
-        print(f"Loading adapt model from {self.adapt_ckpt}...")
-        self.adapt_tokenizer =  AutoTokenizer.from_pretrained(self.adapt_ckpt)
-        self.adapt_model = AutoModelForSeq2SeqLM.from_pretrained(self.adapt_ckpt)
-        if torch.cuda.is_available():
-            self.adapt_model = self.adapt_model.to("cuda:0")
-        return 
+     
         
     
-    def load_model(self, device_str="cuda:0"):
-        if self.adapt_mode in ["prefix", "retrieve+prefix"]:
-            self._load_adapt_model()        
-            # self.adapt_model.to(device_str)
-            
+    def load_model(self, device_str="cuda:0"):  
         print("loading model: ", self.model_name, "from", self.model_path)
         model_path = self.model_path
         if "@" in self.model_path:
             model_path, revision = model_path.split("@")
         else:
             revision = None         
-        self.tokenizer = AutoTokenizer.from_pretrained(model_path, revision=revision, trust_remote_code=True, cache_dir=self.cache_dir, padding_side="left")
-        self.special_token_flags = [True, False]
-
-        
+        self.tokenizer = AutoTokenizer.from_pretrained(model_path, revision=revision, trust_remote_code=True, cache_dir=self.cache_dir, padding_side=self.padding_side)
+        self.special_token_flags = [True, False] 
 
         if self.bf16:
             # config = transformers.AutoConfig.from_pretrained(model_path, trust_remote_code=True)
@@ -179,48 +162,15 @@ class DecoderOnlyModelManager(ModelManager):
         print(f"(initial) self.tokenizer.pad_token_id={self.tokenizer.pad_token_id}")
         if self.tokenizer.pad_token_id is None:
             self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
-        self.tokenizer.padding_side = "left"
+        self.tokenizer.padding_side = self.padding_side
         print(f"(updated) self.tokenizer.pad_token_id={self.tokenizer.pad_token_id}")
         self.model.eval()
  
         print("model device:", self.model.device) 
     
-    def _adapt_with_prefix(self, input_data, pure_input_data, n=3, args=None): 
-        
-        if self.adapt_ckpt == "fixed":
-            decoded_outputs = [["The answer is: "] for _ in range(len(input_data))]
-        # print(input_data_clean)
-        # print(len(input_data_clean), input_data)
-        else:
-            inputs = self.adapt_tokenizer(pure_input_data, return_tensors="pt", add_special_tokens=True, padding=False).to(self.adapt_model.device) 
-            outputs = self.adapt_model.generate(
-                                input_ids=inputs['input_ids'].to(self.adapt_model.device), 
-                                attention_mask=inputs['attention_mask'].to(self.adapt_model.device),
-                                # pad_token_id=self.adapt_tokenizer.eos_token_id, 
-                                do_sample=False, num_beams=n,
-                                # do_sample=True, top_p=0.7, temperature=0.5,
-                                num_return_sequences=n,                        
-                                max_new_tokens=10, # for the outputs
-                            )  
-            decoded_outputs = [self.adapt_tokenizer.decode(y, skip_special_tokens=True) for y in outputs]
-            decoded_outputs = [decoded_outputs[j:j+n] for j in range(0, len(decoded_outputs), n)]
-        input_data_with_prefixes = []
-        prefixes = []
-        for prompt, outs in zip(input_data, decoded_outputs):
-            prefix = outs[0]
-            for d in outs:
-                if set(d.split()).intersection(set(prompt.split())):
-                    prefix = d
-                    break 
-            input_data_with_prefixes.append(prompt + prefix.strip()) # TODO:
-            prefixes.append(prefix.strip())
-        return prefixes, input_data_with_prefixes
-    
+ 
     def infer_generate(self, input_data, args={}, device=None, remarks=None, pure_input_data=None): 
-        
-        if self.adapt_mode in ["prefix", "retrieve+prefix"]:
-            prefixes, input_data = self._adapt_with_prefix(input_data, pure_input_data, args=args)
-        
+         
         if not device:
             device = self.model.device
         if type(args) is dict:
@@ -229,7 +179,7 @@ class DecoderOnlyModelManager(ModelManager):
             args_ = Args()
             args_.__setattr__("num_outputs", args.get("num_outputs", 1))
             args_.__setattr__("beam_size", args.get("beam_size", 1))
-            args_.__setattr__("max_output_tokens", args.get("max_output_tokens", 2048))
+            args_.__setattr__("max_output_tokens", args.get("max_output_tokens", 4096))
             args_.__setattr__("do_sample", args.get("do_sample", False)) 
             args_.__setattr__("top_p", args.get("top_p", 1.0)) 
             args_.__setattr__("top_k", args.get("top_k", None))
@@ -311,48 +261,7 @@ class DecoderOnlyModelManager(ModelManager):
                     stripped_outputs.append(o)
                 cleaned_decoded_outputs.append(stripped_outputs)
             decoded_outputs = cleaned_decoded_outputs
-
-        if self.adapt_mode in ["prefix", "retrieve+prefix"]:
-            decoded_outputs_with_prefixes = []
-            for prefix, outputs in zip(prefixes, decoded_outputs):
-                tmp_otuputs = [prefix + " " + o for o in outputs]
-                decoded_outputs_with_prefixes.append(tmp_otuputs)
-                if remarks is not None:
-                    remarks.append([prefix])
-            decoded_outputs = decoded_outputs_with_prefixes
-            
-        
         return decoded_outputs
 
 
-
-@retry(wait=wait_random_exponential(min=1, max=30), stop=stop_after_attempt(30))
-def completion_with_backoff(**kwargs):
-    return openai.ChatCompletion.create(**kwargs) 
-
-
-class OpenAIModelManager(ModelManager):
-
-    def __init__(self, model_name):
-        super().__init__(model_name, model_name) 
-    
-    def load_model(self):
-        assert openai.api_key is not None
-     
-    def infer_generate(self, input_data, args={}, device=None, remarks=[], pure_input_data=None): 
-        outputs = [] 
-        for input_text in input_data:
-            n = args.num_outputs 
-            completion = completion_with_backoff(
-                model=self.model_name,
-                messages=[
-                    {"role": "user", "content": input_text}
-                ],
-                n=n, temperature=0, top_p=1, 
-                max_tokens=args.max_output_tokens,
-            )
-            finished_reason = completion.choices[0].finish_reason
-            outputs.append([completion.choices[j].message["content"].strip() for j in range(n)])
-            remarks.append({"finished_reason": finished_reason}) 
-        return outputs
-            
+ 
