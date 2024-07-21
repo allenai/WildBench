@@ -127,6 +127,22 @@
     "total": 1023,
     "avg_len": 4277.667647058824
   },
+  "deepseek-v2-chat-0628": {
+    "model": "deepseek-v2-chat-0628",
+    "score": 7.6904296875,
+    "adjusted_score": 5.380859375,
+    "task_macro_score": 5.399428041165569,
+    "adjusted_task_macro_score": 5.399428041165569,
+    "task_categorized_scores": {
+      "Coding & Debugging": 5.5,
+      "Creative Tasks": 5.643410852713178,
+      "Planning & Reasoning": 5.482810164424514,
+      "Information/Advice seeking": 5.272277227722773,
+      "Math & Data Analysis": 5.142857142857142
+    },
+    "total": 1024,
+    "avg_len": 3252.376953125
+  },
   "gpt-4-0125-preview": {
     "model": "gpt-4-0125-preview",
     "score": 7.6640625,
@@ -382,6 +398,22 @@
     },
     "total": 1021,
     "avg_len": 2392.364348677767
+  },
+  "deepseek-v2-coder-0628": {
+    "model": "deepseek-v2-coder-0628",
+    "score": 7.171875,
+    "adjusted_score": 4.34375,
+    "task_macro_score": 4.566459211926647,
+    "adjusted_task_macro_score": 4.566459211926647,
+    "task_categorized_scores": {
+      "Coding & Debugging": 4.886792452830189,
+      "Creative Tasks": 4.077519379844961,
+      "Planning & Reasoning": 4.7174887892376685,
+      "Information/Advice seeking": 4.0049504950495045,
+      "Math & Data Analysis": 4.642857142857142
+    },
+    "total": 1024,
+    "avg_len": 2580.181640625
   },
   "Llama-3-8B-Magpie-Align-v0.1": {
     "model": "Llama-3-8B-Magpie-Align-v0.1",

@@ -45,7 +45,7 @@
     "Rank_TaskMacroReward.K": 1,
     "Rank_Avg": 1.5,
     "RewardScore_Avg": 29.649089401759777,
-    "WB_Elo": 1250.6406186738702
+    "WB_Elo": 1239.7188781582186
   },
   "gpt-4-turbo-2024-04-09": {
     "Arena-Hard v0.1": "82.6",
@@ -93,7 +93,7 @@
     "Rank_TaskMacroReward.K": 2,
     "Rank_Avg": 3.5,
     "RewardScore_Avg": 27.610612405196346,
-    "WB_Elo": 1228.0193590990189
+    "WB_Elo": 1219.2471514160034
   },
   "gpt-4-0125-preview": {
     "Arena-Hard v0.1": "78",
@@ -137,11 +137,11 @@
     "WB_score": 53.28125,
     "WB_score.task_macro": 52.27753918256898,
     "Length": 3335.638671875,
-    "Rank_ScoreMacro": 10,
+    "Rank_ScoreMacro": 11,
     "Rank_TaskMacroReward.K": 3,
-    "Rank_Avg": 6.5,
+    "Rank_Avg": 7.0,
     "RewardScore_Avg": 26.13876959128449,
-    "WB_Elo": 1213.9278263689237
+    "WB_Elo": 1206.493661101178
   },
   "claude-3-opus-20240229": {
     "Arena-Hard v0.1": "60.4",
@@ -185,11 +185,11 @@
     "WB_score": 52.109375,
     "WB_score.task_macro": 51.714047600287536,
     "Length": 2685.9794921875,
-    "Rank_ScoreMacro": 11,
+    "Rank_ScoreMacro": 12,
     "Rank_TaskMacroReward.K": 4,
-    "Rank_Avg": 7.5,
+    "Rank_Avg": 8.0,
     "RewardScore_Avg": 25.857023800143768,
-    "WB_Elo": 1210.4856336146038
+    "WB_Elo": 1203.9199271421658
   },
   "Meta-Llama-3-70B-Instruct": {
     "Arena-Hard v0.1": "41.1",
@@ -233,11 +233,11 @@
     "WB_score": 49.579667644183765,
     "WB_score.task_macro": 47.770804496306326,
     "Length": 3046.6383186705766,
-    "Rank_ScoreMacro": 16,
+    "Rank_ScoreMacro": 17,
     "Rank_TaskMacroReward.K": 5,
-    "Rank_Avg": 10.5,
+    "Rank_Avg": 11.0,
     "RewardScore_Avg": 23.885402248153163,
-    "WB_Elo": 1199.4666626459068
+    "WB_Elo": 1194.6721448382998
   },
   "Qwen1.5-72B-Chat-greedy": {
     "Arena-Hard v0.1": "36.1",
@@ -281,11 +281,11 @@
     "WB_score": 43.46718903036239,
     "WB_score.task_macro": 39.927713665824655,
     "Length": 2392.364348677767,
-    "Rank_ScoreMacro": 25,
+    "Rank_ScoreMacro": 27,
     "Rank_TaskMacroReward.K": 6,
-    "Rank_Avg": 15.5,
+    "Rank_Avg": 16.5,
     "RewardScore_Avg": 19.963856832912327,
-    "WB_Elo": 1152.1586358810764
+    "WB_Elo": 1149.528540789242
   },
   "claude-3-sonnet-20240229": {
     "Arena-Hard v0.1": "46.8",
@@ -329,11 +329,11 @@
     "WB_score": 45.24461839530332,
     "WB_score.task_macro": 45.48145776375293,
     "Length": 2670.243639921722,
-    "Rank_ScoreMacro": 21,
+    "Rank_ScoreMacro": 23,
     "Rank_TaskMacroReward.K": 7,
-    "Rank_Avg": 14.0,
+    "Rank_Avg": 15.0,
     "RewardScore_Avg": 22.740728881876464,
-    "WB_Elo": 1171.469976127402
+    "WB_Elo": 1176.2429377673682
   },
   "mistral-large-2402": {
     "Arena-Hard v0.1": "37.7",
@@ -377,11 +377,11 @@
     "WB_score": 42.28739002932551,
     "WB_score.task_macro": 38.89367833445423,
     "Length": 2514.9814090019568,
-    "Rank_ScoreMacro": 28,
+    "Rank_ScoreMacro": 30,
     "Rank_TaskMacroReward.K": 8,
-    "Rank_Avg": 18.0,
+    "Rank_Avg": 19.0,
     "RewardScore_Avg": 19.446839167227115,
-    "WB_Elo": 1159.144453282937
+    "WB_Elo": 1159.2519978806306
   },
   "claude-3-haiku-20240307": {
     "Arena-Hard v0.1": "41.5",
@@ -425,11 +425,11 @@
     "WB_score": 40.25390625,
     "WB_score.task_macro": 38.893606666167265,
     "Length": 2601.029296875,
-    "Rank_ScoreMacro": 29,
+    "Rank_ScoreMacro": 31,
     "Rank_TaskMacroReward.K": 9,
-    "Rank_Avg": 19.0,
+    "Rank_Avg": 20.0,
     "RewardScore_Avg": 19.446803333083633,
-    "WB_Elo": 1161.38279138356
+    "WB_Elo": 1158.4801669263747
   },
   "dbrx-instruct@together": {
     "Arena-Hard v0.1": "23.9",
@@ -473,11 +473,11 @@
     "WB_score": 35.5425219941349,
     "WB_score.task_macro": 32.598891595850844,
     "Length": 2576.5190615835777,
-    "Rank_ScoreMacro": 36,
+    "Rank_ScoreMacro": 38,
     "Rank_TaskMacroReward.K": 10,
-    "Rank_Avg": 23.0,
+    "Rank_Avg": 24.0,
     "RewardScore_Avg": 16.299445797925422,
-    "WB_Elo": 1123.0446408598282
+    "WB_Elo": 1127.9848069390073
   },
   "Mixtral-8x7B-Instruct-v0.1": {
     "Arena-Hard v0.1": "23.4",
@@ -521,11 +521,11 @@
     "WB_score": 35.0293542074364,
     "WB_score.task_macro": 31.47027304895869,
     "Length": 2653.5813725490198,
-    "Rank_ScoreMacro": 38,
+    "Rank_ScoreMacro": 40,
     "Rank_TaskMacroReward.K": 11,
-    "Rank_Avg": 24.5,
+    "Rank_Avg": 25.5,
     "RewardScore_Avg": 15.735136524479344,
-    "WB_Elo": 1126.9901527047155
+    "WB_Elo": 1130.1697314333167
   },
   "Starling-LM-7B-beta": {
     "Arena-Hard v0.1": "23",
@@ -569,11 +569,11 @@
     "WB_score": 34.17399804496579,
     "WB_score.task_macro": 30.16944980829014,
     "Length": 2797.807240704501,
-    "Rank_ScoreMacro": 41,
+    "Rank_ScoreMacro": 43,
     "Rank_TaskMacroReward.K": 12,
-    "Rank_Avg": 26.5,
+    "Rank_Avg": 27.5,
     "RewardScore_Avg": 15.08472490414507,
-    "WB_Elo": 1121.4254766164338
+    "WB_Elo": 1125.1312227357018
   },
   "command-r": {
     "Arena-Hard v0.1": "17",
@@ -617,11 +617,11 @@
     "WB_score": 35.05859375,
     "WB_score.task_macro": 29.533143228506248,
     "Length": 2919.423828125,
-    "Rank_ScoreMacro": 44,
+    "Rank_ScoreMacro": 46,
     "Rank_TaskMacroReward.K": 13,
-    "Rank_Avg": 28.5,
+    "Rank_Avg": 29.5,
     "RewardScore_Avg": 14.766571614253124,
-    "WB_Elo": 1120.3787751120142
+    "WB_Elo": 1125.030912568135
   },
   "command-r-plus": {
     "Arena-Hard v0.1": "33.1",
@@ -665,11 +665,11 @@
     "WB_score": 41.565557729941304,
     "WB_score.task_macro": 36.76236856767293,
     "Length": 3293.812133072407,
-    "Rank_ScoreMacro": 33,
+    "Rank_ScoreMacro": 35,
     "Rank_TaskMacroReward.K": 14,
-    "Rank_Avg": 23.5,
+    "Rank_Avg": 24.5,
     "RewardScore_Avg": 18.381184283836465,
-    "WB_Elo": 1152.9381936764248
+    "WB_Elo": 1153.3121002656321
   },
   "Meta-Llama-3-8B-Instruct": {
     "Arena-Hard v0.1": "20.6",
@@ -713,11 +713,11 @@
     "WB_score": 33.176930596285445,
     "WB_score.task_macro": 29.20277208638918,
     "Length": 2975.1876832844573,
-    "Rank_ScoreMacro": 45,
+    "Rank_ScoreMacro": 47,
     "Rank_TaskMacroReward.K": 15,
-    "Rank_Avg": 30.0,
+    "Rank_Avg": 31.0,
     "RewardScore_Avg": 14.60138604319459,
-    "WB_Elo": 1140.3233484356538
+    "WB_Elo": 1138.9359949911836
   },
   "tulu-2-dpo-70b": {
     "Arena-Hard v0.1": "15",
@@ -761,11 +761,11 @@
     "WB_score": 32.82502443792767,
     "WB_score.task_macro": 27.983756123225106,
     "Length": 2908.0714285714284,
-    "Rank_ScoreMacro": 46,
+    "Rank_ScoreMacro": 48,
     "Rank_TaskMacroReward.K": 16,
-    "Rank_Avg": 31.0,
+    "Rank_Avg": 32.0,
     "RewardScore_Avg": 13.991878061612553,
-    "WB_Elo": 1111.8727406597127
+    "WB_Elo": 1117.1758876139804
   },
   "Nous-Hermes-2-Mixtral-8x7B-DPO": {
     "Arena-Hard v0.1": "-",
@@ -809,11 +809,11 @@
     "WB_score": 33.22233104799217,
     "WB_score.task_macro": 30.711400306676122,
     "Length": 2874.541625857003,
-    "Rank_ScoreMacro": 39,
+    "Rank_ScoreMacro": 41,
     "Rank_TaskMacroReward.K": 17,
-    "Rank_Avg": 28.0,
+    "Rank_Avg": 29.0,
     "RewardScore_Avg": 15.355700153338061,
-    "WB_Elo": 1095.3512327149908
+    "WB_Elo": 1080.2056309770019
   },
   "Mistral-7B-Instruct-v0.2": {
     "Arena-Hard v0.1": "-",
@@ -857,11 +857,11 @@
     "WB_score": 30.694037145650057,
     "WB_score.task_macro": 25.633728318953878,
     "Length": 2832.3440860215055,
-    "Rank_ScoreMacro": 47,
+    "Rank_ScoreMacro": 49,
     "Rank_TaskMacroReward.K": 18,
-    "Rank_Avg": 32.5,
+    "Rank_Avg": 33.5,
     "RewardScore_Avg": 12.816864159476939,
-    "WB_Elo": 1092.9496446864666
+    "WB_Elo": 1101.3767359840006
   },
   "gpt-3.5-turbo-0125": {
     "Arena-Hard v0.1": "23.3",
@@ -905,11 +905,11 @@
     "WB_score": 32.27761485826002,
     "WB_score.task_macro": 30.01598607195931,
     "Length": 1844.13880742913,
-    "Rank_ScoreMacro": 42,
+    "Rank_ScoreMacro": 44,
     "Rank_TaskMacroReward.K": 19,
-    "Rank_Avg": 30.5,
+    "Rank_Avg": 31.5,
     "RewardScore_Avg": 15.007993035979656,
-    "WB_Elo": 1117.0360328333738
+    "WB_Elo": 1121.251530987005
   },
   "Qwen1.5-7B-Chat@together": {
     "Arena-Hard v0.1": "-",
@@ -953,11 +953,11 @@
     "WB_score": 27.370478983382203,
     "WB_score.task_macro": 23.42316313940188,
     "Length": 2519.4203323558163,
-    "Rank_ScoreMacro": 50,
+    "Rank_ScoreMacro": 52,
     "Rank_TaskMacroReward.K": 20,
-    "Rank_Avg": 35.0,
+    "Rank_Avg": 36.0,
     "RewardScore_Avg": 11.71158156970094,
-    "WB_Elo": 1079.0609979785268
+    "WB_Elo": 1087.3802801104714
   },
   "Llama-2-70b-chat-hf": {
     "Arena-Hard v0.1": "11.6",
@@ -1001,11 +1001,11 @@
     "WB_score": 26.9140625,
     "WB_score.task_macro": 20.659636912866645,
     "Length": 3138.3179587831205,
-    "Rank_ScoreMacro": 54,
+    "Rank_ScoreMacro": 56,
     "Rank_TaskMacroReward.K": 21,
-    "Rank_Avg": 37.5,
+    "Rank_Avg": 38.5,
     "RewardScore_Avg": 10.329818456433323,
-    "WB_Elo": 1094.1330754413618
+    "WB_Elo": 1098.4943658649886
   },
   "Llama-2-7b-chat-hf": {
     "Arena-Hard v0.1": "4.6",
@@ -1049,11 +1049,11 @@
     "WB_score": 15.225048923679054,
     "WB_score.task_macro": 8.262075264042464,
     "Length": 2985.1052114060963,
-    "Rank_ScoreMacro": 55,
+    "Rank_ScoreMacro": 57,
     "Rank_TaskMacroReward.K": 22,
-    "Rank_Avg": 38.5,
+    "Rank_Avg": 39.5,
     "RewardScore_Avg": 4.131037632021232,
-    "WB_Elo": 1034.5746807798178
+    "WB_Elo": 1041.1222188003035
   },
   "gemma-7b-it": {
     "Arena-Hard v0.1": "7.5",
@@ -1097,11 +1097,11 @@
     "WB_score": 10.17578125,
     "WB_score.task_macro": 6.61975914869064,
     "Length": 1726.3440860215053,
-    "Rank_ScoreMacro": 56,
+    "Rank_ScoreMacro": 58,
     "Rank_TaskMacroReward.K": 23,
-    "Rank_Avg": 39.5,
+    "Rank_Avg": 40.5,
     "RewardScore_Avg": 3.30987957434532,
-    "WB_Elo": 1052.6494754658927
+    "WB_Elo": 1054.621454785235
   },
   "gemma-2b-it": {
     "Arena-Hard v0.1": "3",
@@ -1145,11 +1145,11 @@
     "WB_score": -5.249755142017634,
     "WB_score.task_macro": -9.691930072258819,
     "Length": 1590.0833333333333,
-    "Rank_ScoreMacro": 57,
+    "Rank_ScoreMacro": 59,
     "Rank_TaskMacroReward.K": 24,
-    "Rank_Avg": 40.5,
+    "Rank_Avg": 41.5,
     "RewardScore_Avg": -4.845965036129409,
-    "WB_Elo": 983.0769402606998
+    "WB_Elo": 981.6996752412879
   },
   "Llama-3-Instruct-8B-SimPO": {
     "Arena-Hard v0.1": "33.8",
@@ -1193,11 +1193,11 @@
     "WB_score": 41.17302052785924,
     "WB_score.task_macro": 37.049721402304925,
     "Length": 2541.9257086999023,
-    "Rank_ScoreMacro": 32,
+    "Rank_ScoreMacro": 34,
     "Rank_TaskMacroReward.K": 25,
-    "Rank_Avg": 28.5,
+    "Rank_Avg": 29.5,
     "RewardScore_Avg": 18.524860701152463,
-    "WB_Elo": 1151.2663238996643
+    "WB_Elo": 1151.030510314398
   },
   "SELM-Zephyr-7B-iter-3": {
     "Arena-Hard v0.1": "-",
@@ -1241,11 +1241,11 @@
     "WB_score": 31.5234375,
     "WB_score.task_macro": 25.061899136983598,
     "Length": 2823.7800586510266,
-    "Rank_ScoreMacro": 48,
+    "Rank_ScoreMacro": 50,
     "Rank_TaskMacroReward.K": 26,
-    "Rank_Avg": 37.0,
+    "Rank_Avg": 38.0,
     "RewardScore_Avg": 12.530949568491799,
-    "WB_Elo": 1125.7496880056108
+    "WB_Elo": 1124.7095121307725
   },
   "Qwen2-72B-Instruct": {
     "Arena-Hard v0.1": "48.1",
@@ -1289,11 +1289,11 @@
     "WB_score": 46.40625,
     "WB_score.task_macro": 44.497691296234095,
     "Length": 2856.4482421875,
-    "Rank_ScoreMacro": 22,
+    "Rank_ScoreMacro": 24,
     "Rank_TaskMacroReward.K": 27,
-    "Rank_Avg": 24.5,
+    "Rank_Avg": 25.5,
     "RewardScore_Avg": 22.248845648117047,
-    "WB_Elo": 1177.9858535965495
+    "WB_Elo": 1177.1712839729491
   },
   "Hermes-2-Theta-Llama-3-8B": {
     "Arena Elo (hard-en) - latest": "-",
@@ -1334,11 +1334,11 @@
     "WB_score": 32.9423264907136,
     "WB_score.task_macro": 29.635207776375477,
     "Length": 2742.169110459433,
-    "Rank_ScoreMacro": 43,
+    "Rank_ScoreMacro": 45,
     "Rank_TaskMacroReward.K": 28,
-    "Rank_Avg": 35.5,
+    "Rank_Avg": 36.5,
     "RewardScore_Avg": 14.817603888187739,
-    "WB_Elo": 1135.2738128230772
+    "WB_Elo": 1135.3695420288827
   },
   "yi-large": {
     "Arena-Hard v0.1": "63.7",
@@ -1382,11 +1382,11 @@
     "WB_score": 48.93450635386118,
     "WB_score.task_macro": 48.92726960200772,
     "Length": 3095.335952848723,
-    "Rank_ScoreMacro": 12,
+    "Rank_ScoreMacro": 13,
     "Rank_TaskMacroReward.K": 29,
-    "Rank_Avg": 20.5,
+    "Rank_Avg": 21.0,
     "RewardScore_Avg": 24.46363480100386,
-    "WB_Elo": 1191.0828964314967
+    "WB_Elo": 1188.0376249091216
   },
   "Yi-1.5-34B-Chat": {
     "Arena-Hard v0.1": "-",
@@ -1430,11 +1430,11 @@
     "WB_score": 47.350928641251215,
     "WB_score.task_macro": 45.613463477590955,
     "Length": 3523.557843137255,
-    "Rank_ScoreMacro": 20,
+    "Rank_ScoreMacro": 22,
     "Rank_TaskMacroReward.K": 30,
-    "Rank_Avg": 25.0,
+    "Rank_Avg": 26.0,
     "RewardScore_Avg": 22.806731738795477,
-    "WB_Elo": 1163.7436294454853
+    "WB_Elo": 1162.4576654342034
   },
   "reka-flash-20240226": {
     "Arena-Hard v0.1": "-",
@@ -1478,11 +1478,11 @@
     "WB_score": 34.60410557184751,
     "WB_score.task_macro": 30.363615402031144,
     "Length": 2103.0098039215686,
-    "Rank_ScoreMacro": 40,
+    "Rank_ScoreMacro": 42,
     "Rank_TaskMacroReward.K": 31,
-    "Rank_Avg": 35.5,
+    "Rank_Avg": 36.5,
     "RewardScore_Avg": 15.181807701015572,
-    "WB_Elo": 1133.8601676326382
+    "WB_Elo": 1131.7440637161965
   },
   "gemini-1.5-pro": {
     "Arena-Hard v0.1": "72.0",
@@ -1526,11 +1526,11 @@
     "WB_score": 47.3828125,
     "WB_score.task_macro": 52.95184246265066,
     "Length": 3247.9673135852913,
-    "Rank_ScoreMacro": 9,
+    "Rank_ScoreMacro": 10,
     "Rank_TaskMacroReward.K": 32,
-    "Rank_Avg": 20.5,
+    "Rank_Avg": 21.0,
     "RewardScore_Avg": 26.47592123132533,
-    "WB_Elo": 1227.8619839283333
+    "WB_Elo": 1214.9050541752613
   },
   "gemini-1.5-flash": {
     "Arena-Hard v0.1": "49.6",
@@ -1574,11 +1574,11 @@
     "WB_score": 44.14872798434443,
     "WB_score.task_macro": 48.85062170599164,
     "Length": 3654.3993871297243,
-    "Rank_ScoreMacro": 13,
+    "Rank_ScoreMacro": 14,
     "Rank_TaskMacroReward.K": 33,
-    "Rank_Avg": 23.0,
+    "Rank_Avg": 23.5,
     "RewardScore_Avg": 24.42531085299582,
-    "WB_Elo": 1200.8264575436344
+    "WB_Elo": 1193.4318606066881
   },
   "reka-core-20240501": {
     "Arena-Hard v0.1": "-",
@@ -1622,11 +1622,11 @@
     "WB_score": 41.03515625,
     "WB_score.task_macro": 45.90279465292558,
     "Length": 2592.589397089397,
-    "Rank_ScoreMacro": 19,
+    "Rank_ScoreMacro": 20,
     "Rank_TaskMacroReward.K": 34,
-    "Rank_Avg": 26.5,
+    "Rank_Avg": 27.0,
     "RewardScore_Avg": 22.95139732646279,
-    "WB_Elo": 1174.550585704013
+    "WB_Elo": 1174.8253880489929
   },
   "yi-large-preview": {
     "Arena-Hard v0.1": "-",
@@ -1674,7 +1674,7 @@
     "Rank_TaskMacroReward.K": 35,
     "Rank_Avg": 19.5,
     "RewardScore_Avg": 27.647312616012393,
-    "WB_Elo": 1207.3699834815866
+    "WB_Elo": 1216.629652640596
   },
   "nemotron-4-340b-instruct": {
     "Arena-Hard v0.1": "-",
@@ -1718,11 +1718,11 @@
     "WB_score": 48.84765625,
     "WB_score.task_macro": 47.67250981186394,
     "Length": 2754.0098039215686,
-    "Rank_ScoreMacro": 17,
+    "Rank_ScoreMacro": 18,
     "Rank_TaskMacroReward.K": 36,
-    "Rank_Avg": 26.5,
+    "Rank_Avg": 27.0,
     "RewardScore_Avg": 23.83625490593197,
-    "WB_Elo": 1180.8931094818054
+    "WB_Elo": 1182.0577739853727
   },
   "claude-3-5-sonnet-20240620": {
     "Arena-Hard v0.1": "-",
@@ -1770,7 +1770,7 @@
     "Rank_TaskMacroReward.K": 37,
     "Rank_Avg": 21.5,
     "RewardScore_Avg": 27.347542283092196,
-    "WB_Elo": 1234.5535218870648
+    "WB_Elo": 1223.2368021011282
   },
   "deepseek-coder-v2": {
     "Arena-Hard v0.1": "-",
@@ -1814,11 +1814,11 @@
     "WB_score": 48.895405669599214,
     "WB_score.task_macro": 47.39521235239142,
     "Length": 2795.3091265947005,
-    "Rank_ScoreMacro": 18,
+    "Rank_ScoreMacro": 19,
     "Rank_TaskMacroReward.K": 38,
-    "Rank_Avg": 28.0,
+    "Rank_Avg": 28.5,
     "RewardScore_Avg": 23.69760617619571,
-    "WB_Elo": 1193.2312349627832
+    "WB_Elo": 1189.3093304839688
   },
   "gemma-2-9b-it": {
     "Arena-Hard v0.1": "-",
@@ -1862,11 +1862,11 @@
     "WB_score": 45.36203522504893,
     "WB_score.task_macro": 42.696193124381026,
     "Length": 2802.8923679060667,
-    "Rank_ScoreMacro": 24,
+    "Rank_ScoreMacro": 26,
     "Rank_TaskMacroReward.K": 39,
-    "Rank_Avg": 31.5,
+    "Rank_Avg": 32.5,
     "RewardScore_Avg": 21.348096562190513,
-    "WB_Elo": 1158.710734005131
+    "WB_Elo": 1156.30355345473
   },
   "Athene-70B": {
     "Arena Elo (hard-en) - latest": "-",
@@ -1913,7 +1913,7 @@
     "Rank_TaskMacroReward.K": 40,
     "Rank_Avg": 20.5,
     "RewardScore_Avg": 29.768683665979253,
-    "WB_Elo": 1198.3226652925323
+    "WB_Elo": 1198.1634616216684
   },
   "gpt-4o-mini-2024-07-18": {
     "Arena Elo (hard-en) - latest": "-",
@@ -1960,7 +1960,7 @@
     "Rank_TaskMacroReward.K": 41,
     "Rank_Avg": 22.0,
     "RewardScore_Avg": 28.56844701725708,
-    "WB_Elo": 1193.5154531794544
+    "WB_Elo": 1192.2388561710413
   },
   "gemma-2-9b-it-DPO": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2003,11 +2003,11 @@
     "WB_score": 54.2578125,
     "WB_score.task_macro": 53.22295446230848,
     "Length": 3982.628795298727,
-    "Rank_ScoreMacro": 8,
+    "Rank_ScoreMacro": 9,
     "Rank_TaskMacroReward.K": 42,
-    "Rank_Avg": 25.0,
+    "Rank_Avg": 25.5,
     "RewardScore_Avg": 26.61147723115424,
-    "WB_Elo": 1183.0340263398664
+    "WB_Elo": 1182.7763119062336
   },
   "gemma-2-9b-it-SimPO": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2050,11 +2050,58 @@
     "WB_score": 54.07624633431085,
     "WB_score.task_macro": 53.27923406955029,
     "Length": 4277.667647058824,
-    "Rank_ScoreMacro": 7,
+    "Rank_ScoreMacro": 8,
     "Rank_TaskMacroReward.K": 43,
-    "Rank_Avg": 25.0,
+    "Rank_Avg": 25.5,
     "RewardScore_Avg": 26.639617034775146,
-    "WB_Elo": 1185.602510934503
+    "WB_Elo": 1184.987441584614
+  },
+  "deepseek-v2-chat-0628": {
+    "Arena Elo (hard-en) - latest": "-",
+    "Arena-Hard v0.1": "-",
+    "AE2.0 LC": "-",
+    "AE2.0": "-",
+    "haiku_reward.K=300": 0,
+    "llama_reward.K=300": 0,
+    "gpt4t_reward.K=300": 0,
+    "haiku_reward.Creative Tasks.K=300": 0,
+    "llama_reward.Creative Tasks.K=300": 0,
+    "gpt4t_reward.Creative Tasks.K=300": 0,
+    "mixture_of_rewards.Creative Tasks.K=300": 0.0,
+    "haiku_reward.Planning & Reasoning.K=300": 0,
+    "llama_reward.Planning & Reasoning.K=300": 0,
+    "gpt4t_reward.Planning & Reasoning.K=300": 0,
+    "mixture_of_rewards.Planning & Reasoning.K=300": 0.0,
+    "haiku_reward.Math & Data Analysis.K=300": 0,
+    "llama_reward.Math & Data Analysis.K=300": 0,
+    "gpt4t_reward.Math & Data Analysis.K=300": 0,
+    "mixture_of_rewards.Math & Data Analysis.K=300": 0.0,
+    "haiku_reward.Information/Advice seeking.K=300": 0,
+    "llama_reward.Information/Advice seeking.K=300": 0,
+    "gpt4t_reward.Information/Advice seeking.K=300": 0,
+    "mixture_of_rewards.Information/Advice seeking.K=300": 0.0,
+    "haiku_reward.Coding & Debugging.K=300": 0,
+    "llama_reward.Coding & Debugging.K=300": 0,
+    "gpt4t_reward.Coding & Debugging.K=300": 0,
+    "mixture_of_rewards.Coding & Debugging.K=300": 0.0,
+    "haiku_reward.task_macro.K=300": 0,
+    "llama_reward.task_macro.K=300": 0,
+    "gpt4t_reward.task_macro.K=300": 0,
+    "mixture_of_rewards.K=300": 0.0,
+    "task_macro_reward.K=300": 0.0,
+    "WB_score.Creative Tasks": 56.43410852713178,
+    "WB_score.Planning & Reasoning": 54.82810164424514,
+    "WB_score.Math & Data Analysis": 51.42857142857142,
+    "WB_score.Information/Advice seeking": 52.72277227722773,
+    "WB_score.Coding & Debugging": 55.0,
+    "WB_score": 53.80859375,
+    "WB_score.task_macro": 53.994280411655694,
+    "Length": 3252.376953125,
+    "Rank_ScoreMacro": 7,
+    "Rank_TaskMacroReward.K": 44,
+    "Rank_Avg": 25.5,
+    "RewardScore_Avg": 26.997140205827847,
+    "WB_Elo": 1188.4981071844163
   },
   "deepseekv2-chat": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2097,11 +2144,11 @@
     "WB_score": 50.04887585532748,
     "WB_score.task_macro": 48.21191935259587,
     "Length": 2896.965786901271,
-    "Rank_ScoreMacro": 15,
-    "Rank_TaskMacroReward.K": 44,
-    "Rank_Avg": 29.5,
+    "Rank_ScoreMacro": 16,
+    "Rank_TaskMacroReward.K": 45,
+    "Rank_Avg": 30.5,
     "RewardScore_Avg": 24.105959676297935,
-    "WB_Elo": 1180.0748080184171
+    "WB_Elo": 1179.1626854589074
   },
   "gemma-2-27b-it@together": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2144,11 +2191,11 @@
     "WB_score": 49.39453125,
     "WB_score.task_macro": 48.54019672452688,
     "Length": 2924.5455435847207,
-    "Rank_ScoreMacro": 14,
-    "Rank_TaskMacroReward.K": 45,
-    "Rank_Avg": 29.5,
+    "Rank_ScoreMacro": 15,
+    "Rank_TaskMacroReward.K": 46,
+    "Rank_Avg": 30.5,
     "RewardScore_Avg": 24.27009836226344,
-    "WB_Elo": 1178.9972284888786
+    "WB_Elo": 1180.1543357221424
   },
   "Mistral-Nemo-Instruct-2407": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2191,11 +2238,58 @@
     "WB_score": 46.86217008797654,
     "WB_score.task_macro": 44.37513167010813,
     "Length": 3318.2130987292276,
-    "Rank_ScoreMacro": 23,
-    "Rank_TaskMacroReward.K": 46,
-    "Rank_Avg": 34.5,
+    "Rank_ScoreMacro": 25,
+    "Rank_TaskMacroReward.K": 47,
+    "Rank_Avg": 36.0,
     "RewardScore_Avg": 22.187565835054066,
-    "WB_Elo": 1165.482476012898
+    "WB_Elo": 1165.0320398376616
+  },
+  "deepseek-v2-coder-0628": {
+    "Arena Elo (hard-en) - latest": "-",
+    "Arena-Hard v0.1": "-",
+    "AE2.0 LC": "-",
+    "AE2.0": "-",
+    "haiku_reward.K=300": 0,
+    "llama_reward.K=300": 0,
+    "gpt4t_reward.K=300": 0,
+    "haiku_reward.Creative Tasks.K=300": 0,
+    "llama_reward.Creative Tasks.K=300": 0,
+    "gpt4t_reward.Creative Tasks.K=300": 0,
+    "mixture_of_rewards.Creative Tasks.K=300": 0.0,
+    "haiku_reward.Planning & Reasoning.K=300": 0,
+    "llama_reward.Planning & Reasoning.K=300": 0,
+    "gpt4t_reward.Planning & Reasoning.K=300": 0,
+    "mixture_of_rewards.Planning & Reasoning.K=300": 0.0,
+    "haiku_reward.Math & Data Analysis.K=300": 0,
+    "llama_reward.Math & Data Analysis.K=300": 0,
+    "gpt4t_reward.Math & Data Analysis.K=300": 0,
+    "mixture_of_rewards.Math & Data Analysis.K=300": 0.0,
+    "haiku_reward.Information/Advice seeking.K=300": 0,
+    "llama_reward.Information/Advice seeking.K=300": 0,
+    "gpt4t_reward.Information/Advice seeking.K=300": 0,
+    "mixture_of_rewards.Information/Advice seeking.K=300": 0.0,
+    "haiku_reward.Coding & Debugging.K=300": 0,
+    "llama_reward.Coding & Debugging.K=300": 0,
+    "gpt4t_reward.Coding & Debugging.K=300": 0,
+    "mixture_of_rewards.Coding & Debugging.K=300": 0.0,
+    "haiku_reward.task_macro.K=300": 0,
+    "llama_reward.task_macro.K=300": 0,
+    "gpt4t_reward.task_macro.K=300": 0,
+    "mixture_of_rewards.K=300": 0.0,
+    "task_macro_reward.K=300": 0.0,
+    "WB_score.Creative Tasks": 40.775193798449614,
+    "WB_score.Planning & Reasoning": 47.17488789237669,
+    "WB_score.Math & Data Analysis": 46.42857142857142,
+    "WB_score.Information/Advice seeking": 40.04950495049505,
+    "WB_score.Coding & Debugging": 48.86792452830189,
+    "WB_score": 43.4375,
+    "WB_score.task_macro": 45.66459211926647,
+    "Length": 2580.181640625,
+    "Rank_ScoreMacro": 21,
+    "Rank_TaskMacroReward.K": 48,
+    "Rank_Avg": 34.5,
+    "RewardScore_Avg": 22.832296059633236,
+    "WB_Elo": 1155.5375639746762
   },
   "Llama-3-8B-Magpie-Align-v0.1": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2238,11 +2332,11 @@
     "WB_score": 42.44618395303327,
     "WB_score.task_macro": 39.290196827463255,
     "Length": 3107.77397260274,
-    "Rank_ScoreMacro": 26,
-    "Rank_TaskMacroReward.K": 47,
-    "Rank_Avg": 36.5,
+    "Rank_ScoreMacro": 28,
+    "Rank_TaskMacroReward.K": 49,
+    "Rank_Avg": 38.5,
     "RewardScore_Avg": 19.645098413731628,
-    "WB_Elo": 1154.4940642120546
+    "WB_Elo": 1154.0245535881875
   },
   "Llama-3-Instruct-8B-SimPO-v0.2": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2285,11 +2379,11 @@
     "WB_score": 41.50537634408602,
     "WB_score.task_macro": 37.1554198259368,
     "Length": 2533.764418377322,
-    "Rank_ScoreMacro": 31,
-    "Rank_TaskMacroReward.K": 48,
-    "Rank_Avg": 39.5,
+    "Rank_ScoreMacro": 33,
+    "Rank_TaskMacroReward.K": 50,
+    "Rank_Avg": 41.5,
     "RewardScore_Avg": 18.5777099129684,
-    "WB_Elo": 1150.7483293883945
+    "WB_Elo": 1150.919957089786
   },
   "glm-4-9b-chat": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2332,11 +2426,11 @@
     "WB_score": 41.17302052785924,
     "WB_score.task_macro": 39.09896797431742,
     "Length": 3692.043010752688,
-    "Rank_ScoreMacro": 27,
-    "Rank_TaskMacroReward.K": 49,
-    "Rank_Avg": 38.0,
+    "Rank_ScoreMacro": 29,
+    "Rank_TaskMacroReward.K": 51,
+    "Rank_Avg": 40.0,
     "RewardScore_Avg": 19.54948398715871,
-    "WB_Elo": 1151.4883420803928
+    "WB_Elo": 1153.4135674324693
   },
   "SELM-Llama-3-8B-Instruct-iter-3": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2379,11 +2473,11 @@
     "WB_score": 39.96078431372549,
     "WB_score.task_macro": 35.25906077680738,
     "Length": 2913.1470588235293,
-    "Rank_ScoreMacro": 34,
-    "Rank_TaskMacroReward.K": 50,
-    "Rank_Avg": 42.0,
+    "Rank_ScoreMacro": 36,
+    "Rank_TaskMacroReward.K": 52,
+    "Rank_Avg": 44.0,
     "RewardScore_Avg": 17.62953038840369,
-    "WB_Elo": 1147.2810922227022
+    "WB_Elo": 1147.8070782611603
   },
   "Yi-1.5-9B-Chat": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2426,11 +2520,11 @@
     "WB_score": 39.8435972629521,
     "WB_score.task_macro": 38.66535351517231,
     "Length": 3468.23431372549,
-    "Rank_ScoreMacro": 30,
-    "Rank_TaskMacroReward.K": 51,
-    "Rank_Avg": 40.5,
+    "Rank_ScoreMacro": 32,
+    "Rank_TaskMacroReward.K": 53,
+    "Rank_Avg": 42.5,
     "RewardScore_Avg": 19.332676757586157,
-    "WB_Elo": 1151.9013581215938
+    "WB_Elo": 1152.7699067114654
   },
   "Llama-3-Instruct-8B-SimPO-ExPO": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2473,11 +2567,11 @@
     "WB_score": 39.687194525904204,
     "WB_score.task_macro": 35.01502977266739,
     "Length": 2480.6490713587486,
-    "Rank_ScoreMacro": 35,
-    "Rank_TaskMacroReward.K": 52,
-    "Rank_Avg": 43.5,
+    "Rank_ScoreMacro": 37,
+    "Rank_TaskMacroReward.K": 54,
+    "Rank_Avg": 45.5,
     "RewardScore_Avg": 17.507514886333695,
-    "WB_Elo": 1145.905181205087
+    "WB_Elo": 1146.1220037910198
   },
   "Starling-LM-7B-beta-ExPO": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2520,11 +2614,11 @@
     "WB_score": 35.01466275659824,
     "WB_score.task_macro": 31.559353823619887,
     "Length": 2835.826810176125,
-    "Rank_ScoreMacro": 37,
-    "Rank_TaskMacroReward.K": 53,
-    "Rank_Avg": 45.0,
+    "Rank_ScoreMacro": 39,
+    "Rank_TaskMacroReward.K": 55,
+    "Rank_Avg": 47.0,
     "RewardScore_Avg": 15.779676911809943,
-    "WB_Elo": 1138.1803205289302
+    "WB_Elo": 1137.2768338270635
   },
   "neo_7b_instruct_v0.1": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2567,11 +2661,11 @@
     "WB_score": 29.19921875,
     "WB_score.task_macro": 25.019233576987165,
     "Length": 3735.800586510264,
-    "Rank_ScoreMacro": 49,
-    "Rank_TaskMacroReward.K": 54,
-    "Rank_Avg": 51.5,
+    "Rank_ScoreMacro": 51,
+    "Rank_TaskMacroReward.K": 56,
+    "Rank_Avg": 53.5,
     "RewardScore_Avg": 12.509616788493583,
-    "WB_Elo": 1121.3647023882636
+    "WB_Elo": 1121.4690469188822
   },
   "neo_7b_instruct_v0.1-ExPO": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2614,11 +2708,11 @@
     "WB_score": 27.624633431085037,
     "WB_score.task_macro": 23.114172189706185,
     "Length": 4107.917808219178,
-    "Rank_ScoreMacro": 52,
-    "Rank_TaskMacroReward.K": 55,
-    "Rank_Avg": 53.5,
+    "Rank_ScoreMacro": 54,
+    "Rank_TaskMacroReward.K": 57,
+    "Rank_Avg": 55.5,
     "RewardScore_Avg": 11.557086094853092,
-    "WB_Elo": 1116.6945333818721
+    "WB_Elo": 1115.792796264398
   },
   "Yi-1.5-6B-Chat": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2661,11 +2755,11 @@
     "WB_score": 25.278592375366564,
     "WB_score.task_macro": 23.318116689149882,
     "Length": 3899.4686274509804,
-    "Rank_ScoreMacro": 51,
-    "Rank_TaskMacroReward.K": 56,
-    "Rank_Avg": 53.5,
+    "Rank_ScoreMacro": 53,
+    "Rank_TaskMacroReward.K": 58,
+    "Rank_Avg": 55.5,
     "RewardScore_Avg": 11.659058344574941,
-    "WB_Elo": 1110.4728225729164
+    "WB_Elo": 1110.1762723788904
   },
   "reka-edge": {
     "Arena Elo (hard-en) - latest": "-",
@@ -2708,10 +2802,10 @@
     "WB_score": 23.186705767350926,
     "WB_score.task_macro": 21.252257932999665,
     "Length": 2417.351106639839,
-    "Rank_ScoreMacro": 53,
-    "Rank_TaskMacroReward.K": 57,
-    "Rank_Avg": 55.0,
+    "Rank_ScoreMacro": 55,
+    "Rank_TaskMacroReward.K": 59,
+    "Rank_Avg": 57.0,
     "RewardScore_Avg": 10.626128966499833,
-    "WB_Elo": 1111.4945263241882
+    "WB_Elo": 1110.9927989169246
   }
 }
