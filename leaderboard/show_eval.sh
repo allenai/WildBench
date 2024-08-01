@@ -29,8 +29,8 @@ python leaderboard/data_dir/_create_tables.py score
 python leaderboard/data_dir/_merge_results.py
 
 # margin=3;tie_margin=2;K=4;dynamic=True;interval=16
-margin=3;tie_margin=2;K=4;dynamic=True;interval=100;LM=1500
-python -m leaderboard.wb_elo --K $K --margin $margin --tie_margin $tie_margin --num_rounds 128 --dynamic $dynamic --interval $interval --num_processes 4 --LM $LM
+margin=2;tie_margin=2;K=4;dynamic=True;interval=100;LM=1500
+python -m leaderboard.wb_elo --K $K --margin $margin --tie_margin $tie_margin --num_rounds 128 --dynamic $dynamic --interval $interval --num_processes 4 --length_margin $LM
 
 python leaderboard/data_dir/_merge_results.py
 

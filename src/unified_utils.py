@@ -128,6 +128,8 @@ def clear_output(output, model_name):
     """
     output = output.replace("<|endoftext|>", " ")
     output = output.replace("</s>", " ")
+    output = output.replace("<pad>", " ")
+    output = output.replace("<end_of_turn>", " ")
     output = output.strip()
     return output
 
